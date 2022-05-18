@@ -1,0 +1,19 @@
+.layout__scrollTop{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgb(0 0 0 / 5%);
+    scroll-behavior: smooth;
+    cursor: pointer;
+
+}
+.layout__scrollTop:hover{
+    background-color: #000000;
+}
+.layout__scrollTop svg{
+    color: #f8f9fa;
+    font-size: 18px;
+}

@@ -1,12 +1,22 @@
 import Header from "../Header";
 import Footer from "../Footer";
+import { FaAngleUp } from "react-icons/fa"
+import './style.css'
 
 function DefaultLayout({ children }) {
+  function handleSrollTop(){
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+  console.log();
+
   return (
     <div>
-      <Header />
+      <Header languages={children.props.languages} />
       <div className="layout__content-main">{children}</div>
-      <Footer />
+      <div onClick={handleSrollTop} className="layout__scrollTop">
+        <FaAngleUp  />
+      </div>
+      <Footer languages={children.props.languages} />
     </div>
   );
 }

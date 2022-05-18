@@ -1,7 +1,14 @@
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom'
+import { BsFillCheckSquareFill, BsFillTelephoneFill, BsSkype } from 'react-icons/bs';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { AiOutlineClose } from 'react-icons/ai';
+import { HiMail } from 'react-icons/hi';
+import './style.css'
 
-function Header() {
+function Header( { languages} ) {
+  console.log(languages.navigation);
   const { i18n } = useTranslation();
   const [currentLang, setCurrentLang] = useState("vi");
 
@@ -18,11 +25,83 @@ function Header() {
     setCurrentLang("en");
   };
 
+  function handleBurgerMenu(){
+    document.querySelector(".header__burgerMenu").classList.toggle('openBurgerMenu')
+  }
+
+  useEffect(() => {
+    function changeBackground(){
+      if(window.scrollY > 400){
+        document.querySelector(".header").classList.add('backgroundBlack')
+      }else{
+        document.querySelector(".header").classList.remove('backgroundBlack')
+    }
+  }
+    window.addEventListener('scroll', changeBackground)
+    return () => window.removeEventListener('scroll', changeBackground);
+  },[])
+
   return (
-    <>
-      <button onClick={changeLanguageVI}>VI</button>
-      <button onClick={changeLanguageEN}>EN</button>
-    </>
+      <div className="header">
+        <div className="header__logo">
+            <Link className="logo--link" to="/"> 
+                volansoft
+            </Link>
+        </div>
+        <div className="header__navigation">
+          <ul className="nav__lists">																
+            <li className="lists--item"  >
+                <Link to="#getQuoteModal" >
+                    <BsFillCheckSquareFill /> 
+                    Get Quote
+                </Link>
+            </li>
+            <li className="lists--item" >
+                <Link to="mailto:info@volansoft.com">
+                    <HiMail />
+                    info@volansoft.com
+                </Link>
+            </li>
+            <li className="lists--item" >
+                <Link to="tel:9549326532">
+                    <BsFillTelephoneFill /> 
+                    +919549326532
+                </Link>
+            </li>
+            <li className="lists--item" >
+                <Link to="skype:rameshk2316?call">
+                    <BsSkype />
+                    Skype
+                </Link>
+            </li>       
+            <li  className="lists--item">
+              <div className="header__menuButton" onClick={handleBurgerMenu}>
+               <GiHamburgerMenu />
+                Menu
+              </div>
+            </li>                
+          </ul>
+        </div>
+        <div className="header__burgerMenu">
+          <div className="header__menuButton" onClick={handleBurgerMenu}>
+            <div className="menuButton__close">
+              <AiOutlineClose />
+              Close
+            </div>
+            <ul className="menuLists">
+            {languages.navigation.map((nav, index) => (
+                <li className="menuLists-items" key={index}>
+                  <Link to={nav.linkUrl} > {nav.title}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="header__language">
+          <button onClick={changeLanguageVI}>VI</button>
+          <button onClick={changeLanguageEN}>EN</button>
+        </div>
+      </div>
   );
 }
 
