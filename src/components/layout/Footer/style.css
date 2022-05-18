@@ -45,13 +45,15 @@
 
 .social_link li{
     height: 40px;
-    background-color:#fff;
-    
+    background-color: #fff;
+    margin: 5px;
+    padding: 3px 8px;
 }
 
 .social_link a{
-    font-size: 32px;
+    font-size: 27px;
     color: #000;
+
 
 }
 .footer-address{
