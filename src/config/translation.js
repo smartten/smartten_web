@@ -8,7 +8,7 @@ const languageData = {
                 {title:'career' ,linkUrl:'about-us'},
                 {title:'contact' ,linkUrl:'about-us'}],
     bussiness:[{title:'general enquiries',mail:'info@volansoft.com', mobile:'+91 95493 26532', phone:'Mobile', icon:'fa-solid fa-mobile-screen'},
-                {title:'bussiness enqquires',mail:'business@volansoft.com', mobile:'+91 78911 21113', phone:'Mobile', icon:'fa-solid fa-messages'},
+                {title:'bussiness enqquires',mail:'business@volansoft.com', mobile:'+91 78911 21113', phone:'Mobile', icon:'fa-regular fa-message'},
                 {title:'recruitments',mail:'career@volansoft.com', mobile:'+91 90241 95011', phone:'Mobile', icon:'fa-solid fa-suitcase'}],
     
   },
@@ -21,7 +21,7 @@ const languageData = {
                 {title:'việc làm' ,linkUrl:'about-us'},
                 {title:'liên hệ' ,linkUrl:'about-us'}],
     bussiness:[{title:'thắc mắc chung',mail:'info@volansoft.com', mobile:'+91 95493 26532', phone:'Số điện thoại', icon:'fa-solid fa-mobile-screen'},
-                {title:'yêu cầu kinh doanh',mail:'business@volansoft.com', mobile:'+91 78911 21113', phone:'Số điện thoại', icon:'fa-solid fa-messages'},
+                {title:'yêu cầu kinh doanh',mail:'business@volansoft.com', mobile:'+91 78911 21113', phone:'Số điện thoại', icon:'fa-regular fa-message'},
                 {title:'tuyển dụng',mail:'career@volansoft.com', mobile:'+91 90241 95011', phone:'Số điện thoại', icon:'fa-solid fa-suitcase'}],
 
   },

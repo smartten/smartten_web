@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaFacebookF,FaTwitter, FaWhatsapp ,FaLinkedinIn } from 'react-icons/fa';
 import { FiMapPin } from 'react-icons/fi';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';  
-
 import locationMap from '../../../assets/images/location_map.png';
 import './style.css'
 
@@ -61,7 +59,7 @@ function Footer({ languages}) {
                   {languages.bussiness.map((business, index) => (
                       <li key={index} className="business_info">
                         <span>
-                          <FontAwesomeIcon icon={business.icon} />
+                          <i className={business.icon}></i>
                           {business.title}
                         </span>   
                         <br />
