@@ -1,0 +1,15 @@
+.social_link{
+    display: flex;
+}
+
+.social_link li{
+    height: 40px;
+    margin: 5px;
+    padding: 10px 10px 0 10px;
+}
+
+.social_link li a{
+    margin-top: 5px;
+    font-size: 27px;
+    color: #000;
+}

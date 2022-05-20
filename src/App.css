@@ -40,3 +40,13 @@
 .scrollUpAnimation{
   transform: translateY(30px);
 }
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+ul{
+  margin: 0;
+}

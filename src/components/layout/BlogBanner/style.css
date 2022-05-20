@@ -1,0 +1,25 @@
+.blog-banner{
+    background-image:url(../../../assets/images/banner-blog.jpeg);
+    width: 100%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    margin-bottom: 30px;
+    display: flex;
+    z-index: 33;
+}
+.banner-container{
+    margin: auto;
+    text-align: start;
+}
+.banner-container h2{
+    color: #fff;
+    font-size: 45px;
+    font-weight: 350;
+}
+.banner-container h3{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+}

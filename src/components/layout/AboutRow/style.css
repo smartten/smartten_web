@@ -7,10 +7,7 @@
     position: relative;
 }
 
-.about-row li{
-    list-style: none;
-    
-}
+
 
 .about-row:after, .about-row:before{
     content: "";

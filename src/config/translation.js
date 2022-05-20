@@ -3,8 +3,8 @@ const languageData = {
   en: {
     address: "701-702, Evershine Tower, Amrapali Circle, Vaishali Nagar, Jaipur- 30202",
     navigation:[{title:'home' ,linkUrl:'/'},
-                {title:'about us' ,linkUrl:'about-us'},
-                {title:'service' ,linkUrl:'about-us'},
+                {title:'about us' ,linkUrl:'/about-us'},
+                {title:'blog' ,linkUrl:'/blog'},
                 {title:'career' ,linkUrl:'about-us'},
                 {title:'contact' ,linkUrl:'about-us'}],
     bussiness:[{title:'general enquiries',mail:'info@volansoft.com', mobile:'+91 95493 26532', phone:'Mobile', icon:'fa-solid fa-mobile-screen'},
@@ -16,8 +16,8 @@ const languageData = {
   vi: {
     address: "Số 1 - Đào Duy Anh - Hà Nội",
     navigation:[{title:'trang chủ' ,linkUrl:'/'},
-                {title:'về chúng tôi' ,linkUrl:'about-us'},
-                {title:'dịch vụ' ,linkUrl:'about-us'},
+                {title:'về chúng tôi' ,linkUrl:'/about-us'},
+                {title:'blog' ,linkUrl:'/blog'},
                 {title:'việc làm' ,linkUrl:'about-us'},
                 {title:'liên hệ' ,linkUrl:'about-us'}],
     bussiness:[{title:'thắc mắc chung',mail:'info@volansoft.com', mobile:'+91 95493 26532', phone:'Số điện thoại', icon:'fa-solid fa-mobile-screen'},

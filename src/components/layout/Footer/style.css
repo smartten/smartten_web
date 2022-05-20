@@ -5,6 +5,7 @@
     margin: auto;
     width: 100%;
     background-color:#090e11;
+
 }
 
 .footer li{
@@ -39,23 +40,6 @@
     text-transform: capitalize;
 }
 
-.social_link{
-    display: flex;
-}
-
-.social_link li{
-    height: 40px;
-    background-color: #fff;
-    margin: 5px;
-    padding: 3px 8px;
-}
-
-.social_link a{
-    font-size: 27px;
-    color: #000;
-
-
-}
 .footer-address{
     display: flex;
 }
@@ -101,4 +85,8 @@
 }
 .fa-solid{
     color: #fff;
+}
+.social_link li{
+    background-color: #fff;
+
 }

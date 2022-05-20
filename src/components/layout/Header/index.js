@@ -8,7 +8,6 @@ import { HiMail } from 'react-icons/hi';
 import './style.css'
 
 function Header( { languages} ) {
-  console.log(languages.navigation);
   const { i18n } = useTranslation();
   const [currentLang, setCurrentLang] = useState("vi");
 
@@ -51,28 +50,28 @@ function Header( { languages} ) {
         <div className="header__navigation">
           <ul className="nav__lists">																
             <li className="lists--item"  >
-                <Link to="#getQuoteModal" >
+                <a href="#getQuoteModal" >
                     <BsFillCheckSquareFill /> 
                     Get Quote
-                </Link>
+                </a>
             </li>
             <li className="lists--item" >
-                <Link to="mailto:info@volansoft.com">
+                <a href="mailto:info@volansoft.com">
                     <HiMail />
                     info@volansoft.com
-                </Link>
+                </a>
             </li>
             <li className="lists--item" >
-                <Link to="tel:9549326532">
+                <a href="tel:9549326532">
                     <BsFillTelephoneFill /> 
                     +919549326532
-                </Link>
+                </a>
             </li>
             <li className="lists--item" >
-                <Link to="skype:rameshk2316?call">
+                <a href="skype:rameshk2316?call">
                     <BsSkype />
                     Skype
-                </Link>
+                </a>
             </li>       
             <li  className="lists--item">
               <div className="header__menuButton" onClick={handleBurgerMenu}>

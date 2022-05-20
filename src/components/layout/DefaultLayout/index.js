@@ -7,7 +7,6 @@ function DefaultLayout({ children }) {
   function handleSrollTop(){
     window.scrollTo({top: 0, behavior: 'smooth'});
   }
-  console.log();
 
   return (
     <div>
