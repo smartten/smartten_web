@@ -1,16 +1,20 @@
 import React from 'react'
-
+import Fade from 'react-reveal/Fade';
 import './style.css'
 
-function BlogBanner() {
-  return (
-    <div className="blog-banner">
-        <div className="banner-container">
-            <h2>Blog</h2>
-            <h3>Our aim is to apply Technological Solutions to your Business Objectives &amp; Ideas</h3>
+function Banner({ title, backgroundName, description}) {
+    return(
+        <div className="blog-banner" >
+            <img src={require('../../../assets/images/banner-blog.jpeg')}  alt={backgroundName}/>
+                <div className="banner-container">
+                    <Fade bottom>
+                        <h2>{title}</h2>
+                        <h3>{description}</h3>
+                    </Fade>
+                </div>
         </div>
-    </div>
-  )
+    )
+  
 }
 
-export default BlogBanner
+export default Banner

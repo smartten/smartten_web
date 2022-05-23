@@ -6,59 +6,58 @@ import houseImg from '../../assets/images/houseImg.jpeg';
 import ourTeam from '../../assets/images/our-team.jpeg';
 import Fade from 'react-reveal/Fade';
 import './style.css';
+import Banner from '../../components/layout/BlogBanner';
 
 function AboutUs() {
   return (
     <div className="about-us">
       <div className="about-banner">
-          
-          <Fade bottom >
-            <h1 className="title2 scrollUpAnimation">About Us</h1>
-            <p>A company with creative professionals, committed to deliver the products with excellence</p>
-          </Fade>
+          <Banner title="About Us" backgroundName="banner-about.jpg" description="A company with creative professionals, committed to deliver the products with excellence" />
       </div>
       <div className="about-achivements">
-        <div className="achivements-lists">
-        <div className="achivements-item">
-          <AiFillCheckCircle />
-          <span>
-            <CountUp start={0} end={300} duration={2.75} />
+        <div className="about-achivements--container">
+          <div className="achivements-lists">
+            <div className="achivements-item">
+              <AiFillCheckCircle />
+              <span>
+                <CountUp start={0} end={300} duration={2.75} />
+                +
+              </span>
+              <span>Project Complete</span>
+            </div>
+            <div className="achivements-item">
+              <ImMap />
+              <span>
+                <CountUp start={0} end={20} duration={2.75} />
+                +
+              </span>
+              <span>Project Complete</span>
+            </div>
+            <div className="achivements-item">
+              <ImSmile />
+              <span>
+            <CountUp start={0} end={100} duration={2.75} />
             +
-          </span>
-          <span>Project Complete</span>
-        </div>
-        <div className="achivements-item">
-          <ImMap />
-          <span>
-            <CountUp start={0} end={20} duration={2.75} />
-            +
-          </span>
-          <span>Project Complete</span>
-        </div>
-        <div className="achivements-item">
-          <ImSmile />
-          <span>
-        <CountUp start={0} end={100} duration={2.75} />
-        +
-          </span>
-          <span>Project Complete</span>
-        </div>
-        <div className="achivements-item">
-          <AiTwotoneLike />
-          <span>
-            <CountUp start={0} end={82} duration={2.75} />%
-          </span>
-          <span>Project Complete</span>
-        </div>
-        </div>
-        <div className="achivements-details">
-          <Fade bottom>
-            <h3>Are you Ready</h3>
-            <h1>Welcome to our company</h1>
-          </Fade>
-          <p>
-            Volan Software & Technologies is one amongst the leading Mobile Application Development Company and also website development company which is excelled in developing exemplary IT solutions for various industries. Our competence is to fascinate customers, industrial edge and work towards greater satisfaction. We have experts professionals belonging to all leading technologies who are always curious to adapt according to varying technology requirements. Delivering commitments within the committed timeline are two major concerns which are considered while developing applications. We have been tagged as the favorite development partner by our clients as we have delivered some outstanding solutions in the span of our 5+ years of service where we seek for more in the further coming years.
-          </p>
+              </span>
+              <span>Project Complete</span>
+            </div>
+            <div className="achivements-item">
+              <AiTwotoneLike />
+              <span>
+                <CountUp start={0} end={82} duration={2.75} />%
+              </span>
+              <span>Project Complete</span>
+            </div>
+          </div>
+          <div className="achivements-details">
+            <Fade bottom>
+              <h3>Are you Ready</h3>
+              <h1>Welcome to our company</h1>
+            </Fade>
+            <p>
+              Volan Software & Technologies is one amongst the leading Mobile Application Development Company and also website development company which is excelled in developing exemplary IT solutions for various industries. Our competence is to fascinate customers, industrial edge and work towards greater satisfaction. We have experts professionals belonging to all leading technologies who are always curious to adapt according to varying technology requirements. Delivering commitments within the committed timeline are two major concerns which are considered while developing applications. We have been tagged as the favorite development partner by our clients as we have delivered some outstanding solutions in the span of our 5+ years of service where we seek for more in the further coming years.
+            </p>
+          </div>
         </div>
       </div>
       <div className="about-mission">

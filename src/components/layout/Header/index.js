@@ -41,66 +41,68 @@ function Header( { languages} ) {
   },[])
 
   return (
-      <div className="header">
-        <div className="header__logo">
-            <Link className="logo--link" to="/"> 
-                volansoft
-            </Link>
-        </div>
-        <div className="header__navigation">
-          <ul className="nav__lists">																
-            <li className="lists--item"  >
-                <a href="#getQuoteModal" >
-                    <BsFillCheckSquareFill /> 
-                    Get Quote
-                </a>
-            </li>
-            <li className="lists--item" >
-                <a href="mailto:info@volansoft.com">
-                    <HiMail />
-                    info@volansoft.com
-                </a>
-            </li>
-            <li className="lists--item" >
-                <a href="tel:9549326532">
-                    <BsFillTelephoneFill /> 
-                    +919549326532
-                </a>
-            </li>
-            <li className="lists--item" >
-                <a href="skype:rameshk2316?call">
-                    <BsSkype />
-                    Skype
-                </a>
-            </li>       
-            <li  className="lists--item">
-              <div className="header__menuButton" onClick={handleBurgerMenu}>
-               <GiHamburgerMenu />
-                Menu
-              </div>
-            </li>                
-          </ul>
-        </div>
-        <div className="header__burgerMenu">
-          <div className="header__menuButton" onClick={handleBurgerMenu}>
-            <div className="menuButton__close">
-              <AiOutlineClose />
-              Close
-            </div>
-            <ul className="menuLists">
-            {languages.navigation.map((nav, index) => (
-                <li className="menuLists-items" key={index}>
-                  <Link to={nav.linkUrl} > {nav.title}</Link>
-                </li>
-              ))}
+    <div className="header">
+        <div className="header--container">
+          <div className="header__logo">
+              <Link className="logo-link" to="/"> 
+                  volansoft
+              </Link>
+          </div>
+          <div className="header__navigation">
+            <ul className="nav__lists">																
+              <li className="lists-item"  >
+                  <a href="#getQuoteModal" >
+                      <BsFillCheckSquareFill /> 
+                      Get Quote
+                  </a>
+              </li>
+              <li className="lists-item" >
+                  <a href="mailto:info@volansoft.com">
+                      <HiMail />
+                      info@volansoft.com
+                  </a>
+              </li>
+              <li className="lists-item" >
+                  <a href="tel:9549326532">
+                      <BsFillTelephoneFill /> 
+                      +919549326532
+                  </a>
+              </li>
+              <li className="lists-item" >
+                  <a href="skype:rameshk2316?call">
+                      <BsSkype />
+                      Skype
+                  </a>
+              </li>       
+              <li  className="lists-item">
+                <div className="header__menuButton" onClick={handleBurgerMenu}>
+                <GiHamburgerMenu />
+                  Menu
+                </div>
+              </li>                
             </ul>
           </div>
+          <div className="header__burgerMenu">
+            <div className="header__menuButton" onClick={handleBurgerMenu}>
+              <div className="menuButton__close">
+                <AiOutlineClose />
+                Close
+              </div>
+              <ul className="menuLists">
+              {languages.navigation.map((nav, index) => (
+                  <li className="menuLists-items" key={index}>
+                    <Link to={nav.linkUrl} > {nav.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <div className="header__language">
+            <button onClick={changeLanguageVI}>VI</button>
+            <button onClick={changeLanguageEN}>EN</button>
+          </div>
         </div>
-        <div className="header__language">
-          <button onClick={changeLanguageVI}>VI</button>
-          <button onClick={changeLanguageEN}>EN</button>
-        </div>
-      </div>
+    </div>
   );
 }
 

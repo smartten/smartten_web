@@ -1,9 +1,9 @@
 import {React, useEffect, useState} from 'react'
 import { Link, useParams} from 'react-router-dom'
-import BlogBanner from '../../components/layout/BlogBanner'
 import blogApi from '../../api/blogApi'
 import './style.css'
 import SocialLink from '../../components/layout/SocialLink'
+import Banner from '../../components/layout/BlogBanner'
 
 function Post() {
   const [posts, setPosts] = useState([])
@@ -14,7 +14,6 @@ function Post() {
   let { blogIndex } = useParams();
 
   let currentIndex = parseInt(blogIndex)
-  console.log(currentIndex);
   
 
   useEffect(() => {
@@ -30,7 +29,7 @@ function Post() {
 
   return (
     <div className="post">
-        <BlogBanner />
+        <Banner title="Blog" backgroundName="banner-about.e753733f9a6577572b57.jpg"  description="Our aim is to apply Technological Solutions to your Business Objectives &amp; Ideas"  />
         <div className="post-content-container">
           <div className="post-content">
             <div className="post-content-left">

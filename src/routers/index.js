@@ -2,6 +2,7 @@ import Home from "../pages/Home";
 import AboutUs from "../pages/AboutUs";
 import Blog from "../pages/Blog";
 import Post from "../pages/Post";
+import Services from "../pages/Services";
 
 const publicRouter = [
   {
@@ -19,7 +20,10 @@ const publicRouter = [
   {
     path:"/blog/post/:blogIndex",
     component:Post,
-
+  },
+  {
+    path:"/services",
+    component:Services,
   }
   
 ];

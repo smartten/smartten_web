@@ -4,7 +4,6 @@ import './style.css'
 import blogApi from '../../api/blogApi'
 import BlogBanner from '../../components/layout/BlogBanner'
 
-
 function Blog() {
     const [posts, setPosts] = useState([])
     const [postsDisplay, setPostsDisplay] = useState()
@@ -32,7 +31,7 @@ function Blog() {
 
   return (
     <div className="blog">
-        <BlogBanner />
+        <BlogBanner title="Blog" backgroundName="banner-about.e753733f9a6577572b57.jpg" description="Our aim is to apply Technological Solutions to your Business Objectives &amp; Ideas" />
         <div className="blog-posts">
             <ul className="posts-lists">
                 {postsDisplay && postsDisplay.map((post,index) =>(

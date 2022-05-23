@@ -2,14 +2,7 @@
     width: 100%;
 }
 .about-banner{
-    background-image: url(../../assets/images/banner-about.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    padding: 250px 0 50px;
-    color: #fff;
-    text-align: start;
-    padding-left: 80px;
+    
 }
 
 .about-reasons{
@@ -29,7 +22,14 @@
 }
 .about-achivements{
     display: flex;
-    margin: 30px 80px;
+    width: 100%;
+    margin-top:35px;
+}
+.about-achivements--container{
+    display: flex;
+    max-width: 1300px;
+    margin:auto;
+
 }
 .achivements-lists{
     display: flex;

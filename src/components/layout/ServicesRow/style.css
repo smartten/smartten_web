@@ -1,0 +1,31 @@
+.service__row{
+    display: flex;
+    min-height:346px
+}
+
+.service__row-paragraph{
+}
+
+.service__row--list{
+    
+}
+.service__row--list::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #131212;
+    opacity: .88;
+    content: "";
+}
+
+
+.row--list--image{
+    
+}
+.row--list--image img{
+    
+}
+
+.row--list--content{
+
+}
