@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7aad4141-8d3f-45a0-801d-a0e61d8cc311" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Banner/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Banner/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Category/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Category/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/How/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/How/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +47,7 @@
       <option name="presentableId" value="Default" />
       <updated>1653293840462</updated>
       <workItem from="1653293843041" duration="2272000" />
-      <workItem from="1653297121262" duration="1841000" />
+      <workItem from="1653297121262" duration="2192000" />
     </task>
     <servers />
   </component>
