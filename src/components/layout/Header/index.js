@@ -20,8 +20,8 @@ function Header() {
 
   return (
     <>
-      <button onClick={changeLanguageVI}>VI</button>
-      <button onClick={changeLanguageEN}>EN</button>
+      {/* <button onClick={changeLanguageVI}>VI</button>
+      <button onClick={changeLanguageEN}>EN</button> */}
     </>
   );
 }

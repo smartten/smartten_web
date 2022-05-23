@@ -1,11 +1,13 @@
 const languageData = {
   /************ ENGLISH **************/
   en: {
-    address: "Ocean Park Building - No.1 Dao Duy Anh",
+    // address: "Ocean Park Building - No.1 Dao Duy Anh",
+    // name : 'adam',
   },
   /************ VietNam **************/
   vi: {
-    address: "Số 1 - Đào Duy Anh - Hà Nội",
+    // name : 'thái an',
+    // address: "Số 1 - Đào Duy Anh - Hà Nội",
   },
 };
 

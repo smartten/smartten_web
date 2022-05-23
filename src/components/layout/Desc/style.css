@@ -1,0 +1,64 @@
+.description {
+    display: flex;
+
+    margin: 50px;
+    margin-bottom: 100px;
+
+}
+
+.explore-img {
+
+    box-shadow: 50px 50px #888;
+
+}
+
+.desc-one {
+    margin-left: 40px;
+}
+
+.desc-text {
+    padding-left: 30px;
+
+}
+
+.desc-btn {
+    display: flex;
+
+    justify-content: flex-end;
+    padding-right: 10px;
+
+}
+
+
+
+.bt-ex {
+    background-color: #000;
+    color: #fff;
+    margin-right: 20px;
+    text-align: justify;
+    padding: 5px 30px;
+    border: 1px solid #8c8c8c;
+    background-size: 100%;
+    background: linear-gradient(to right ,  rgb(255, 255, 255) 10%, rgb(0, 0, 0));
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+
+}
+
+.bt-ex a{
+    color: #fff;
+}
+
+
+.bt-ex:hover{
+    background-position: left bottom;
+}
+
+.bt-ex:hover a{
+    color: #000;
+}
+
+.desc-five {
+    text-align: justify;
+}

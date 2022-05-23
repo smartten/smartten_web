@@ -1,0 +1,60 @@
+.how {
+    color: #fff;
+    padding: 50px 0;
+    display: block;
+    box-sizing: border-box;
+
+    font-family: karla, sans-serif;
+
+    line-height: 24px;
+}
+
+.titl {
+    font-size: 34px;
+    font-family: brandon, serif;
+    letter-spacing: 1.5px;
+    line-height: 42px;
+    margin: 0 auto 10px;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+.desc {
+    width: 100%;
+    display:flex;
+}
+.desc-container{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60%;
+    margin: auto;
+    justify-content: center;
+}
+
+.icon-bt-h{
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 60px;
+    
+}
+
+.desc-one-t{
+    width: 270px;
+    margin: 10px;
+}
+
+.fix{
+    margin-left: 50px;
+}
+
+.font{
+    line-height: 32px;
+    font-weight: 500;
+    font-family: brandon,serif;
+    /* letter-spacing: 1.5px; */
+    font-size: 20px;
+}
+
+

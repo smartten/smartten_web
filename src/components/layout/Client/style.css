@@ -1,0 +1,47 @@
+.client {
+    text-align: center;
+    margin : 50px 250px;
+
+}
+
+.client-titl{
+    margin-bottom: 30px;
+}
+
+.client h1{
+    font-size: 34px;
+    font-family: brandon,serif;
+    letter-spacing: 1.5px;
+    line-height: 42px;
+    margin: 0 auto 10px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.client p{
+    font-family: karla,sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.client-swiper{
+    margin: 5px;
+    box-shadow: 0 1px 3px transparent, 0 1px 2px rgb(0 0 0 / 2%);
+    transition: all .3s cubic-bezier(.25,.8,.25,1);
+    border: 1px solid #dfdfdf;
+    padding: 10px;
+    margin: 0 5px;
+    background-color: #ddd;
+    
+}
+
+.client-swiper a{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.client-swiper img{
+    height:50px;
+    max-width:100%;
+}
