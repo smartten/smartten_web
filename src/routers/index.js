@@ -6,8 +6,6 @@ const publicRouter = [
     path: "/",
     component: Home,
   },
-
-  
 ];
 
 export { publicRouter };

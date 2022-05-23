@@ -1,10 +1,9 @@
-import React from 'react'
-import foundersImg from '../../../img/founders.jpg'
+import React from 'react';
+import foundersImg from '../../../img/founders.jpg';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAnglesRight, faLocationDot, faEnvelopeOpenText, faSquarePhoneFlip, faLayerGroup, faGem } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faTwitterSquare, faTelegram, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons'
-import './style.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAnglesRight, faLocationDot, faEnvelopeOpenText, faSquarePhoneFlip, faLayerGroup, faGem } from '@fortawesome/free-solid-svg-icons';
+import './style.css';
 
 
 

@@ -3,7 +3,6 @@ import background from '../../../img/dark_dot.jpg'
 import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnglesRight, faLocationDot, faEnvelopeOpenText, faSquarePhoneFlip, faLayerGroup,faGem, faScrewdriverWrench, faPenNib, faTabletScreenButton, faHeadset } from '@fortawesome/free-solid-svg-icons'
-import { faFacebook, faTwitterSquare, faTelegram, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons'
 
 export default function How() {
   return (

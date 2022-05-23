@@ -1,8 +1,5 @@
 import React from 'react'
 import background from '../../../img/s1.jpg'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faCheck, faEnvelopesBulk, faPhone } from '@fortawesome/free-solid-svg-icons'
-import { faSkype } from '@fortawesome/free-brands-svg-icons'
 import CountUp from 'react-countup';
 import './style.css'
 
