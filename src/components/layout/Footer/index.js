@@ -38,7 +38,7 @@ function Footer({ languages}) {
                   <ul className="footer_bussinesses">
                     {languages.bussiness.map((business, index) => (
                         <li key={index} className="business_info">
-                          <span>
+                          <span className="business-icon">
                             <i className={business.icon}></i>
                             {business.title}
                           </span>   

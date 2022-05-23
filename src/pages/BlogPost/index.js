@@ -5,7 +5,7 @@ import './style.css'
 import SocialLink from '../../components/layout/SocialLink'
 import Banner from '../../components/layout/BlogBanner'
 
-function Post() {
+function BlogPost() {
   const [posts, setPosts] = useState([])
   
   const [post, setPost] = useState([])
@@ -87,4 +87,4 @@ function Post() {
   )
 }
 
-export default Post
+export default BlogPost

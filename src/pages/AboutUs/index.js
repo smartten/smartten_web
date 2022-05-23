@@ -20,7 +20,7 @@ function AboutUs() {
             <div className="achivements-item">
               <AiFillCheckCircle />
               <span>
-                <CountUp start={0} end={300} duration={2.75} />
+                <CountUp start={0} end={300} duration={3.5} />
                 +
               </span>
               <span>Project Complete</span>
@@ -28,7 +28,7 @@ function AboutUs() {
             <div className="achivements-item">
               <ImMap />
               <span>
-                <CountUp start={0} end={20} duration={2.75} />
+                <CountUp start={0} end={20} duration={3.5} />
                 +
               </span>
               <span>Project Complete</span>
@@ -36,7 +36,7 @@ function AboutUs() {
             <div className="achivements-item">
               <ImSmile />
               <span>
-            <CountUp start={0} end={100} duration={2.75} />
+            <CountUp start={0} end={100} duration={3.5} />
             +
               </span>
               <span>Project Complete</span>
@@ -44,7 +44,7 @@ function AboutUs() {
             <div className="achivements-item">
               <AiTwotoneLike />
               <span>
-                <CountUp start={0} end={82} duration={2.75} />%
+                <CountUp start={0} end={82} duration={3.5} />%
               </span>
               <span>Project Complete</span>
             </div>

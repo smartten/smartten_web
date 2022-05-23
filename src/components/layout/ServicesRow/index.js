@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './style.css'
 import Fade from 'react-reveal/Fade';
 
@@ -7,7 +8,9 @@ function ServiceRow( { titleParagraph, paragraph, titleList, list, imageName} ) 
     <Fade bottom>
       <div className="service__row">
           <div className="service__row-paragraph">
-            <h3>{titleParagraph}</h3>
+            <Link to="/services/post">
+              <h3>{titleParagraph}</h3>
+            </Link>
             <p>{paragraph}</p>
           </div>
           <div className="service__row--list">

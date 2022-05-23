@@ -1,9 +1,9 @@
 import Home from "../pages/Home";
 import AboutUs from "../pages/AboutUs";
 import Blog from "../pages/Blog";
-import Post from "../pages/Post";
+import Post from "../pages/BlogPost";
 import Services from "../pages/Services";
-import ServicePost from "../pages/ServicePost";
+import ServicePost from "../pages/ServicesPost";
 
 const publicRouter = [
   {
@@ -29,7 +29,6 @@ const publicRouter = [
   {
     path:"/services/post",
     component: ServicePost,
-
   }
   
 ];
