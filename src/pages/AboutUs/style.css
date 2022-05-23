@@ -24,6 +24,7 @@
     display: flex;
     width: 100%;
     margin-top:35px;
+    font-weight: 250;
 }
 .about-achivements--container{
     display: flex;
@@ -43,10 +44,19 @@
     font-size: 35px;
     flex-direction: column;
     align-items: center;
+    padding-top:15px ;
+}
+.achivements-item.border-left{
+    border-left: 2px solid #e3e3e1;
+}
+.achivements-item.border-top{
+    border-top: 2px solid #e3e3e1;
+
 }
 .achivements-details{
     max-width:40%;
     text-align: start;
+    line-height: 27px;
 
 }
 
@@ -54,6 +64,11 @@
     display: flex;
     margin: 30px 10px;
     background-color: #f8f9fa;
+}
+.about-mission .mission-details{
+    text-align:left;
+    margin: 0 25px;
+    line-height: 27px;
 }
 .about-mission img{
     max-width:40%;
@@ -82,4 +97,5 @@
     background: #000000;
     color: white;
     padding:30px;
+    line-height: 27px;
 }

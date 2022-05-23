@@ -4,6 +4,8 @@
 .service-post-content-container{
     display: flex;
     width: 100%;
+    background-color: #f4f5f6;
+
 
 }
 .service-post-content{
@@ -29,9 +31,25 @@
 .content-item h3{
     font-size: 24px;
     color: #000000;
+    font-weight: 300;
 }
 .content-item p{
     font-size: 16px;
     color: #333333;
     line-height:28px;
+}
+.post-content-list h2{
+    font-size: 34px;
+    font-weight: 300;
+
+}
+.post-content-intro h2{
+    font-size: 34px;
+    font-weight: 300;
+}
+.post-content-intro p{
+    font-size: 16px;
+    color: #333333;
+    line-height:29px;
+    text-align: justify;
 }

@@ -16,7 +16,7 @@ function ServicesPost(  ) {
 						<p>We focus on providing custom web development services for businesses who seeks a consistent and flexible experience to users via distinct platforms. Leveraging new aspects and tactics for web development intricate progressive web applications, we bring back and front end operations together that enables to boost up the speed of your business. Our expertise spans across start ups, small and medium sized organizations; we provide cost effective software development services for Mobile, Web, Cloud, IOT and others to understand clients. We at volansoft believes to provide the perfect solution in your preferred technology platform, to both realistic time frames and budgets.</p>
 					</div>
 				</Fade>
-				<div>
+				<div className="post-content-list">
 					<h2>Our Web-Development Services</h2>
 					<Fade bottom>
 						<div className="content-list">
@@ -59,6 +59,9 @@ function ServicesPost(  ) {
 						</div>
 					</Fade>
 				</div>
+			</div>
+			<div className="service-post-technology">
+	
 			</div>
     	</div>
     </div>

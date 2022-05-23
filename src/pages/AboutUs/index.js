@@ -17,7 +17,7 @@ function AboutUs() {
       <div className="about-achivements">
         <div className="about-achivements--container">
           <div className="achivements-lists">
-            <div className="achivements-item">
+            <div className="achivements-item ">
               <AiFillCheckCircle />
               <span>
                 <CountUp start={0} end={300} duration={3.5} />
@@ -25,7 +25,7 @@ function AboutUs() {
               </span>
               <span>Project Complete</span>
             </div>
-            <div className="achivements-item">
+            <div className="achivements-item border-left">
               <ImMap />
               <span>
                 <CountUp start={0} end={20} duration={3.5} />
@@ -33,7 +33,7 @@ function AboutUs() {
               </span>
               <span>Project Complete</span>
             </div>
-            <div className="achivements-item">
+            <div className="achivements-item border-top">
               <ImSmile />
               <span>
             <CountUp start={0} end={100} duration={3.5} />
@@ -41,7 +41,7 @@ function AboutUs() {
               </span>
               <span>Project Complete</span>
             </div>
-            <div className="achivements-item">
+            <div className="achivements-item border-left border-top">
               <AiTwotoneLike />
               <span>
                 <CountUp start={0} end={82} duration={3.5} />%
@@ -63,9 +63,8 @@ function AboutUs() {
       <div className="about-mission">
         <Fade left>
           <img src={houseImg} alt="House Images" />
-
         </Fade>
-        <div>
+        <div className="mission-details">
         <Fade bottom>
           <h2>
               Our Mission
