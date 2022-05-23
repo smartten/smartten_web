@@ -12,15 +12,23 @@
     z-index: -1;
     overflow: hidden;
 }
+.service-stars-image1{
+    animation: orbit-clock-wise 180s infinite;
 
+}
+.service-stars-image2{
+    animation: orbit-clock-wise-reverse 360s infinite;
+
+}
 .service-stars-image1,
 .service-stars-image2{
     background-image: url(../../assets/images/stars.png);
     background-position: center;
-    width: 100%;
-    height: 100%;
-    animation: orbit-clock-wise 180s infinite;
+    width: 200%;
+    height: 200%;
     position: absolute;
+    left:-700px;
+    top:-450px;
 }
 
 @keyframes orbit-clock-wise {
@@ -42,6 +50,28 @@
     100%{
         opacity: .4;
         transform: rotate(360deg)
+    }
+    
+}
+@keyframes orbit-clock-wise-reverse {
+    0%{
+        opacity: 0.4;
+        transform: rotate(360deg);
+    }
+    2%{
+        opacity: .8;
+
+    }
+    4%{
+        opacity: 0.2;
+
+    }
+    5%{
+        opacity:0.8;
+    }
+    100%{
+        opacity: .4;
+        transform: rotate(0deg)
     }
     
 }

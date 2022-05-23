@@ -91,7 +91,10 @@ function Header( { languages} ) {
               <ul className="menuLists">
               {languages.navigation.map((nav, index) => (
                   <li className="menuLists-items" key={index}>
-                    <Link to={nav.linkUrl} > {nav.title}</Link>
+                    <Link to={nav.linkUrl} > 
+                      {nav.title}
+
+                    </Link>
                   </li>
                 ))}
               </ul>

@@ -61,7 +61,10 @@ function AboutUs() {
         </div>
       </div>
       <div className="about-mission">
-        <img src={houseImg} alt="House Images" />
+        <Fade left>
+          <img src={houseImg} alt="House Images" />
+
+        </Fade>
         <div>
         <Fade bottom>
           <h2>

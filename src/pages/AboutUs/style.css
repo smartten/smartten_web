@@ -52,10 +52,20 @@
 
 .about-mission{
     display: flex;
-    margin: 30px 80px;
+    margin: 30px 10px;
+    background-color: #f8f9fa;
 }
 .about-mission img{
     max-width:40%;
+}
+.about-mission img::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #e3e3e1;
+    left: 15px;
+    top: 15px;
+    z-index: -1;
 }
 .about-team{
     display: flex;
