@@ -5,7 +5,11 @@ function ServicePost() {
   return (
     <div className="service-post">
         <div className="service-post-images">
-</div>
+          <div className="service-stars-image1">
+            <div className="service-stars-image2">
+            </div>
+          </div>
+        </div>
         
     </div>
   )

@@ -27,7 +27,7 @@ const publicRouter = [
     component:Services,
   },
   {
-    path:"/services/web-development",
+    path:"/services/post",
     component: ServicePost,
 
   }
