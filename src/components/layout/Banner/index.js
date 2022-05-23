@@ -32,13 +32,7 @@ export default function Banner() {
                     </div>
                     
                     
-                    <div className="menu-item">
                     
-                        <a className="menu-link" to="/">
-                            Menu
-                        </a>
-                        <div className="icon"><a> <FontAwesomeIcon icon={faBars}></FontAwesomeIcon></a></div>
-                    </div>
                 </div>
             </div>
             <div className="intro">

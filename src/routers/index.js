@@ -1,3 +1,4 @@
+
 import Home from "../pages/Home/Home";
 
 const publicRouter = [
@@ -5,6 +6,8 @@ const publicRouter = [
     path: "/",
     component: Home,
   },
+
+  
 ];
 
 export { publicRouter };
