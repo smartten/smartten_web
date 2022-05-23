@@ -2,9 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7aad4141-8d3f-45a0-801d-a0e61d8cc311" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Banner/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Banner/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Category/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Category/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/How/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/How/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/location_map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/blogApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/instance.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/banner-about.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/banner-blog.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/banner-services.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/communication.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/continuity.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/houseImg.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/location_map.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/our-team.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/process.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/quality.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/security.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/service__row--image1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/service__row--image2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/service__row--image3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/service__row--image4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/service__row--image5.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/service__row--image6.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/speed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/stars.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/technology.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/images/trust.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/AboutRow/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/AboutRow/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/BlogBanner/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/BlogBanner/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/Footer/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/Header/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/ParagraphRow/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/ParagraphRow/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/ServicesRow/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/ServicesRow/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/SocialLink/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/SocialLink/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/AboutUs/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/AboutUs/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Blog/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Blog/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Post/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Post/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ServicePost/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ServicePost/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Services/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Services/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/DefaultLayout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/DefaultLayout/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/DefaultLayout/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/DefaultLayout/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Footer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/translation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/translation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1653293840462</updated>
       <workItem from="1653293843041" duration="2272000" />
-      <workItem from="1653297121262" duration="2192000" />
+      <workItem from="1653297121262" duration="3463000" />
     </task>
     <servers />
   </component>

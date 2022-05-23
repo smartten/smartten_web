@@ -1,0 +1,95 @@
+.footer-container{
+    width: 100%;
+    background-color:#090e11;
+}
+.footer{
+    display: flex;
+    max-width: 1300px;
+    flex-direction: column;
+    color: #fff;
+    margin: auto;
+
+}
+
+.footer li{
+    list-style: none;
+
+}
+.footer a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer_logo{
+    color: #fff;
+    letter-spacing: 8px;
+    font-weight: 100;
+    font-size: 22px;
+    height: 55px;
+    line-height: 55px;
+    right: 5px;
+}
+.footer_logo a{
+    text-transform: uppercase;
+}
+.footer__top{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 80px;
+}
+
+.widget-navigation li{
+    margin: 10px;
+    text-align: right;
+    text-transform: capitalize;
+}
+
+.footer-address{
+    display: flex;
+}
+.footer-address span{
+    width: 250px;
+}
+
+.footer__bottom{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 80px;
+}
+
+.bottom__navigation{
+    display: flex;
+    justify-content: space-around;
+}
+.bottom__navigation li{
+    margin: 10px;
+    text-transform: capitalize;
+}
+
+.footer_bussinesses{
+    display: flex;
+}
+.copyright span{
+    line-height:70px;
+    align-items: center;
+}
+.copyright a:hover{
+    text-decoration: underline;
+}
+.business_info span{
+    text-transform: uppercase;
+}
+.business_info{
+    padding: 10px;
+}
+.location_section h4{
+    text-align: start;
+    font-size: 25px;
+    margin-left: 20px;
+}
+.fa-solid{
+    color: #fff;
+}
+.social_link li{
+    background-color: #fff;
+
+}

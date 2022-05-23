@@ -1,3 +1,22 @@
+.layout__scrollTop{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgb(0 0 0 / 5%);
+    scroll-behavior: smooth;
+    cursor: pointer;
+
+}
+.layout__scrollTop:hover{
+    background-color: #000000;
+}
+.layout__scrollTop svg{
+    color: #f8f9fa;
+    font-size: 18px;
+}
 
 
 
@@ -12,12 +31,12 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	
-	
+
+
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -33,7 +52,7 @@ time, mark, audio, video {
 .tit{
 	font-size : 16px;
 	font-weight: bold;
-	
+
 }
 
 .word{
@@ -44,7 +63,7 @@ time, mark, audio, video {
 .beau{
 	padding: 20px;
 	margin : 20px;
-	
+
 }
 
 .container{
@@ -56,7 +75,7 @@ time, mark, audio, video {
 	width: 360px ;
 	height: 290px ;
 	font-size: 16px;
-	
+
 }
 
 .homi{
@@ -66,7 +85,7 @@ time, mark, audio, video {
 .bro{
 	margin-right: 30px;
 	padding : 30px 20px;
-    
+
 
 }
 
@@ -81,4 +100,4 @@ time, mark, audio, video {
 	text-align: justify;
 }
 
-    
+

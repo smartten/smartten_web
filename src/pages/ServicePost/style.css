@@ -1,0 +1,47 @@
+.service-post{
+    display:block;
+    width:100%;
+    height: 100vh;
+
+}
+.service-post-images{
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.service-stars-image1,
+.service-stars-image2{
+    background-image: url(../../assets/images/stars.png);
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    animation: orbit-clock-wise 180s infinite;
+    position: absolute;
+}
+
+@keyframes orbit-clock-wise {
+    0%{
+        opacity: 0.4;
+        transform: rotate(0deg);
+    }
+    2%{
+        opacity: .8;
+
+    }
+    4%{
+        opacity: 0.2;
+
+    }
+    5%{
+        opacity:0.8;
+    }
+    100%{
+        opacity: .4;
+        transform: rotate(360deg)
+    }
+    
+}

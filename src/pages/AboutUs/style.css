@@ -1,0 +1,75 @@
+.about-us{
+    width: 100%;
+}
+.about-banner{
+    
+}
+
+.about-reasons{
+    justify-content:center;
+}
+.about-reasons h1{
+    text-transform: capitalize;
+}
+
+.about-banner h1{
+    font-size: 55px;
+    font-weight: 300;
+}
+.about-banner p{
+    font-size:25px;
+    font-weight: 300;
+}
+.about-achivements{
+    display: flex;
+    width: 100%;
+    margin-top:35px;
+}
+.about-achivements--container{
+    display: flex;
+    max-width: 1300px;
+    margin:auto;
+
+}
+.achivements-lists{
+    display: flex;
+    max-width: 700px;
+    flex-wrap: wrap;
+}
+.achivements-item{
+    width: 250px;
+    display: flex;
+    min-height: 250px ;
+    font-size: 35px;
+    flex-direction: column;
+    align-items: center;
+}
+.achivements-details{
+    max-width:40%;
+    text-align: start;
+
+}
+
+.about-mission{
+    display: flex;
+    margin: 30px 80px;
+}
+.about-mission img{
+    max-width:40%;
+}
+.about-team{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.about-team img{
+    max-width: 40%;
+
+}
+.team-details{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background: #000000;
+    color: white;
+    padding:30px;
+}

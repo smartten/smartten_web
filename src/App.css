@@ -1,5 +1,5 @@
 .App {
-  /* text-align: center; */
+  text-align: center;
 }
 
 .App-logo {
@@ -37,9 +37,16 @@
   }
 }
 
+.scrollUpAnimation{
+  transform: translateY(30px);
+}
+
+a{
+  text-decoration: none;
+}
 li{
   list-style: none;
 }
-a{
-  text-decoration: none;
+ul{
+  margin: 0;
 }

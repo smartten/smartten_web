@@ -1,0 +1,52 @@
+.blog-posts{
+    display: flex;
+    width:100%;
+    
+}
+.posts-lists{
+    display: flex;
+    flex-wrap: wrap;
+    max-width:1500px;
+    margin: auto;
+}
+.post-item{
+    max-width: 400px;
+    text-align: start;
+    margin: 20px;
+}
+.post-item img{
+    width: 100%;
+
+}
+.post-item a{
+    color: #000000;
+}
+.post-item h2{
+    text-transform: capitalize;
+    font-size: 21x;
+
+}
+
+.blog-pagination{
+    display: flex;
+}
+
+.pagination-container{
+    display: flex;
+    font-size: 46px;
+    margin:auto;
+}
+
+.pagination-container i{
+    background-color: #f4f5f5;
+    color:#656565;
+    margin: 20px 20px
+
+}
+
+.pagination-container button{
+    width: 120px;
+    height: 60px;
+    margin: 20px;
+    font-size: 12px;
+}
