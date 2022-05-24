@@ -7,6 +7,7 @@ import { publicRouter } from "./routers";
 import languageData from "./config/translation";
 import "./App.css";
 
+
 function App() {
   const { i18n } = useTranslation();
 

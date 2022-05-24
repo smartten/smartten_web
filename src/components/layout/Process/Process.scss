@@ -1,0 +1,47 @@
+.Process {
+  padding: 9rem 0;
+  display: flex;
+  flex-direction: column;
+  
+  &-container{
+    
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    
+
+    &-content{ 
+        color: #444;
+        text-align: left;
+        overflow-x: hidden;
+        line-height: 2.4rem;
+        max-width: 90rem;
+        margin: 0 auto 3rem;
+    }
+  }
+
+  
+
+  &-Title {
+    font-size: 3.4rem;
+    letter-spacing: 1.5px;
+    line-height: 42px;
+    margin: 0 auto 10px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  &-Desc{
+    font-size: 1.6rem;
+    font-family: karla,sans-serif;
+    text-align: center;
+    
+
+    a{
+        color: blue;
+        text-decoration: none;
+        font-weight: 700;
+        
+    }
+  }
+}

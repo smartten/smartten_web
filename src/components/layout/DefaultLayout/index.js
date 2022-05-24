@@ -1,7 +1,14 @@
 import Header from "../Header";
+
 import Footer from "../Footer";
 import { FaAngleUp } from "react-icons/fa"
-import './style.css'
+
+
+
+
+import './style.css';
+
+
 
 function DefaultLayout({ children }) {
   function handleSrollTop(){
@@ -15,8 +22,13 @@ function DefaultLayout({ children }) {
       <div onClick={handleSrollTop} className="layout__scrollTop">
         <FaAngleUp  />
       </div>
+      
+
+        
       <Footer languages={children.props.languages} />
     </div>
+
+
   );
 }
 

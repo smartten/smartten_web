@@ -4,6 +4,7 @@ import Blog from "../pages/Blog";
 import Post from "../pages/BlogPost";
 import Services from "../pages/Services";
 import ServicePost from "../pages/ServicesPost";
+import Career from "../pages/Career"
 
 const publicRouter = [
   {
@@ -29,6 +30,12 @@ const publicRouter = [
   {
     path:"/services/post",
     component: ServicePost,
+
+  },
+  {
+    path:"/career",
+    component: Career,
+
   }
   
 ];
