@@ -2,7 +2,7 @@
 
 }
 .post-banner{
-    background-color: #000000;
+    background-color: var(--primary-color);
 }
 .post-content-container{
     width: 100%;
@@ -31,16 +31,16 @@
     justify-content:space-between
 }
 .content-navigation .social_link li{
-    background-color: #000000;
+    background-color: var(--primary-color);
 }
 .content-navigation .social_link li a{
-    color: #fff
+    color: var(--white-color)
 }
 .content-navigation-button{
     width: 150px;
     height: 50px;
-    background-color: #000000;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--white-color);
     text-transform: uppercase;
     letter-spacing:1.5px;
     line-height: 50px;
@@ -72,7 +72,7 @@
     border-radius: 5px;
 }
 .suggestion-item a span{
-    color: #000000;
+    color: var(--primary-color);
     margin-top:20px;
     font-size: 17px;
 }
@@ -97,8 +97,8 @@
     height:110px ;
 }
 .form-group button{
-    background-color: #000000;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--white-color);
     width: 120px;
     height: 50px;
     text-transform: uppercase;

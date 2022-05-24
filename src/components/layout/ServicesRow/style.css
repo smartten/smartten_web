@@ -10,7 +10,7 @@
     margin: 0 15px;
 }
 .service__row-paragraph a{
-    color: #000000;
+    color: var(--text-color);
 }
 .service__row-paragraph h3{
     font-size: 30px;
@@ -40,7 +40,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0, 0.8);
     content: ' ';
 }
 .row--list--image img{

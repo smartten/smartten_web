@@ -48,12 +48,10 @@ function Blog() {
         <div className="blog-pagination">
             <div className="pagination-container">
                 <button onClick={() => postsIndex === 0 ? setPostsIndex(0) :(setPostsIndex(postsIndex-3))}>
-                    <i className="fa-solid fa-chevron-left"></i>
                     Previous
                 </button>
                 <button onClick={() => (setPostsIndex(postsIndex+3))}> 
                     Next
-                    <i className="fa-solid fa-chevron-right"></i>
                 </button>
             </div>
         </div>

@@ -1,12 +1,12 @@
 .footer-container{
     width: 100%;
-    background-color:#090e11;
+    background-color:var(--primary-color);
 }
 .footer{
     display: flex;
     max-width: 1300px;
     flex-direction: column;
-    color: #fff;
+    color: var(--white-color);
     margin: auto;
 
 }
@@ -18,10 +18,10 @@
 
 .footer a{
     text-decoration: none;
-    color: #fff;
+    color: var(--white-color);
 }
 .footer_logo{
-    color: #fff;
+    color: var(--white-color);
     letter-spacing: 8px;
     font-weight: 100;
     font-size: 22px;
@@ -92,9 +92,9 @@
     margin-left: 20px;
 }
 .fa-solid{
-    color: #fff;
+    color: var(--white-color);
 }
 .social_link li{
-    background-color: #fff;
+    background-color: var(--white-color);
 
 }
