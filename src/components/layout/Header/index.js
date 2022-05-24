@@ -44,15 +44,15 @@ function Header( { languages} ) {
     <div className="header">
         <div className="header--container">
           <div className="header__logo">
-              <Link className="logo-link" to="/"> 
+              <Link className="logo-link" to="/">
                   volansoft
               </Link>
           </div>
           <div className="header__navigation">
-            <ul className="nav__lists">																
+            <ul className="nav__lists">
               <li className="lists-item"  >
                   <a href="#getQuoteModal" >
-                      <BsFillCheckSquareFill /> 
+                      <BsFillCheckSquareFill />
                       Get Quote
                   </a>
               </li>
@@ -64,7 +64,7 @@ function Header( { languages} ) {
               </li>
               <li className="lists-item" >
                   <a href="tel:9549326532">
-                      <BsFillTelephoneFill /> 
+                      <BsFillTelephoneFill />
                       +919549326532
                   </a>
               </li>
@@ -73,13 +73,13 @@ function Header( { languages} ) {
                       <BsSkype />
                       Skype
                   </a>
-              </li>       
+              </li>
               <li  className="lists-item">
                 <div className="header__menuButton" onClick={handleBurgerMenu}>
                 <GiHamburgerMenu />
                   Menu
                 </div>
-              </li>                
+              </li>
             </ul>
           </div>
           <div className="header__burgerMenu">
