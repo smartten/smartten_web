@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38e069ab-e66d-4e43-acf5-5137e7a62d09" name="Changes" comment="update" />
+    <list default="true" id="38e069ab-e66d-4e43-acf5-5137e7a62d09" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,13 +38,14 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7aad4141-8d3f-45a0-801d-a0e61d8cc311" name="Changes" comment="" />
+      <changelist id="38e069ab-e66d-4e43-acf5-5137e7a62d09" name="Changes" comment="update" />
       <created>1653293840462</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1653293840462</updated>
       <workItem from="1653293843041" duration="2272000" />
       <workItem from="1653297121262" duration="3463000" />
+      <workItem from="1653397480663" duration="357000" />
     </task>
     <servers />
   </component>
