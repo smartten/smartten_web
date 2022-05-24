@@ -1,0 +1,31 @@
+.TimeLineItem {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  height: 42rem;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 13rem;
+  }
+  &-name {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2b264a;
+    margin-bottom: 10px;
+    line-height: 26px;
+    letter-spacing: 1.5px;
+    margin: 0 0 15px;
+  }
+
+  &-description {
+    font-size: 14px;
+    line-height: 22px;
+    color: #656469;
+    text-align: center;
+  }
+}
