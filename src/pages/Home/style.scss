@@ -212,6 +212,7 @@ video {
   font-size: 14px;
   font-weight: 600;
   line-height: 25px;
+  letter-spacing: 1px;
 
 
  
@@ -477,14 +478,21 @@ video {
 }
 
 .above-one {
+  color: #000;
+  background: #fff;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
 }
 
 .above-one:hover {
+  background-color: #000;
   color: #fff;
-  background: linear-gradient(to right, rgb(0, 0, 0) 50%, rgb(235, 226, 226));
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all 0.5s ease-out;
+  cursor: pointer;
 }
 
 //New,blog
