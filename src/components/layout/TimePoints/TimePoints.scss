@@ -16,6 +16,7 @@
 		border-radius: 50%;
 		transition: all 0.5s ease-out;
 		position: relative;
+		line-height: 48px;
 		::after {
 			animation: pulsing-2 1s cubic-bezier(.19,1,.22,1) infinite alternate;
 			animation-duration: 1s;
@@ -37,7 +38,9 @@
 			transform: translateY(-50%);
 			height: 1px;
 			background-color: #000;
+			z-index: -1;
 		}
+	
 	}
 
 	&-up {
