@@ -3,7 +3,7 @@ import "./Career.scss";
 import BlogBanner from "../../components/layout/BlogBanner";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAnglesRight } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesRight, faUpload } from "@fortawesome/free-solid-svg-icons";
 const Career = () => {
   return (
     <div className="Career">
@@ -75,50 +75,39 @@ const Career = () => {
         <div className="CareerBottomRight">
           <h1>Apply Now</h1>
           <div className="BottomRightMultiple">
-            <div class="form-group">
+            <div className="form-group">
               <input
                 type="text"
-                class="form-control v-focus"
+                className="form-control "
                 placeholder="Your Name"
                 name="name"
                 id="name"
               />
             </div>
 
-            <div class="form-group">
+            <div className="form-group">
               <input
                 type="text"
-                class="form-control v-focus"
+                className="form-control "
                 placeholder="Your Email"
                 name="email"
                 id="email"
               />
             </div>
 
-            <div class="form-group">
+            <div className="form-group">
               <input
                 type="text"
-                class="form-control v-focus"
+                className="form-control "
                 placeholder="Your Mobile Number"
                 name="mobile_no"
                 id="mobile_no"
               />
             </div>
 
-            <div class="form-group">
-              <textarea
-                cols="30"
-                rows="8"
-                class="form-control v-focus"
-                placeholder="Your Message"
-                name="message"
-                id="message"
-              ></textarea>
-            </div>
-
-            <div class="form-group">
+            <div className="form-group">
               <select
-                class="form-control v-focus"
+                className="form-control form-group "
                 name="posts"
                 id="posts"
                 placeholder="Select Post"
@@ -133,25 +122,40 @@ const Career = () => {
               </select>
             </div>
 
-            <div class="form-group">
-              <div class="upload upload-type-btn">
-                <input
-                  type="file"
-                  class="invisible"
-                  name="uploadCarrer"
-                  id="uploadCarrer"
-                  onchange="return validateImageExtensionOther(this.value)"
-                />
-                <label for="uploadCarrer" class="ftr-icons upload-icon">
-                  <span>
-                    <i class="fa fa-upload"></i>&nbsp; Upload Attachment
-                  </span>
-                </label>
-              </div>
-              <p class="note-p" id="uploadFile"></p>
+            <div className="form-group Message ">
+              <textarea
+                cols="30"
+                rows="8"
+                className="form-control  v-focus"
+                placeholder="Your Message"
+                name="message"
+                id="message"
+              ></textarea>
             </div>
 
-            
+            <div className="formUpLoad">
+              <input type="file" id="upload" hidden />
+              <label for="upload">
+                <i>
+                  <FontAwesomeIcon icon={faUpload}></FontAwesomeIcon>
+                </i>{" "}
+                UPLOAD ATTACHMENT
+              </label>
+            </div>
+
+            <div className="form-group">
+              <input
+                type="text"
+                className="form-control "
+                placeholder="Your Email"
+                name="email"
+                id="email"
+              />
+            </div>
+          </div>
+          <div className="BottomRightButton">
+            <button className="RightButtonBlack">APPLY NOW</button>
+            <button className="RightButtonBlack">RESET</button>
           </div>
         </div>
       </div>
