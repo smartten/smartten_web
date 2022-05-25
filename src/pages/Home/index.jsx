@@ -1,20 +1,14 @@
 import './style.scss';
 import React from "react";
-import Button from "../../components/layout/Button/Button"
+
 
 import Process from "../../components/layout/Process/Process";
 import background from "../../img/s1.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBars,
-  faCheck,
-  faEnvelopesBulk,
-  faPhone,
   faLayerGroup,
   faGem,
   faMobileScreen,
-  faEnvelopeOpenText,
-  faSquarePhoneFlip,
   faDesktop,
   faBook,
   faUserGroup,
@@ -25,7 +19,7 @@ import {
   faTabletScreenButton,
   faHeadset,
 } from "@fortawesome/free-solid-svg-icons";
-import { faSkype } from "@fortawesome/free-brands-svg-icons";
+
 import CountUp from "react-countup";
 
 import exploreImg from "../../img/explore.jpg";
@@ -126,7 +120,7 @@ function Home({ languages }) {
               <p className="banner-intro-title-desc">
                 We love helping start-up become brand names <br/> and corporation launch new products
               </p>
-              <a className="qoute" href="/">GET A FREE QUOTE</a>
+              <a  className="qoute" href="/">GET A FREE QUOTE</a>
                 
             </div>
 
@@ -171,7 +165,7 @@ function Home({ languages }) {
       <div className="home-desc">
         <div className="home-desc-description">
           <div className="explore-img">
-            <img src={exploreImg}></img>
+            <img alt='icon' src={exploreImg}></img>
           </div>
           <div className="home-square"></div>
           <div className="home-desc-text">
@@ -233,14 +227,14 @@ function Home({ languages }) {
             <div className="category-down">
               <div className="category-d-left">
                 <div className="founders-img">
-                  <img className="img-child" src={foundersImg}></img>
+                  <img alt="img" className="img-child" src={foundersImg}></img>
                 </div>
               </div>
 
               <div className="category-d-right">
                 <div className="cate-d-right-card">
                   <div className="cate-d-right-card-icon">
-                    <a>
+                    <a href="https://github.com/">
                       {" "}
                       <FontAwesomeIcon icon={faLayerGroup}></FontAwesomeIcon>
                     </a>
@@ -258,7 +252,7 @@ function Home({ languages }) {
 
                 <div className="cate-d-right-card">
                   <div className="cate-d-right-card-icon">
-                    <a>
+                    <a href="https://github.com/">
                       {" "}
                       <FontAwesomeIcon icon={faGem}></FontAwesomeIcon>
                     </a>
@@ -285,7 +279,7 @@ function Home({ languages }) {
             <div className="services-option-above  ">
               <div className="above-one frame bro">
                 <div className="ic">
-                  <a>
+                  <a href="https://github.com/">
                     {" "}
                     <FontAwesomeIcon icon={faDesktop}></FontAwesomeIcon>
                   </a>
@@ -300,7 +294,7 @@ function Home({ languages }) {
 
               <div className="above-one frame bro">
                 <div className="ic">
-                  <a>
+                  <a href="https://github.com/">
                     {" "}
                     <FontAwesomeIcon icon={faMobileScreen}></FontAwesomeIcon>
                   </a>
@@ -316,7 +310,7 @@ function Home({ languages }) {
 
               <div className="above-one frame bro">
                 <div className="ic">
-                  <a>
+                  <a href="https://github.com/">
                     {" "}
                     <FontAwesomeIcon icon={faRocket}></FontAwesomeIcon>
                   </a>
@@ -333,7 +327,7 @@ function Home({ languages }) {
             <div className="services-option-below">
               <div className="above-one frame bro">
                 <div className="ic">
-                  <a>
+                  <a href="https://github.com/">
                     {" "}
                     <FontAwesomeIcon icon={faDisplay}></FontAwesomeIcon>
                   </a>
@@ -350,7 +344,7 @@ function Home({ languages }) {
 
               <div className="above-one frame bro">
                 <div className="ic">
-                  <a>
+                  <a href="https://github.com/">
                     {" "}
                     <FontAwesomeIcon icon={faBook}></FontAwesomeIcon>
                   </a>
@@ -366,7 +360,7 @@ function Home({ languages }) {
 
               <div className="above-one frame bro">
                 <div className="ic">
-                  <a>
+                  <a href="https://github.com/">
                     {" "}
                     <FontAwesomeIcon icon={faUserGroup}></FontAwesomeIcon>
                   </a>
@@ -430,7 +424,7 @@ function Home({ languages }) {
             <div className="how-desc-container">
               <div className="how-desc-one-t">
                 <div className="how-icon">
-                  <a>
+                  <a href="https://github.com/">
                     {" "}
                     <FontAwesomeIcon icon={faLayerGroup}></FontAwesomeIcon>
                   </a>
@@ -441,7 +435,7 @@ function Home({ languages }) {
 
               <div className="how-desc-one-t">
                 <div className="how-icon">
-                  <a>
+                  <a href="https://github.com/">
                     {" "}
                     <FontAwesomeIcon
                       icon={faScrewdriverWrench}
@@ -457,7 +451,7 @@ function Home({ languages }) {
 
               <div className="how-desc-one-t">
                 <div className="how-icon">
-                  <a>
+                  <a href="https://github.com/">
                     {" "}
                     <FontAwesomeIcon icon={faPenNib}></FontAwesomeIcon>
                   </a>
@@ -470,7 +464,7 @@ function Home({ languages }) {
               </div>
               <div className="how-desc-one-t">
                 <div className="how-icon">
-                  <a>
+                  <a href="https://github.com/">
                     {" "}
                     <FontAwesomeIcon icon={faLayerGroup}></FontAwesomeIcon>
                   </a>
@@ -481,7 +475,7 @@ function Home({ languages }) {
 
               <div className="how-desc-one-t">
                 <div className="how-icon">
-                  <a>
+                  <a href="https://github.com/">
                     {" "}
                     <FontAwesomeIcon
                       icon={faTabletScreenButton}
@@ -494,7 +488,7 @@ function Home({ languages }) {
 
               <div className="how-desc-one-t">
                 <div className="how-icon">
-                  <a>
+                  <a href="https://github.com/">
                     {" "}
                     <FontAwesomeIcon icon={faHeadset}></FontAwesomeIcon>
                   </a>
@@ -528,7 +522,7 @@ function Home({ languages }) {
             <SwiperSlide>
               <div className="client-swiper">
                 <a href="https://github.com/">
-                  <img className="img-icon" src={ic1Img}></img>
+                  <img className="img-icon" alt="icon" src={ic1Img}></img>
                 </a>
               </div>
 
@@ -537,148 +531,148 @@ function Home({ languages }) {
             <SwiperSlide>
               <div className="client-swiper">
                 <a href="https://github.com/">
-                  <img className="img-icon" src={ic2Img}></img>
+                  <img className="img-icon" alt="icon" src={ic2Img}></img>
                 </a>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="client-swiper">
-                <a>
-                  <img className="img-icon" src={ic3Img}></img>
+                <a href="https://github.com/">
+                  <img className="img-icon" alt="icon" src={ic3Img}></img>
                 </a>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="client-swiper">
-                <a>
-                  <img className="img-icon" src={ic4Img}></img>
+                <a href="https://github.com/"> 
+                  <img className="img-icon" alt="icon" src={ic4Img}></img>
                 </a>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="client-swiper">
-                <a>
-                  <img className="img-icon" src={ic5Img}></img>
-                </a>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="client-swiper">
-                <a>
-                  <img className="img-icon" src={ic6Img}></img>
+                <a href="https://github.com/">
+                  <img className="img-icon" alt="icon" src={ic5Img}></img>
                 </a>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="client-swiper">
-                <a>
-                  <img className="img-icon" src={ic7Img}></img>
+                <a href="https://github.com/">
+                  <img className="img-icon" alt="icon" src={ic6Img}></img>
                 </a>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="client-swiper">
-                <a>
-                  <img className="img-icon" src={ic8Img}></img>
+                <a href="https://github.com/">
+                  <img className="img-icon" alt="icon" src={ic7Img}></img>
                 </a>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="client-swiper">
-                <a>
-                  <img className="img-icon" src={ic9Img}></img>
+                <a href="https://github.com/">
+                  <img className="img-icon" alt="icon" src={ic8Img}></img>
                 </a>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="client-swiper">
-                <a>
-                  <img className="img-icon" src={ic10Img}></img>
+                <a href="https://github.com/">
+                  <img className="img-icon" alt="icon" src={ic9Img}></img>
                 </a>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="client-swiper">
-                <a>
-                  <img className="img-icon" src={ic11Img}></img>
+                <a href="https://github.com/">
+                  <img className="img-icon" alt="icon" src={ic10Img}></img>
                 </a>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="client-swiper">
-                <a>
-                  <img className="img-icon" src={ic12Img}></img>
+                <a href="https://github.com/"> 
+                  <img className="img-icon" alt="icon" src={ic11Img}></img>
                 </a>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="client-swiper">
-                <a>
-                  <img className="img-icon" src={ic13Img}></img>
+                <a href="https://github.com/">
+                  <img className="img-icon" alt="icon" src={ic12Img}></img>
                 </a>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="client-swiper">
-                <a>
-                  <img className="img-icon" src={ic14Img}></img>
+                <a href="https://github.com/">
+                  <img className="img-icon" alt="icon" src={ic13Img}></img>
                 </a>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="client-swiper">
-                <a>
-                  <img className="img-icon" src={ic15Img}></img>
+                <a href="https://github.com/">
+                  <img className="img-icon" alt="icon" src={ic14Img}></img>
                 </a>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="client-swiper">
-                <a>
-                  <img className="img-icon" src={ic16Img}></img>
+                <a href="https://github.com/">
+                  <img className="img-icon" alt="icon" src={ic15Img}></img>
                 </a>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="client-swiper">
-                <a>
-                  <img className="img-icon" src={ic17Img}></img>
+                <a href="https://github.com/">
+                  <img className="img-icon" alt="icon" src={ic16Img}></img>
                 </a>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="client-swiper">
-                <a>
-                  <img className="img-icon" src={ic18Img}></img>
+                <a href="https://github.com/"> 
+                  <img className="img-icon" alt="icon" src={ic17Img}></img>
                 </a>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="client-swiper">
-                <a>
-                  <img className="img-icon" src={ic19Img}></img>
+                <a href="https://github.com/">
+                  <img className="img-icon" alt="icon" src={ic18Img}></img>
                 </a>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="client-swiper">
-                <a>
-                  <img className="img-icon" src={ic20Img}></img>
+                <a href="https://github.com/">
+                  <img className="img-icon" alt="icon" src={ic19Img}></img>
+                </a>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="client-swiper">
+                <a href="https://github.com/">
+                  <img className="img-icon" alt="icon" src={ic20Img}></img>
                 </a>
               </div>
             </SwiperSlide>
@@ -707,7 +701,7 @@ function Home({ languages }) {
             >
               <SwiperSlide>
                 <div className="fb-swiper">
-                  <img className="cl-img" src={cl1Img}></img>
+                  <img className="cl-img" alt="icon" src={cl1Img}></img>
                   <div>
                     <h1>
                       VolanSoft is a truly professional company. They have
@@ -725,7 +719,7 @@ function Home({ languages }) {
 
               <SwiperSlide>
                 <div className="fb-swiper">
-                  <img className="cl-img" src={cl2Img}></img>
+                  <img className="cl-img" alt="icon" src={cl2Img}></img>
                   <div>
                     <h1>
                       VolanSoft came in and saved the day! They are very easy to
@@ -743,7 +737,7 @@ function Home({ languages }) {
 
               <SwiperSlide>
                 <div className="fb-swiper">
-                  <img className="cl-img" src={cl3Img}></img>
+                  <img className="cl-img" alt="icon" src={cl3Img}></img>
                   <div>
                     <h1>
                       Flexibility and on-time delivery. VolanSoft team has
