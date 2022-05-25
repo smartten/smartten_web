@@ -145,6 +145,7 @@ video {
   background-repeat: no-repeat;
   background-position: center;
   
+  
 }
 
 
@@ -174,21 +175,18 @@ video {
 
 
 .banner-intro {
-  padding-top: 150px;
+  // padding-top: 70px;
   text-align: center;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   font-family: raleway, serif;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.6);
   letter-spacing: 3px;
-  padding-top: 230px;
-  
-  
     
 }
 
@@ -217,48 +215,37 @@ video {
  
 }
 
-.qoute {
-  color: #fff;
-  background-color: #000;
-  line-height: 1.42857143;
-  border-radius: 4px;
-  font-family: karla, sans-serif;
-  height: 40px;
-  padding: 8px 25px;
-  border: 1px solid #8c8c8c;
-  font-size: 16px; 
-  background-size: 200% 100%;
-  transition: .5s ease-out;
-  
-}
-
 .banner-menu-desc {
   border-top: 3px solid #fff;
   padding-top: 7px;
   font-size: 16px;
 }
 
-.qoute a {
+.qoute {
+  position: relative;
+  transition: background-position .5s;
+  background: linear-gradient(to right,#000 0,#272727 50%,#0f0f0f 100%);
+  background-size: 200% auto;
   color: #fff;
-  border-radius: 50px;
- 
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-  
+  text-transform: uppercase;
+  width: 184px;
+  height: 40px;
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #8c8c8c;
+  border-radius: 5px;
+  line-height: 40px;
+  margin-left: 180px;
+  padding: 0 15px;
 }
 
 
-
-.qoute:hover {
-  
-  background: linear-gradient(to left, rgb(0, 0, 0) 100%, rgb(124, 123, 123) 50%) right;
-    box-shadow: 0 4px 15px 0 rgba(120, 126, 124, 0.75);
+.qoute:hover{
+  background-position: right center;
 }
 
-.qoute:hover a {
-  color: #fff;
-}
+
 
 .home-banner-desc {
   padding-top: 20px;
@@ -278,8 +265,9 @@ video {
   // margin-bottom: 100px;
 }
 .notice-item {
-  padding-right: 70px;
-  font-size: 28px;
+  padding-right: 120px;
+  padding-top: 120px;
+  font-size: 30px;
   
 }
 
@@ -287,12 +275,12 @@ video {
 
 .home-desc-description {
   display: flex;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin: 50px 100px 85px 0px;
+  text-align: left;
 }
 
 .explore-img {
-  box-shadow: 30px 30px #888;
+  box-shadow: 100px 50px rgb(117, 114, 114);
 }
 
 
@@ -301,20 +289,24 @@ video {
 .home-desc-btn {
   display: flex;
   justify-content: flex-end;
-  padding-right: 10px;
 }
-
-.desc-btn-bt-ex {
-  background-color: #000;
+.home-desc-btn a{
+  position: relative;
+  border: 1px solid #8c8c8c;
+  border-radius: 2px;
   color: #fff;
   margin-right: 20px;
-  text-align: justify;
+  display: block;
   padding: 15px 50px;
-  border: 1px solid #8c8c8c;
-  background-size: 200% 100%;
-  transition: all 0.5s ease-out;
-  font-family: karla,serif;
   font-size: 16px;
+  transition: background-position .5s;
+  background: linear-gradient(to right,#000 0,#272727 50%,#0f0f0f 100%);
+  background-size: 200% auto;
+}
+
+.home-desc-btn a:hover{
+  background-position: right center;
+
 }
 
 
@@ -345,7 +337,7 @@ video {
 }
 
 .home-desc-text{
-    padding-left: 50px;
+    padding-left: 150px;
     margin-top: 50px;
     font-family: brandon,serif;
 }
@@ -368,14 +360,16 @@ video {
   flex-direction: column;
   background-color: #000;
   color: #fff;
-  padding: 120px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding:100px 300px;
+  font-family: karla, sans-serif;
 }
 
 .category-top {
   display: flex;
   letter-spacing: 0.2rem;
-  
+  text-align: justify;
+  text-align-last: left;
+  letter-spacing: 1px;
   
 }
 
@@ -432,7 +426,12 @@ video {
   line-height: 24px;
   font-size-adjust: 0.58;
   text-align: justify; /* For Edge */
-  
+  h1{
+    font-size: 30px;
+  }
+  p{
+    font-size: 16px;
+  }
 }
 
 .cate-d-right-card:hover {
@@ -476,15 +475,22 @@ video {
   justify-content: center;
 }
 
-.above-one {
+.jus{
+  font-family: karla,serif;
 }
 
-.above-one:hover {
-  color: #fff;
-  background: linear-gradient(to right, rgb(0, 0, 0) 50%, rgb(235, 226, 226));
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all 0.5s ease-out;
+
+.above-one{
+  border: 1px solid #ccc;
+}
+.above-one:hover{
+  transition: background-color 0.8s ease-in-out;
+  background-color: #000;
+  cursor: pointer;
+  color: white;
+  svg{
+    color: white;
+  }
 }
 
 //New,blog
@@ -570,7 +576,11 @@ video {
       background-color: #000;
       color: #fff;
       padding: 20px 20px 25px;
-
+      button{
+        width: 125px;
+        height: 40px;
+        border-radius: 5px;
+      }
       .ItemTitle {
         font-size: 20px;
         font-weight: 500;

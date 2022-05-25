@@ -126,9 +126,8 @@ function Home({ languages }) {
               <p className="banner-intro-title-desc">
                 We love helping start-up become brand names <br/> and corporation launch new products
               </p>
-              <button className="qoute">
-                <a href="/">GET A FREE QUOTE</a>
-              </button>
+              <a className="qoute" href="/">GET A FREE QUOTE</a>
+                
             </div>
 
             <div className="notice">
@@ -203,16 +202,8 @@ function Home({ languages }) {
               customers and put a great emphasis on quality and delivery.
             </p>
             <div className="home-desc-btn">
-              <button className="desc-btn-bt-ex ">
-
-                  <a href="/">EXPLORE NOW</a>
-
-              </button>
-              <button className="desc-btn-bt-ex ">
-
-                  <a href="/"> START DISCUSSION</a>
-
-              </button>
+              <a href="/">EXPLORE NOW</a>
+              <a href="/"> START DISCUSSION</a>
             </div>
           </div>
         </div>
@@ -413,11 +404,7 @@ function Home({ languages }) {
                   <div className="NewsItemMain">
                     <h3 className="ItemTitle">{data.title}</h3>
                     <p className="ItemContent">{data.content}</p>
-                    <Button
-                      color={"#fff"}
-                      padding="12px 16px"
-                      content={"Read more"}
-                    />
+                    <button>read more</button>
                   </div>
                 </div>
               </SwiperSlide>

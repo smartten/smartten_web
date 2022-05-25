@@ -16,10 +16,19 @@
 		border-radius: 50%;
 		transition: all 0.5s ease-out;
 		position: relative;
-
+		::after {
+			animation: pulsing-2 1s cubic-bezier(.19,1,.22,1) infinite alternate;
+			animation-duration: 1s;
+			animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+			animation-delay: 0s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-fill-mode: none;
+			animation-play-state: running;
+			animation-name: pulsing-2;
 		text-align: center;
 		line-height: 48px;
-
+		}
 		.TimePoints-horizontal {
 			width: 130px;
 			position: absolute;
