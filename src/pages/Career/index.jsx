@@ -1,35 +1,29 @@
 import React from "react";
 import "./Career.scss";
-import backgroundCareer1 from "../../img/banner-career.jpg";
-import backgroundCareer2 from "../../img/career2.png";
+import BlogBanner from '../../components/layout/BlogBanner'
+
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  
+  faAnglesRight
+} from "@fortawesome/free-solid-svg-icons";
 const Career = () => {
   return (
     <div className="Career">
-      <div className="CareerTop">
-        <div
-          className="CareerTopBg"
-          style={{ backgroundImage: `url(${backgroundCareer1})` }}
-        >
-          <div className="TopBgDesc">
-            <h1>Career</h1>
-            <p>
-              Our aim is to apply Technological Solutions to your Business
-              Objectives & Ideas
-            </p>
-          </div>
-        </div>
-      </div>
+      <BlogBanner title="Career"  backgroundName = "banner-career.jpg" description="Our aim is to apply Technological Solutions to your Business Objectives & Ideas
+
+"/>
 
       <div className="CareerBottom">
         <div className="CareerBottomLeft">
-          <div
-            className="BottomLeftBg"
-            style={{ backgroundImage: `url(${backgroundCareer2})` }}
-          ></div>
+          <div className="BottomLeftBg">
+
+          </div>
           <div className="BottomLeftDesc">
             <h2>Why join VolanSoft???</h2>
             <p>
-              Simple. <span>We love what we do.</span>
+              Simple. <span>We love what we do.</span> <br/>
               We’ve been creating amazing mobile and connected experiences since
               5+ years. We are working in a direction to set some era in the
               web/mobile app development field.
@@ -47,12 +41,12 @@ const Career = () => {
 
             <p>Reasons to join us-</p>
 
-            <p>VolanSoft would love to hire your awesomeness.</p>
-            <p>We do the projects others think are too hard to manage.</p>
-            <p>Obsessed with what’s next, and cutting-edge tech.</p>
-            <p>We strive for the better and think globally.</p>
+            <p className="bt-desc-text"><i><FontAwesomeIcon icon={faAnglesRight}></FontAwesomeIcon></i>  VolanSoft would love to hire your awesomeness.</p>
+            <p className="bt-desc-text"><i><FontAwesomeIcon icon={faAnglesRight}></FontAwesomeIcon></i> We do the projects others think are too hard to manage.</p>
+            <p className="bt-desc-text"><i><FontAwesomeIcon icon={faAnglesRight}></FontAwesomeIcon></i> Obsessed with what’s next, and cutting-edge tech.</p>
+            <p className="bt-desc-text"><i><FontAwesomeIcon icon={faAnglesRight}></FontAwesomeIcon></i> We strive for the better and think globally.</p>
 
-            <p>
+            <p >
               Grow your career at VolanSoft. Come work and play with the very
               best developers, designers and strategists. Don’t just take our
               word for it: We’ve been named a Great Place to Work, come here and

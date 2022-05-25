@@ -5,7 +5,7 @@ import './style.css'
 function Banner({ title, backgroundName, description}) {
     return(
         <div className="blog-banner" >
-            <img src={require('../../../assets/images/banner-blog.jpeg')}  alt={backgroundName}/>
+            <img src={require(`../../../assets/images/${backgroundName}`)}  alt={backgroundName}/>
                 <div className="banner-container">
                     <Fade bottom>
                         <h2>{title}</h2>
