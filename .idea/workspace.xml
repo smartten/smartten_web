@@ -1,68 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="38e069ab-e66d-4e43-acf5-5137e7a62d09" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Button/Button.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Button/Button.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Header/style.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/News/News.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/News/News.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Process/Process.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Process/Process.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/TimeLine/TimeLine.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/TimeLine/TimeLine.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/TimeLineItem/TimeLineItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/TimeLineItem/TimeLineItem.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/TimePoints/TimePoints.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/TimePoints/TimePoints.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/b1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/banner-career.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/bg1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/bg2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/bl1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/bl2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/bl3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/bl4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/bl5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/cl1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/cl2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/cl3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/dark_dot.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/explore.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/founders.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ic1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ic10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ic11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ic12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ic13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ic14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ic15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ic16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ic17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ic18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ic19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ic2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ic3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ic4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ic5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ic6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ic7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ic8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/ic9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/rocket.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/s1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Career/Career.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Career/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Custom/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Custom/style.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Home/style.scss" afterDir="false" />
+    <list default="true" id="38e069ab-e66d-4e43-acf5-5137e7a62d09" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/DefaultLayout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/DefaultLayout/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,10 +31,31 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/luyennk/Desktop/web_smartten&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;/Users/luyennk/Desktop/web_smartten/node_modules/react-scripts&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="renders learn react link" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/App.test.js" />
+      <test-names>
+        <test-name value="renders learn react link" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.renders learn react link" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
