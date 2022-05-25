@@ -363,11 +363,17 @@ video {
 
 
 //category
-
+.home-category-container{
+  display:flex;
+  background-color: #000;
+  .home-category{
+    max-width: 1300px;
+    margin: auto;
+}   
+}
 .home-category {
   display: flex;
   flex-direction: column;
-  background-color: #000;
   color: #fff;
   padding: 120px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -452,7 +458,13 @@ video {
 .service {
   margin: 500px;
 }
-
+.home-service-container{
+  display:flex;
+  .home-service{
+    max-width: 1300px;
+    margin:auto;
+  }
+}
 .services-title {
   font-size: 34px;
   padding: 40px;
@@ -480,12 +492,6 @@ video {
 .above-one {
   color: #000;
   background: #fff;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-transition: background-color 2s ease-out;
-  -moz-transition: background-color 2s ease-out;
-  -o-transition: background-color 2s ease-out;
   transition: background-color 2s ease-out;
 }
 
@@ -625,7 +631,7 @@ video {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  max-width: 60%;
+  max-width: 1100px;
   margin: auto;
   justify-content: center;
 }
