@@ -1,7 +1,5 @@
 import AboutRow from '../../components/layout/AboutRow';
 import CountUp from 'react-countup';
-import { AiFillCheckCircle, AiTwotoneLike } from 'react-icons/ai';  
-import { ImMap, ImSmile } from 'react-icons/im'
 import houseImg from '../../assets/images/houseImg.jpeg';
 import ourTeam from '../../assets/images/our-team.jpeg';
 import Fade from 'react-reveal/Fade';
@@ -18,7 +16,7 @@ function AboutUs() {
         <div className="about-achivements--container">
           <div className="achivements-lists">
             <div className="achivements-item ">
-              <AiFillCheckCircle />
+              <i className="fa-regular fa-circle-check"></i>
               <h3>
                 <CountUp start={0} end={300} duration={3.5} />
                 +
@@ -26,7 +24,7 @@ function AboutUs() {
               <h2>Project Complete</h2>
             </div>
             <div className="achivements-item border-left">
-              <ImMap />
+            <i className="fa-regular fa-map"></i>
               <h3>
                 <CountUp start={0} end={20} duration={3.5} />
                 +
@@ -34,7 +32,7 @@ function AboutUs() {
               <h2>Project Complete</h2>
             </div>
             <div className="achivements-item border-top">
-              <ImSmile />
+            <i className="fa-regular fa-face-smile"></i>
               <h3>
             <CountUp start={0} end={100} duration={3.5} />
             +
@@ -42,7 +40,7 @@ function AboutUs() {
               <h2>Project Complete</h2>
             </div>
             <div className="achivements-item border-left border-top">
-              <AiTwotoneLike />
+               <i className="fa-regular fa-thumbs-up"></i>
               <h3>
                 <CountUp start={0} end={82} duration={3.5} />%
               </h3>
