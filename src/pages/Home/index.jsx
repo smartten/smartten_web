@@ -404,7 +404,7 @@ function Home({ languages }) {
                   <div className="NewsItemMain">
                     <h3 className="ItemTitle">{data.title}</h3>
                     <p className="ItemContent">{data.content}</p>
-                    <button>read more</button>
+                    <button>Read more</button>
                   </div>
                 </div>
               </SwiperSlide>

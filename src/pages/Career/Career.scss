@@ -1,29 +1,57 @@
-.Career{
+.CareerTopBg{
     display: block;
     background-color:#000;
     background-size: cover;
-    min-height: 300px;
+    height: 50vh;
     background-repeat: no-repeat;
-    background-position: center;      
-    padding: 250px 0 50px;
-    position: relative;
-    text-align: center;
+    background-position: center;         
+    position: relative;  
+    opacity: 1.1;
+    
     ::before{
-        opacity: .4;
+        
     }
-    .CareerDesc{
+    .TopBgDesc{
+        position: absolute;
+        bottom: 20px;
         color: #fff;
-        font-family: Karla,serif;       
-        margin: 0 auto;
-        text-align: justify;
+        font-family: Karla,serif;     
 
-        .DescTitle{
+        h1{
             font-size: 48px;
             line-height: 64px;
         }
 
-        .DescSub{
+        p{
             font-size: 24px;
         }
     }
+}
+
+
+.CareerBottom{
+    margin: 50px 50px;
+    display: flex;
+}
+
+.CareerBottomLeft{
+
+    flex: 1;
+    .CareerBottomBg{
+        height: 100%;
+        background-color: #fff;
+    }
+    
+    .BottomLeftDesc{
+        border: 2px solid #000 ;
+
+        h2{
+            font-size: 20px;
+            line-height: 22px;
+        }
+    }
+}
+
+.CareerBottomRight{
+    flex:1;
 }
