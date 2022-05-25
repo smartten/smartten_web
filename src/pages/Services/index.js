@@ -8,7 +8,7 @@ function Services() {
 
   return (
     <div className="services">
-        <BlogBanner title="services" backgroundName="banner-services.5fe75710ac183ea3567b.jpeg" description="Our aim is to apply Technological Solutions to your Business Objectives &amp; Ideas" />
+        <BlogBanner title="services" backgroundName="banner-about.jpg" description="Our aim is to apply Technological Solutions to your Business Objectives &amp; Ideas" />
         <div className="service__content">
           <ServiceRow titleParagraph="Web Development" 
           paragraph="A website offers much more than what meets the eye. Our team of experts will maximize the impact of your web solution from both a design and development perspective. We take great pride in exploring and utilizing our knowledge of current design-development practices and implementing them in our performance enhancing our scope of accessibility, in getting projects. We also boost our exposure in streaming media, employee-facing administration panels, push notification servers and several other options that make us different from the rest of our market competitors. We have a very vast experienced and technically sound team of web development service which is capable of creating stunning featured, trendy yet stylish fully-featured web apps along with building up a team of full-stack web developers. We take the courage of making front-end development, building backend infrastructure, API design and development, and strategy advising. Our potentiality lies in our comprehensive solutions to meet and fit our client’s needs." 

@@ -62,6 +62,18 @@
 .row-details h2{
     text-align:left;
     text-transform: capitalize;
+    font-size: 30px;
+}
+.row-details h2::after {
+    top: 15px;
+    left: 0;
+    position: relative;
+    width: 35px;
+    height: 2px;
+    content: "";
+    display: inherit;
+    background-color: #000;
+    transform: none;
 }
 .details-li{
     display:flex;

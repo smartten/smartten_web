@@ -1,13 +1,15 @@
 .blog-posts{
     display: flex;
     width:100%;
-    
+    margin:30px 0;
 }
 .posts-lists{
     display: flex;
     flex-wrap: wrap;
     max-width:1500px;
     margin: auto;
+    padding:40px 0;
+
 }
 .post-item{
     max-width: 400px;
@@ -16,15 +18,15 @@
 }
 .post-item img{
     width: 100%;
-
+    height: 80%;
 }
 .post-item a{
     color: var(--text-color);
 }
 .post-item h2{
     text-transform: capitalize;
-    font-size: 21x;
-
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .blog-pagination{

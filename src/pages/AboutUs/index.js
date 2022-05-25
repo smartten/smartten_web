@@ -5,6 +5,7 @@ import ourTeam from '../../assets/images/our-team.jpeg';
 import Fade from 'react-reveal/Fade';
 import './style.css';
 import Banner from '../../components/layout/BlogBanner';
+import { Link } from 'react-router-dom';
 
 function AboutUs() {
   return (
@@ -87,61 +88,68 @@ function AboutUs() {
       <div className="about-team">
         <img src={ourTeam} alt="Our Team" />
         <div className="team-details ">
-        <Fade bottom>
-            <h2 >
+          <Fade bottom>
+            <h2 className="details-title">
               Our Team
             </h2>
-            </Fade>
+          </Fade>
           <p>
             A Team is the secret that makes common people achieve uncommon results. VolanSoft has a team of creative, innovative and expert professionals with strategic minds. We have a passion to work on the leading edge technologies and are always eager to take challenges that evidently enhance our excellence. Our inclination towards the innovation and creativity is the key that has made us achieve outstanding results in the industry.
           </p>
           <p>
             We have worked with various clients and everyone having a different set of requirements and faced many technical challenges. We believe in delivering commitment to the clients with quality and perfection. We visualize the requirements and think out-of-the-box to bring the expectations into life. As an organization we value your business and know our business can only achieve success we build a honest relation with the clients and for this we maintain the transparency throughout the project.
           </p>
-      </div>
-      </div>
-      <div class="about-services">
-        <div className='services-header'>
-          <h3>Industries we Serve</h3>
-          <p>For your very specific industry, we have highly-tailored IT solutions.</p>
+          <Link to="/team">meet our team</Link>
         </div>
-        <div className='services-content'>
-          <div className='content-item'>
-              <div className='item-image'>
-                <img src="https://www.volansoft.com/assets/images/industries/departures.png" alt="Industries" class="" />
+      </div>
+      <div class="about-services-container">
+        <div class="about-services">
+          <Fade bottom>
+            <div className='services-header'>
+              <h3>Industries We Serve</h3>
+              <p>For your very specific industry, we have highly-tailored IT solutions.</p>
+            </div>
+          </Fade>
+          <Fade  left>
+            <div className='services-content'>
+              <div className='content-item'>
+                  <div className='item-image'>
+                    <img src="https://www.volansoft.com/assets/images/industries/departures.png" alt="Industries" class="" />
+                  </div>
+                  <h5 >Travel</h5>
               </div>
-              <h5 >Travel</h5>
-          </div>
-          <div className='content-item'>
-              <div>
-                <img src="https://www.volansoft.com/assets/images/industries/delivery-truck.png" alt="Industries" class="" />
+              <div className='content-item'>
+                  <div className='item-image' >
+                    <img src="https://www.volansoft.com/assets/images/industries/delivery-truck.png" alt="Industries" class="" />
+                  </div>
+                  <h5 >Transportation</h5>
               </div>
-              <h5 >Transportation</h5>
-          </div>
-          <div className='content-item'>
-                <div>
-                  <img src="https://www.volansoft.com/assets/images/industries/pay.png" alt="Industries" class="" />
-                </div>
-                <h5 >Banking</h5>
-          </div>
-          <div className='content-item'>
-                <div>
-                  <img src="https://www.volansoft.com/assets/images/industries/charity.png" alt="Industries" class="" />
-                </div>
-                <h5 >Healthcare</h5>
-          </div>
-          <div className='content-item'>
-              <div>
-                <img src="https://www.volansoft.com/assets/images/industries/joystick.png" alt="Industries" class="" />
+              <div className='content-item'>
+                    <div className='item-image'>
+                      <img src="https://www.volansoft.com/assets/images/industries/pay.png" alt="Industries" class="" />
+                    </div>
+                    <h5 >Banking</h5>
               </div>
-              <h5 >Entertainment</h5>
-          </div>
-          <div className='content-item'>
-              <div>
-                <img src="https://www.volansoft.com/assets/images/industries/diploma.png" alt="Industries" class="" />
+              <div className='content-item'>
+                    <div className='item-image'>
+                      <img src="https://www.volansoft.com/assets/images/industries/charity.png" alt="Industries" class="" />
+                    </div>
+                    <h5 >Healthcare</h5>
               </div>
-              <h5 >Education</h5>
-          </div>
+              <div className='content-item'>
+                  <div className='item-image'>
+                    <img src="https://www.volansoft.com/assets/images/industries/joystick.png" alt="Industries" class="" />
+                  </div>
+                  <h5 >Entertainment</h5>
+              </div>
+              <div className='content-item'>
+                  <div className='item-image'>
+                    <img src="https://www.volansoft.com/assets/images/industries/diploma.png" alt="Industries" class="" />
+                  </div>
+                  <h5 >Education</h5>
+              </div>
+            </div>
+          </Fade>
         </div>
       </div>
 					

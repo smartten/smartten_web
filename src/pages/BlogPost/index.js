@@ -29,7 +29,7 @@ function BlogPost() {
 
   return (
     <div className="post">
-        <Banner title="Blog" backgroundName="banner-about.e753733f9a6577572b57.jpg"  description="Our aim is to apply Technological Solutions to your Business Objectives &amp; Ideas"  />
+        <Banner title="Blog" backgroundName="banner-about.jpg"  description="Our aim is to apply Technological Solutions to your Business Objectives &amp; Ideas"  />
         <div className="post-content-container">
           <div className="post-content">
             <div className="post-content-left">

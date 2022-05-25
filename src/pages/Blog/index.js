@@ -31,7 +31,7 @@ function Blog() {
 
   return (
     <div className="blog">
-        <BlogBanner title="Blog" backgroundName="banner-about.e753733f9a6577572b57.jpg" description="Our aim is to apply Technological Solutions to your Business Objectives &amp; Ideas" />
+        <BlogBanner title="Blog" backgroundName="banner-about.jpg" description="Our aim is to apply Technological Solutions to your Business Objectives &amp; Ideas" />
         <div className="blog-posts">
             <ul className="posts-lists">
                 {postsDisplay && postsDisplay.map((post,index) =>(
