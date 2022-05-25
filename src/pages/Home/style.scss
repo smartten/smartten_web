@@ -210,6 +210,7 @@ video {
   font-size: 14px;
   font-weight: 600;
   line-height: 25px;
+  letter-spacing: 1px;
 
 
  
@@ -354,11 +355,17 @@ video {
 
 
 //category
-
+.home-category-container{
+  display:flex;
+  background-color: #000;
+  .home-category{
+    max-width: 1300px;
+    margin: auto;
+}   
+}
 .home-category {
   display: flex;
   flex-direction: column;
-  background-color: #000;
   color: #fff;
   padding:100px 300px;
   font-family: karla, sans-serif;
@@ -450,7 +457,13 @@ video {
 .service {
   margin: 500px;
 }
-
+.home-service-container{
+  display:flex;
+  .home-service{
+    max-width: 1300px;
+    margin:auto;
+  }
+}
 .services-title {
   font-size: 34px;
   padding: 40px;
@@ -523,7 +536,6 @@ video {
   }
 
   &-container {
-    z-index: 100;
     position: relative;
   }
 
@@ -580,6 +592,7 @@ video {
         width: 125px;
         height: 40px;
         border-radius: 5px;
+        
       }
       .ItemTitle {
         font-size: 20px;
@@ -627,7 +640,7 @@ video {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  max-width: 60%;
+  max-width: 1100px;
   margin: auto;
   justify-content: center;
 }
