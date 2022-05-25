@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import { publicRouter } from "./routers";
 import languageData from "./config/translation";
 import "./App.css";
+import NotFound from "./pages/NotFound";
 
 function App() {
   const { i18n } = useTranslation();
@@ -40,7 +41,12 @@ function App() {
                 />
               );
             })}
+            <Route
+              path="*"
+              element={<NotFound />}
+            />
           </Routes>
+          
         </div>
       </Router>
     </div>

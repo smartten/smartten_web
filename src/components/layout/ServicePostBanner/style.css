@@ -26,14 +26,33 @@
     top:-450px;
 }
 .post-banner-content{
+    display: flex;
+
     
 }
 .banner-content-container{
     color: var(--white-color);
-    margin-top:150px;
+    margin: auto;
+    width: 450px ;
+    padding-top: 250px;
+}
+.banner-content-container h2{
+    font-size: 42px;
+}
+.banner-content-container h3{
+    font-size: 18px;
 }
 
 .banner-content-image{
+    width: 210px;
+    height: 210px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    background: #101010;
+    margin: 140px auto 0;
+    position: relative;
+    border: 1px solid rgba(255,255,255,.1);
 }
 
 

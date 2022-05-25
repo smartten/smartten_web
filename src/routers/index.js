@@ -42,6 +42,7 @@ const publicRouter = [
     component:Solutions,
   }
   
+  
 ];
 
 export { publicRouter };

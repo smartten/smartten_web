@@ -1,10 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom'
-import { BsFillCheckSquareFill, BsFillTelephoneFill, BsSkype } from 'react-icons/bs';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { AiOutlineClose } from 'react-icons/ai';
-import { HiMail } from 'react-icons/hi';
 import './style.css'
 
 function Header( { languages} ) {
@@ -52,32 +48,36 @@ function Header( { languages} ) {
             <ul className="nav__lists">
               <li className="lists-item"  >
                   <a href="#getQuoteModal" >
-                      <BsFillCheckSquareFill />
+                    <i className="fa fa-check-square"/>
                       Get Quote
                   </a>
               </li>
               <li className="lists-item" >
                   <a href="mailto:info@volansoft.com">
-                      <HiMail />
+                      <i className="fa fa-envelope" />
                       info@volansoft.com
                   </a>
               </li>
               <li className="lists-item" >
                   <a href="tel:9549326532">
-                      <BsFillTelephoneFill />
+                    <i className="fa fa-phone-square" />
                       +919549326532
                   </a>
               </li>
               <li className="lists-item" >
                   <a href="skype:rameshk2316?call">
-                      <BsSkype />
+                    <i className="fa-brands fa-skype"/>
                       Skype
                   </a>
               </li>
               <li  className="lists-item">
                 <div className="header__menuButtonOpen" onClick={handleBurgerMenu}>
                   Menu &nbsp; 
-                <GiHamburgerMenu />
+                  <div class="hamburger">
+                      <div class="top-bun"></div>
+                      <div class="meat"></div>
+                      <div class="bottom-bun"></div>
+									</div>
                 </div>
               </li>
             </ul>
@@ -85,8 +85,8 @@ function Header( { languages} ) {
           <div className="header__burgerMenu">
             <div className="header__menuButtonClose" onClick={handleBurgerMenu}>
               <div className="menuButton__close">
-                <AiOutlineClose />
                 Close
+                <i className="fa-solid fa-xmark"></i>
               </div>
               <ul className="menuLists">
               {languages.navigation.map((nav, index) => (
