@@ -31,37 +31,34 @@
 
 
 .CareerBottom{
-    margin: 50px 50px;
+    margin: 50px 100px;
     display: flex;
 
     .CareerBottomLeft{
         position: relative;
+        flex: 1;
         
         .BottomLeftBg{
             position: absolute;
-            width: 100%;
+            width: 80%;
             height: 100%;
             background: url(../../img/career2.png);
-            z-index: -1;
-            left: -20px;
-        }
-
-    
-        flex: 1;
-        
+            z-index: -1; 
+            left: 15px;
+            right: 35px;
+            top: 30px;
+        }  
         .CareerBottomBg{
-            height: 100%;
-            
-            
+            height: 100%;     
         }
         
         .BottomLeftDesc{
-           
+            margin-left: 50px;    
             background-color: #fff;
             border: 1px solid #000 ;
             text-align: left;
             z-index: 1;
-            padding: 20px 30px;
+            padding: 20px 20px;
             width: calc(100%/1.3);
             letter-spacing: 1px;
             line-height: 25px;
@@ -74,6 +71,7 @@
 
             p{
                 font-family: karla,sans-serif;
+                font-size: 16px;
 
                 span{
                     font-weight: bold;

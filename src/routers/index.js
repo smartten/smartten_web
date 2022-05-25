@@ -33,7 +33,7 @@ const publicRouter = [
   },
 
   {
-    path: "/career/post",
+    path: "/career",
     component: Career,
   },
 ];

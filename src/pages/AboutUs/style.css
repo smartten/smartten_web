@@ -4,19 +4,40 @@
 .about-banner{
     
 }
-.about-services{
+.about-services-container{
+    width: 100%;
+    display: flex;
+    background: #f9f9f9;
+    padding: 60px 0;
 
+}
+.about-services{
+    max-width: 1300px;
+    margin: auto;
+}
+.about-services .services-header{
+    
+}
+.about-services .services-header h3{
+    font-size:34px;
+}
+.about-services .services-header p{
+    font-size: 16px;
 }
 .about-services .services-content{
     display: flex;
 }
-.
+.services-content .content-item{
+    margin: 5px 45px;
+}
+
 .about-reasons{
     justify-content:center;
 }
 .about-reasons h1{
     text-transform: capitalize;
     font-weight: 300;
+    font-size: 34px;
 }
 
 .about-banner h1{
@@ -43,15 +64,16 @@
 .achivements-lists{
     display: flex;
     max-width: 500px;
-    height: 380px;
+    height: 280px;
     flex-wrap: wrap;
     justify-content:center;
 }
 .achivements-item{
     width: 200px;
-    height: 180px ;
+    height: 130px ;
     display: flex;
     font-size: 20px;
+    font-weight: 150;
     flex-direction: column;
     align-items: center;
     padding-top:15px ;
@@ -83,7 +105,15 @@
     line-height: 27px;
 
 }
+.achivements-details h3{
+    font-size: 16px ;
 
+}
+.about-achivements h1{
+    font-size: 34px;
+    font-weight: 300;
+
+}
 .about-mission{
     display: flex;
     margin: 30px 10px;
@@ -93,6 +123,9 @@
     text-align:left;
     margin: 0 25px;
     line-height: 27px;
+}
+.mission-details h2{
+    font-size: 34px;
 }
 .about-mission .image{
     max-width:41%;
@@ -117,7 +150,7 @@
     flex-direction: row-reverse;
 }
 .about-team img{
-    max-width: 40%;
+    width: 50%;
 
 }
 .team-details{
@@ -128,4 +161,31 @@
     color: white;
     padding:30px;
     line-height: 27px;
+}
+.team-details .details-title{
+    font-size: 34px;
+
+}
+.team-details a{
+    width: 160px;
+    height: 40px;
+    display: block;
+    color: var(--black-color);
+    border-radius:2px;
+    margin-left: 68px;
+    background: var(--white-color);
+    font-size:16px;
+    line-height: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 300;
+}
+.item-image{
+    background: var(--white-color);
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgb(204 204 204 / 46%);
+    padding: 45px;
+}
+.item-image img{
+    width: 100%;
 }
