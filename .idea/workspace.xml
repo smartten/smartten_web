@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7aad4141-8d3f-45a0-801d-a0e61d8cc311" name="Changes" comment="">
+    <list default="true" id="38e069ab-e66d-4e43-acf5-5137e7a62d09" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/components/layout/Button/Button.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/layout/Button/Button.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/layout/Header/style.js" afterDir="false" />
@@ -60,14 +60,9 @@
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/DefaultLayout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/DefaultLayout/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/DefaultLayout/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/DefaultLayout/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/layout/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/translation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/translation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +98,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7aad4141-8d3f-45a0-801d-a0e61d8cc311" name="Changes" comment="" />
+      <changelist id="38e069ab-e66d-4e43-acf5-5137e7a62d09" name="Changes" comment="update" />
       <created>1653293840462</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -111,10 +106,14 @@
       <workItem from="1653293843041" duration="2272000" />
       <workItem from="1653297121262" duration="3463000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1653382599274" duration="331000" />
 =======
       <workItem from="1653380463397" duration="360000" />
 >>>>>>> product_HomePage
+=======
+      <workItem from="1653397480663" duration="357000" />
+>>>>>>> 602e7f616d3e8ab64b48f498988c0526e8e2ee38
     </task>
     <servers />
   </component>

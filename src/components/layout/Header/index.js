@@ -75,15 +75,15 @@ function Header( { languages} ) {
                   </a>
               </li>
               <li  className="lists-item">
-                <div className="header__menuButton" onClick={handleBurgerMenu}>
+                <div className="header__menuButtonOpen" onClick={handleBurgerMenu}>
+                  Menu &nbsp; 
                 <GiHamburgerMenu />
-                  Menu
                 </div>
               </li>
             </ul>
           </div>
           <div className="header__burgerMenu">
-            <div className="header__menuButton" onClick={handleBurgerMenu}>
+            <div className="header__menuButtonClose" onClick={handleBurgerMenu}>
               <div className="menuButton__close">
                 <AiOutlineClose />
                 Close

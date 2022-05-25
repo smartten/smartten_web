@@ -19,34 +19,34 @@ function AboutUs() {
           <div className="achivements-lists">
             <div className="achivements-item ">
               <AiFillCheckCircle />
-              <span>
+              <h3>
                 <CountUp start={0} end={300} duration={3.5} />
                 +
-              </span>
-              <span>Project Complete</span>
+              </h3>
+              <h2>Project Complete</h2>
             </div>
             <div className="achivements-item border-left">
               <ImMap />
-              <span>
+              <h3>
                 <CountUp start={0} end={20} duration={3.5} />
                 +
-              </span>
-              <span>Project Complete</span>
+              </h3>
+              <h2>Project Complete</h2>
             </div>
             <div className="achivements-item border-top">
               <ImSmile />
-              <span>
+              <h3>
             <CountUp start={0} end={100} duration={3.5} />
             +
-              </span>
-              <span>Project Complete</span>
+              </h3>
+              <h2>Project Complete</h2>
             </div>
             <div className="achivements-item border-left border-top">
               <AiTwotoneLike />
-              <span>
+              <h3>
                 <CountUp start={0} end={82} duration={3.5} />%
-              </span>
-              <span>Project Complete</span>
+              </h3>
+              <h2>Project Complete</h2>
             </div>
           </div>
           <div className="achivements-details">
@@ -55,14 +55,16 @@ function AboutUs() {
               <h1>Welcome to our company</h1>
             </Fade>
             <p>
-              Volan Software & Technologies is one amongst the leading Mobile Application Development Company and also website development company which is excelled in developing exemplary IT solutions for various industries. Our competence is to fascinate customers, industrial edge and work towards greater satisfaction. We have experts professionals belonging to all leading technologies who are always curious to adapt according to varying technology requirements. Delivering commitments within the committed timeline are two major concerns which are considered while developing applications. We have been tagged as the favorite development partner by our clients as we have delivered some outstanding solutions in the span of our 5+ years of service where we seek for more in the further coming years.
+              Volan Software &apmt; Technologies is one amongst the leading Mobile Application Development Company and also website development company which is excelled in developing exemplary IT solutions for various industries. Our competence is to fascinate customers, industrial edge and work towards greater satisfaction. We have experts professionals belonging to all leading technologies who are always curious to adapt according to varying technology requirements. Delivering commitments within the committed timeline are two major concerns which are considered while developing applications. We have been tagged as the favorite development partner by our clients as we have delivered some outstanding solutions in the span of our 5+ years of service where we seek for more in the further coming years.
             </p>
           </div>
         </div>
       </div>
       <div className="about-mission">
         <Fade left>
-          <img src={houseImg} alt="House Images" />
+          <div className="image">
+            <img src={houseImg} alt="House Images" />
+          </div>
         </Fade>
         <div className="mission-details">
         <Fade bottom>
@@ -100,6 +102,54 @@ function AboutUs() {
           </p>
       </div>
       </div>
+      <div class="about-services">
+        <div className='services-header'>
+          <h3>Industries we Serve</h3>
+          <p>For your very specific industry, we have highly-tailored IT solutions.</p>
+        </div>
+        <div className='services-content'>
+          <div className='content-item'>
+              <div className='item-image'>
+                <img src="https://www.volansoft.com/assets/images/industries/departures.png" alt="Industries" class="" />
+              </div>
+              <h5 >Travel</h5>
+          </div>
+          <div className='content-item'>
+              <div>
+                <img src="https://www.volansoft.com/assets/images/industries/delivery-truck.png" alt="Industries" class="" />
+              </div>
+              <h5 >Transportation</h5>
+          </div>
+          <div className='content-item'>
+                <div>
+                  <img src="https://www.volansoft.com/assets/images/industries/pay.png" alt="Industries" class="" />
+                </div>
+                <h5 >Banking</h5>
+          </div>
+          <div className='content-item'>
+                <div>
+                  <img src="https://www.volansoft.com/assets/images/industries/charity.png" alt="Industries" class="" />
+                </div>
+                <h5 >Healthcare</h5>
+          </div>
+          <div className='content-item'>
+              <div>
+                <img src="https://www.volansoft.com/assets/images/industries/joystick.png" alt="Industries" class="" />
+              </div>
+              <h5 >Entertainment</h5>
+          </div>
+          <div className='content-item'>
+              <div>
+                <img src="https://www.volansoft.com/assets/images/industries/diploma.png" alt="Industries" class="" />
+              </div>
+              <h5 >Education</h5>
+          </div>
+        </div>
+      </div>
+					
+					
+				
+		
       <div className="about-reasons">
           <Fade bottom>
               <h1>why choose us</h1>

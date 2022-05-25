@@ -19,7 +19,7 @@
 
 }
 .post-item a{
-    color: #000000;
+    color: var(--text-color);
 }
 .post-item h2{
     text-transform: capitalize;
@@ -35,18 +35,15 @@
     display: flex;
     font-size: 46px;
     margin:auto;
-}
-
-.pagination-container i{
-    background-color: #f4f5f5;
-    color:#656565;
-    margin: 20px 20px
-
+    margin-bottom:25px
 }
 
 .pagination-container button{
     width: 120px;
     height: 60px;
-    margin: 20px;
-    font-size: 12px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0 20px;
 }

@@ -1,6 +1,13 @@
 .App {
-  /* text-align: center; */
+  text-align: center;
   overflow: hidden;
+}
+:root{
+  --primary-color: #000000;
+  --primary-color-rgb: rgb(0, 0, 0);
+  --white-color: #fff;
+  --text-color:#000000;
+  --black-color: #000000;
 }
 
 .App-logo {
@@ -22,7 +29,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--white-color);
 }
 
 .App-link {

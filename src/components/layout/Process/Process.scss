@@ -23,6 +23,22 @@
       }
     }
   
+
+  &-Title {
+    font-size: 3.0rem;
+    letter-spacing: 1.5px;
+    line-height: 42px;
+    margin: 0 auto 10px;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+    
+  }
+
+  &-Desc{
+    font-size: 1.6rem;
+    font-family: karla,sans-serif;
+    text-align: center;
     
   
     &-Title {
@@ -49,4 +65,4 @@
     }
   }
   
-}
+  }}

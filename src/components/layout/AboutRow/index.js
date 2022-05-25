@@ -1,6 +1,5 @@
 import React from 'react'
 import './style.css'
-import { AiFillCheckCircle } from 'react-icons/ai'
 import Fade from 'react-reveal/Fade';
 
 function AboutRow({ title, imgSrc, details }) {
@@ -21,7 +20,7 @@ function AboutRow({ title, imgSrc, details }) {
           <ul className="details-ul">			
             {details.map((detail,index) => (
               <div key={index} className="details-li">
-                <AiFillCheckCircle />
+                <i className="fa-solid fa-circle-check"></i>
                 <li >{detail}</li>
               </div>
             ))}

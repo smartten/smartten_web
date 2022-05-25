@@ -11,5 +11,5 @@
 .social_link li a{
     margin-top: 5px;
     font-size: 27px;
-    color: #000;
+    color: var(--primary-color);
 }

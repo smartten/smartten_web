@@ -10,7 +10,7 @@ const languageData = {
     bussiness:[{title:'general enquiries',mail:'info@volansoft.com', mobile:'+91 95493 26532', phone:'Mobile', icon:'fa-solid fa-mobile-screen'},
                 {title:'bussiness enquires',mail:'business@volansoft.com', mobile:'+91 78911 21113', phone:'Mobile', icon:'fa-regular fa-message'},
                 {title:'recruitments',mail:'career@volansoft.com', mobile:'+91 90241 95011', phone:'Mobile', icon:'fa-solid fa-suitcase'}],
-
+    
   },
   /************ VietNam **************/
   vi: {

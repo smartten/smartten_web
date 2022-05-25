@@ -4,12 +4,19 @@
 .about-banner{
     
 }
+.about-services{
 
+}
+.about-services .services-content{
+    display: flex;
+}
+.
 .about-reasons{
     justify-content:center;
 }
 .about-reasons h1{
     text-transform: capitalize;
+    font-weight: 300;
 }
 
 .about-banner h1{
@@ -23,29 +30,46 @@
 .about-achivements{
     display: flex;
     width: 100%;
-    margin-top:35px;
+    margin:50px 0;
     font-weight: 250;
+    
 }
 .about-achivements--container{
     display: flex;
-    max-width: 1300px;
+    max-width: 1100px;
     margin:auto;
-
+    justify-content: space-between;
 }
 .achivements-lists{
     display: flex;
-    max-width: 700px;
+    max-width: 500px;
+    height: 380px;
     flex-wrap: wrap;
+    justify-content:center;
 }
 .achivements-item{
-    width: 250px;
+    width: 200px;
+    height: 180px ;
     display: flex;
-    min-height: 250px ;
-    font-size: 35px;
+    font-size: 20px;
     flex-direction: column;
     align-items: center;
     padding-top:15px ;
+    margin: 0;
 }
+.achivements-item svg{
+    font-size: 34px;
+}
+.achivements-item h3{
+    font-size: 30px;
+    font-weight: 300;
+    margin:1px 8px;
+}
+.achivements-item h2{
+    font-size: 23px;
+    font-weight: 300;
+}
+
 .achivements-item.border-left{
     border-left: 2px solid #e3e3e1;
 }
@@ -54,7 +78,7 @@
 
 }
 .achivements-details{
-    max-width:40%;
+    max-width:57%;
     text-align: start;
     line-height: 27px;
 
@@ -63,17 +87,22 @@
 .about-mission{
     display: flex;
     margin: 30px 10px;
-    background-color: #f8f9fa;
+    background-color: var(--white-color);
 }
 .about-mission .mission-details{
     text-align:left;
     margin: 0 25px;
     line-height: 27px;
 }
-.about-mission img{
-    max-width:40%;
+.about-mission .image{
+    max-width:41%;
+
 }
-.about-mission img::after{
+.about-mission .image img{
+    width: 100%;
+}
+.about-mission .image::after{
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
@@ -82,6 +111,7 @@
     top: 15px;
     z-index: -1;
 }
+
 .about-team{
     display: flex;
     flex-direction: row-reverse;
@@ -94,7 +124,7 @@
     display: flex;
     flex-direction: column;
     text-align: start;
-    background: #000000;
+    background: var(--primary-color);
     color: white;
     padding:30px;
     line-height: 27px;

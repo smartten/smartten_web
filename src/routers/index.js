@@ -4,7 +4,7 @@ import Blog from "../pages/Blog";
 import Post from "../pages/BlogPost";
 import Services from "../pages/Services";
 import ServicePost from "../pages/ServicesPost";
-import Career from "../pages/Career"
+import Career from "../pages/Career";
 
 const publicRouter = [
   {
@@ -12,32 +12,30 @@ const publicRouter = [
     component: Home,
   },
   {
-    path:"/about-us",
+    path: "/about-us",
     component: AboutUs,
   },
   {
-    path:"/blog",
+    path: "/blog",
     component: Blog,
   },
   {
-    path:"/blog/post/:blogIndex",
-    component:Post,
+    path: "/blog/post/:blogIndex",
+    component: Post,
   },
   {
-    path:"/services",
-    component:Services,
+    path: "/services",
+    component: Services,
   },
   {
-    path:"/services/post",
+    path: "/services/post",
     component: ServicePost,
-
   },
-  {
-    path:"/career",
-    component: Career,
 
-  }
-  
+  {
+    path: "/career/post",
+    component: Career,
+  },
 ];
 
 export { publicRouter };
