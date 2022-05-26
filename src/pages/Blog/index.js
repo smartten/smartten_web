@@ -8,17 +8,17 @@ function Blog( { languages, postsData } ) {
     const [postIndex, setPostIndex] = useState(0)
     let postsPerPages = 3
 
-    console.log(postsData.length);
-        useEffect(() => {
-            async function slicePosts(){
-                let slicePosts = postsData?.slice(postIndex, postIndex + postsPerPages)
-                setPostsDisplay(slicePosts)
-                return slicePosts
-            }
-            slicePosts()
-        },[postsData,postsPerPages,postIndex])
+    console.log(postsData);
 
-        console.log(postsData, postsDisplay);
+    useEffect(() => {
+        async function slicePosts(){
+            let slicePosts = postsData?.slice(postIndex, postIndex + postsPerPages)
+            setPostsDisplay(slicePosts)
+            return slicePosts
+        }
+        slicePosts()
+    },[postsData,postsPerPages,postIndex])
+
   return (
     <div className="blog">
         <BlogBanner title="Blog" backgroundName="banner-about.jpg" description="Our aim is to apply Technological Solutions to your Business Objectives & Ideas" />

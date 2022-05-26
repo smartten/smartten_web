@@ -29,7 +29,8 @@ function App() {
   useEffect(() => {
     async function getPost(){
       let postsData = await blogApi.getBlogs('blog')
-      setPosts(postsData)
+      let filteredPosts = postsData.filter(post => post.active === true)
+      setPosts(filteredPosts)
       return postsData
     }
     getPost()
