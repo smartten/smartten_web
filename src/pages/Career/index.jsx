@@ -75,50 +75,50 @@ const Career = () => {
         <div className="CareerBottomRight">
           <h1>Apply Now</h1>
           <div className="BottomRightMultiple">
-            <div class="form-group">
+            <div className="form-group">
               <input
                 type="text"
-                class="form-control v-focus"
+                className="form-control v-focus"
                 placeholder="Your Name"
                 name="name"
                 id="name"
               />
             </div>
 
-            <div class="form-group">
+            <div className="form-group">
               <input
                 type="text"
-                class="form-control v-focus"
+                className="form-control v-focus"
                 placeholder="Your Email"
                 name="email"
                 id="email"
               />
             </div>
 
-            <div class="form-group">
+            <div className="form-group">
               <input
                 type="text"
-                class="form-control v-focus"
+                className="form-control v-focus"
                 placeholder="Your Mobile Number"
                 name="mobile_no"
                 id="mobile_no"
               />
             </div>
 
-            <div class="form-group">
+            <div className="form-group">
               <textarea
                 cols="30"
                 rows="8"
-                class="form-control v-focus"
+                className="form-control v-focus"
                 placeholder="Your Message"
                 name="message"
                 id="message"
               ></textarea>
             </div>
 
-            <div class="form-group">
+            <div className="form-group">
               <select
-                class="form-control v-focus"
+                className="form-control v-focus"
                 name="posts"
                 id="posts"
                 placeholder="Select Post"
@@ -133,22 +133,22 @@ const Career = () => {
               </select>
             </div>
 
-            <div class="form-group">
-              <div class="upload upload-type-btn">
+            <div className="form-group">
+              <div className="upload upload-type-btn">
                 <input
                   type="file"
-                  class="invisible"
+                  className="invisible"
                   name="uploadCarrer"
                   id="uploadCarrer"
                   onchange="return validateImageExtensionOther(this.value)"
                 />
-                <label for="uploadCarrer" class="ftr-icons upload-icon">
+                <label for="uploadCarrer" className="ftr-icons upload-icon">
                   <span>
-                    <i class="fa fa-upload"></i>&nbsp; Upload Attachment
+                    <i className="fa fa-upload"></i>&nbsp; Upload Attachment
                   </span>
                 </label>
               </div>
-              <p class="note-p" id="uploadFile"></p>
+              <p className="note-p" id="uploadFile"></p>
             </div>
 
             

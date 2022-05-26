@@ -41,7 +41,7 @@ function Header( { languages} ) {
         <div className="header--container">
           <div className="header__logo">
               <Link className="logo-link" to="/">
-                  volansoft
+                  smartten
               </Link>
           </div>
           <div className="header__navigation">
@@ -73,10 +73,10 @@ function Header( { languages} ) {
               <li  className="lists-item">
                 <div className="header__menuButtonOpen" onClick={handleBurgerMenu}>
                   Menu &nbsp; 
-                  <div class="hamburger">
-                      <div class="top-bun"></div>
-                      <div class="meat"></div>
-                      <div class="bottom-bun"></div>
+                  <div className="hamburger">
+                      <div className="top-bun"></div>
+                      <div className="meat"></div>
+                      <div className="bottom-bun"></div>
 									</div>
                 </div>
               </li>
@@ -92,8 +92,19 @@ function Header( { languages} ) {
               {languages.navigation.map((nav, index) => (
                   <li className="menuLists-items" key={index}>
                     <Link to={nav.linkUrl} > 
-                      {nav.title}
-
+                      { !nav.childrenList ? nav.title:(
+                        <div>
+                          <i className="fa-solid fa-arrow-left-long"></i>
+                          {nav.title}
+                          <div>
+                            {/* {nav.childrenList.map(item => (
+                              <div >
+                                {item}
+                              </div>
+                            ))} */}
+                          </div>
+                        </div>
+                      )}
                     </Link>
                   </li>
                 ))}

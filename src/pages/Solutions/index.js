@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css'
+import './style.scss'
 
 function Solutions() {
   return (
@@ -23,7 +23,204 @@ function Solutions() {
           </div>
         </div>
       </div>
-      
+      <div className="solutions-games-list-wrap">
+      <div className="solutions-games-list">
+        <div className="games-list-title">
+          <h3>Our Rummy Game Feature</h3>
+        </div>
+        <div className="game-list">
+          <div className="game-item">
+            <div className="sbox-container">
+
+              <div className="sbox"> 
+                <span>
+                  <span>
+                    <span>
+                      <div className="about-icon">
+                        <img alt="" src="https://www.volansoft.com/assets/images/point.png" className="r_icon_img" />
+                      </div>
+                      <div className="icon-text">
+                        <h4>Point Rummy</h4>
+                        <p>13 Card game, Support 2-6 plays with single or two decks</p>
+                      </div>
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="game-item">
+            <div className="sbox-container">
+
+              <div className="sbox"> 
+                <span>
+                  <span>
+                    <span>
+                      <div className="about-icon">
+                        <img alt="" src="https://www.volansoft.com/assets/images/pool.png" className="r_icon_img" />
+                      </div>
+                      <div className="icon-text">
+                        <h4>Pool Rummy</h4>
+                        <p>101 Points Pool or 201 Points Pool with fixed entry fee, Supports 2-6 plays with single or two decks</p>
+                      </div>
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="game-item">
+            <div className="sbox-container">
+
+              <div className="sbox"> 
+                <span>
+                  <span>
+                    <span>
+                      <div className="about-icon">
+                        <img alt="" src="https://www.volansoft.com/assets/images/deal.png" className="r_icon_img" />
+                      </div>
+                      <div className="icon-text">
+                        <h4>Deal Rummy</h4>
+                        <p>Play for a fixed number of deals Support 2-6 plays with single or two decks</p>
+                      </div>
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="game-item">
+            <div className="sbox-container">
+
+              <div className="sbox"> 
+                <span>
+                  <span>
+                    <span>
+                      <div className="about-icon">
+                        <img alt="" src="https://www.volansoft.com/assets/images/tournament.png" className="r_icon_img" />
+                      </div>
+                      <div className="icon-text">
+                        <h4>Tournaments</h4>
+                        <p>Tournaments of multi table and multiplayer level with players moving up towards the finish line</p>
+                      </div>
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="game-item">
+            <div className="sbox-container">
+
+              <div className="sbox"> 
+                <span>
+                  <span>
+                    <span>
+                      <div className="about-icon">
+                        <img alt="" src="https://www.volansoft.com/assets/images/anti.png" className="r_icon_img" />
+                      </div>
+                      <div className="icon-text">
+                        <h4>World-Class Anti-Fraud System</h4>
+                        <p>Algorithm based game tracking to detect collusion and offer fair game play</p>
+                      </div>
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="game-item">
+            <div className="sbox-container">
+
+              <div className="sbox"> 
+                <span>
+                  <span>
+                    <span>
+                      <div className="about-icon">
+                        <img alt="" src="https://www.volansoft.com/assets/images/rewards.png" className="r_icon_img" />
+                      </div>
+                      <div className="icon-text">
+                        <h4>Best Rewards & Loyalty</h4>
+                        <p>Different Promotions & loyalty program for players</p>
+                      </div>
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="game-item">
+            <div className="sbox-container">
+
+              <div className="sbox"> 
+                <span>
+                  <span>
+                    <span>
+                      <div className="about-icon">
+                        <img alt="" src="https://www.volansoft.com/assets/images/rng.png" className="r_icon_img" />
+                      </div>
+                      <div className="icon-text">
+                        <h4>RNG Certified Games</h4>
+                        <p>Most trusted RNG algorithm which can be certified by any authority</p>
+                      </div>
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="game-item">
+            <div className="sbox-container">
+
+              <div className="sbox"> 
+                <span>
+                  <span>
+                    <span>
+                      <div className="about-icon">
+                        <img alt="" src="https://www.volansoft.com/assets/images/responsible.png" className="r_icon_img" />
+                      </div>
+                      <div className="icon-text">
+                        <h4>Responsible Gaming</h4>
+                        <p>Ensure responsible gaming guidelines with different check points on deposit</p>
+                      </div>
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          <div className="game-item">
+            <div className="sbox-container">
+
+              <div className="sbox"> 
+                <span>
+                  <span>
+                    <span>
+                      <div className="about-icon">
+                        <img alt="" src="https://www.volansoft.com/assets/images/r08.png" className="r_icon_img" />
+                      </div>
+                      <div className="icon-text">
+                        <h4>Back Office & CRM</h4>
+                        <p>Easy to use back office to give better insight of the business</p>
+                      </div>
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        </div>
+      </div>
     </div>
   )
 }

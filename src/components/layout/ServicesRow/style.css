@@ -54,7 +54,9 @@
     color:white;
 }
 .row--list--content h3{
+    text-align: left;
     font-size: 20px;
+    margin-left: 45px;
 }
 .row--list--content ul{
     display: flex;
@@ -64,4 +66,7 @@
 .list--content-items li{
     margin: 8px 0;
     font-size: 18px;
+}
+.list--content-items li i{
+    margin-right: 10px;
 }

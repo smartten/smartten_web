@@ -54,7 +54,7 @@ function AboutUs() {
               <h1>Welcome to our company</h1>
             </Fade>
             <p>
-              Volan Software &apmt; Technologies is one amongst the leading Mobile Application Development Company and also website development company which is excelled in developing exemplary IT solutions for various industries. Our competence is to fascinate customers, industrial edge and work towards greater satisfaction. We have experts professionals belonging to all leading technologies who are always curious to adapt according to varying technology requirements. Delivering commitments within the committed timeline are two major concerns which are considered while developing applications. We have been tagged as the favorite development partner by our clients as we have delivered some outstanding solutions in the span of our 5+ years of service where we seek for more in the further coming years.
+              Volan Software & Technologies is one amongst the leading Mobile Application Development Company and also website development company which is excelled in developing exemplary IT solutions for various industries. Our competence is to fascinate customers, industrial edge and work towards greater satisfaction. We have experts professionals belonging to all leading technologies who are always curious to adapt according to varying technology requirements. Delivering commitments within the committed timeline are two major concerns which are considered while developing applications. We have been tagged as the favorite development partner by our clients as we have delivered some outstanding solutions in the span of our 5+ years of service where we seek for more in the further coming years.
             </p>
           </div>
         </div>
@@ -102,8 +102,8 @@ function AboutUs() {
           <Link to="/team">meet our team</Link>
         </div>
       </div>
-      <div class="about-services-container">
-        <div class="about-services">
+      <div className="about-services-container">
+        <div className="about-services">
           <Fade bottom>
             <div className='services-header'>
               <h3>Industries We Serve</h3>
@@ -114,37 +114,37 @@ function AboutUs() {
             <div className='services-content'>
               <div className='content-item'>
                   <div className='item-image'>
-                    <img src="https://www.volansoft.com/assets/images/industries/departures.png" alt="Industries" class="" />
+                    <img src="https://www.volansoft.com/assets/images/industries/departures.png" alt="Industries" className="" />
                   </div>
                   <h5 >Travel</h5>
               </div>
               <div className='content-item'>
                   <div className='item-image' >
-                    <img src="https://www.volansoft.com/assets/images/industries/delivery-truck.png" alt="Industries" class="" />
+                    <img src="https://www.volansoft.com/assets/images/industries/delivery-truck.png" alt="Industries" className="" />
                   </div>
                   <h5 >Transportation</h5>
               </div>
               <div className='content-item'>
                     <div className='item-image'>
-                      <img src="https://www.volansoft.com/assets/images/industries/pay.png" alt="Industries" class="" />
+                      <img src="https://www.volansoft.com/assets/images/industries/pay.png" alt="Industries" className="" />
                     </div>
                     <h5 >Banking</h5>
               </div>
               <div className='content-item'>
                     <div className='item-image'>
-                      <img src="https://www.volansoft.com/assets/images/industries/charity.png" alt="Industries" class="" />
+                      <img src="https://www.volansoft.com/assets/images/industries/charity.png" alt="Industries" className="" />
                     </div>
                     <h5 >Healthcare</h5>
               </div>
               <div className='content-item'>
                   <div className='item-image'>
-                    <img src="https://www.volansoft.com/assets/images/industries/joystick.png" alt="Industries" class="" />
+                    <img src="https://www.volansoft.com/assets/images/industries/joystick.png" alt="Industries" className="" />
                   </div>
                   <h5 >Entertainment</h5>
               </div>
               <div className='content-item'>
                   <div className='item-image'>
-                    <img src="https://www.volansoft.com/assets/images/industries/diploma.png" alt="Industries" class="" />
+                    <img src="https://www.volansoft.com/assets/images/industries/diploma.png" alt="Industries" className="" />
                   </div>
                   <h5 >Education</h5>
               </div>

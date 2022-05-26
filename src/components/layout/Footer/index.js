@@ -13,7 +13,7 @@ function Footer({ languages}) {
               <div className="footer-widget">
                 <div className="footer_logo">
                   <Link to="/" >
-                    <span>VolanSoft</span>
+                    <span>smartten</span>
                   </Link>
                 </div>
                 <ul className="widget-navigation">
@@ -54,7 +54,7 @@ function Footer({ languages}) {
               <div className="copyright">  
                 <span>Copyright © 
                   <Link to="/">
-                    Volan Software &amp; Technologies
+                    Volan Software & Technologies
                   </Link>. All Rights Reserved
                 </span>
               </div>

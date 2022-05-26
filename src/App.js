@@ -2,16 +2,21 @@ import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import DefaultLayout from "./components/layout/DefaultLayout";
 import { useTranslation } from "react-i18next";
-
 import { publicRouter } from "./routers";
 import languageData from "./config/translation";
 import "./App.css";
 import NotFound from "./pages/NotFound";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
+import blogApi from './api/blogApi'
+
 
 function App() {
   const { i18n } = useTranslation();
 
   const [languages, setLanguages] = useState(languageData.en);
+
+  const [posts, setPosts] = useState([])
 
   useEffect(() => {
     if (i18n.language === "en") {
@@ -20,6 +25,15 @@ function App() {
       setLanguages(languageData.vi);
     }
   }, [i18n.language]);
+
+  useEffect(() => {
+    async function getPost(){
+      let postsData = await blogApi.getBlogs('blog')
+      setPosts(postsData)
+      return postsData
+    }
+    getPost()
+  },[])
 
   return (
     <div className="App">
@@ -38,15 +52,33 @@ function App() {
                       <Page languages={languages} />
                     </Layout>
                   }
+                    />
+                  );
+                })}
+                <Route
+                  path="/blog"
+                  element={
+                    <DefaultLayout>
+                      <Blog postsData={posts} languages={languages} />
+                    </DefaultLayout>
+                  }
                 />
-              );
-            })}
-            <Route
-              path="*"
-              element={<NotFound />}
-            />
-          </Routes>
-          
+                <Route 
+                  path="/blog/post/:blogIndex"
+                  element={
+                    <DefaultLayout>
+                      <BlogPost postsData={posts} languages={languages} />
+                    </DefaultLayout>
+                  }
+                >
+                </Route>
+                <Route
+                  path="*"
+                  element={<NotFound />}
+                >
+
+                </Route>
+            </Routes>
         </div>
       </Router>
     </div>
