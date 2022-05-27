@@ -1,10 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom'
-import { BsFillCheckSquareFill, BsFillTelephoneFill, BsSkype } from 'react-icons/bs';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { AiOutlineClose } from 'react-icons/ai';
-import { HiMail } from 'react-icons/hi';
 import './style.css'
 
 function Header( { languages} ) {
@@ -40,66 +36,84 @@ function Header( { languages} ) {
     return () => window.removeEventListener('scroll', changeBackground);
   },[])
 
+
   return (
     <div className="header">
         <div className="header--container">
           <div className="header__logo">
               <Link className="logo-link" to="/">
-                  volansoft
+                  smartten
               </Link>
           </div>
           <div className="header__navigation">
             <ul className="nav__lists">
               <li className="lists-item"  >
                   <a href="#getQuoteModal" >
-                      <BsFillCheckSquareFill />
+                    <i className="fa fa-check-square"/>
                       Get Quote
                   </a>
               </li>
               <li className="lists-item" >
                   <a href="mailto:info@volansoft.com">
-                      <HiMail />
+                      <i className="fa fa-envelope" />
                       info@volansoft.com
                   </a>
               </li>
               <li className="lists-item" >
                   <a href="tel:9549326532">
-                      <BsFillTelephoneFill />
+                    <i className="fa fa-phone-square" />
                       +919549326532
                   </a>
               </li>
               <li className="lists-item" >
                   <a href="skype:rameshk2316?call">
-                      <BsSkype />
+                    <i className="fa-brands fa-skype"/>
                       Skype
                   </a>
               </li>
               <li  className="lists-item">
                 <div className="header__menuButtonOpen" onClick={handleBurgerMenu}>
                   Menu &nbsp; 
-                <GiHamburgerMenu />
+                  <div className="hamburger">
+                      <div className="top-bun"></div>
+                      <div className="meat"></div>
+                      <div className="bottom-bun"></div>
+									</div>
                 </div>
               </li>
             </ul>
           </div>
           <div className="header__burgerMenu">
-            <div className="header__menuButtonClose" onClick={handleBurgerMenu}>
-              <div className="menuButton__close">
-                <AiOutlineClose />
+            <div className="header__menuList" >
+              <div className="menuLists__close" onClick={handleBurgerMenu}>
                 Close
+                <i className="fa-solid fa-xmark"></i>
               </div>
-              <ul className="menuLists">
-              {languages.navigation.map((nav, index) => (
-                  <li className="menuLists-items" key={index}>
-                    <Link to={nav.linkUrl} > 
-                      {nav.title}
-
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              <div className="menuLists-lists">
+                <ul className="menuLists-lists-inner">
+                  {languages.navigation.map((nav, index) =>(
+                    <li key={index} className={nav.hasChild}>
+                      <Link to={nav.linkUrl}>
+                        {nav.hasChild && <i className="fa-solid fa-left-long"></i>}
+                        {nav.title}
+                      </Link>
+                      {nav.hasChild && 
+                      <div className="menu-display-table">
+                            <ul>
+                              {nav.childrenList.map((child, index1) => (
+                                <li key={index1}>
+                                  <Link to="/services/web-development">{child}</Link>
+                                </li>
+                              ))}
+                            </ul>
+                      </div>}
+                    </li> 
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
+
           <div className="header__language">
             <button onClick={changeLanguageVI}>VI</button>
             <button onClick={changeLanguageEN}>EN</button>
