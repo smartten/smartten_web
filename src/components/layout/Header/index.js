@@ -36,6 +36,7 @@ function Header( { languages} ) {
     return () => window.removeEventListener('scroll', changeBackground);
   },[])
 
+
   return (
     <div className="header">
         <div className="header--container">
@@ -83,34 +84,36 @@ function Header( { languages} ) {
             </ul>
           </div>
           <div className="header__burgerMenu">
-            <div className="header__menuButtonClose" onClick={handleBurgerMenu}>
-              <div className="menuButton__close">
+            <div className="header__menuList" >
+              <div className="menuLists__close" onClick={handleBurgerMenu}>
                 Close
                 <i className="fa-solid fa-xmark"></i>
               </div>
-              <ul className="menuLists">
-              {languages.navigation.map((nav, index) => (
-                  <li className="menuLists-items" key={index}>
-                    <Link to={nav.linkUrl} > 
-                      { !nav.childrenList ? nav.title:(
-                        <div>
-                          <i className="fa-solid fa-arrow-left-long"></i>
-                          {nav.title}
-                          <div>
-                            {/* {nav.childrenList.map(item => (
-                              <div >
-                                {item}
-                              </div>
-                            ))} */}
-                          </div>
-                        </div>
-                      )}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              <div className="menuLists-lists">
+                <ul className="menuLists-lists-inner">
+                  {languages.navigation.map((nav, index) =>(
+                    <li key={index} className={nav.hasChild}>
+                      <Link to={nav.linkUrl}>
+                        {nav.hasChild && <i className="fa-solid fa-left-long"></i>}
+                        {nav.title}
+                      </Link>
+                      {nav.hasChild && 
+                      <div className="menu-display-table">
+                            <ul>
+                              {nav.childrenList.map((child, index1) => (
+                                <li key={index1}>
+                                  <Link to="/services/web-development">{child}</Link>
+                                </li>
+                              ))}
+                            </ul>
+                      </div>}
+                    </li> 
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
+
           <div className="header__language">
             <button onClick={changeLanguageVI}>VI</button>
             <button onClick={changeLanguageEN}>EN</button>

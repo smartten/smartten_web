@@ -48,6 +48,7 @@ function Footer({ languages}) {
                         </li>
                       ))}
                   </ul>
+                  
               </div>    
           </div>
           <div className="footer__bottom">

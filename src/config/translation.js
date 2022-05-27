@@ -4,14 +4,15 @@ const languageData = {
     address: "701-702, Evershine Tower, Amrapali Circle, Vaishali Nagar, Jaipur- 30202",
     navigation:[{title:'home' ,linkUrl:'/'},
                 {title:'about us' ,linkUrl:'/about-us'},
-                {title:'services' ,linkUrl:'/services', childrenList: ["web development", "mobile app development", "ui/ux design", "digital marketing", "blockchain development", "it consultancy"]},
-                {title:'solutions' ,linkUrl:'/solutions', childrenList: ["rummy app development", "fantasy app development", "smart contracts development company", "mlm software development company", "crm software development"] },
+                {title:'services' ,linkUrl:'/services', hasChild:"has-child", childrenList: ["web development", "mobile app development", "ui/ux design", "digital marketing", "blockchain development", "it consultancy"]},
+                {title:'solutions' ,linkUrl:'/solutions', hasChild:"has-child", childrenList: ["rummy app development", "fantasy app development", "smart contracts development company", "mlm software development company", "crm software development"] },
                 {title:'blog' ,linkUrl:'/blog'},
                 {title:'career' ,linkUrl:'/career'}],
     bussiness:[{title:'general enquiries',mail:'info@volansoft.com', mobile:'+91 95493 26532', phone:'Mobile', icon:'fa-solid fa-mobile-screen'},
                 {title:'bussiness enquires',mail:'business@volansoft.com', mobile:'+91 78911 21113', phone:'Mobile', icon:'fa-regular fa-message'},
                 {title:'recruitments',mail:'career@volansoft.com', mobile:'+91 90241 95011', phone:'Mobile', icon:'fa-solid fa-suitcase'}],
     lang:"en",
+    
   },
   /************ VietNam **************/
   vi: {

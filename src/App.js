@@ -35,6 +35,7 @@ function App() {
     }
     getPost()
   },[])
+  
 
   return (
     <div className="App">
