@@ -69,6 +69,7 @@
 .footer_bussinesses{
     display: flex;
     border-top: 1px solid #343231;
+    padding: 0;
 }
 
 
@@ -82,19 +83,24 @@
 .business_info span{
     text-transform: uppercase;
     position: relative;
-    padding-left: 25px;
     color: #fff;
     font-size: 16px;
     line-height: 25px;
     display: inline-block;
-    margin: 25px 0 0;
     letter-spacing: 1.5px;
 }
 .business_info{
-    padding: 10px;
+    padding: 20px;
     text-align: start;
+    
+}
+.footer_bussinesses li:nth-child(2){
     border-left: 1px solid #343231;
 }
+.footer_bussinesses li:nth-child(3){
+    border-left: 1px solid #343231;
+}
+
 .business-icon i{
     margin-right:10px;
 }

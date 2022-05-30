@@ -1,0 +1,12 @@
+.career .container{
+    display:flex;
+}
+.container .career-content{
+    max-width: 1200px;
+    margin: 45px auto;
+    display: flex;
+
+}
+.wrap-sidetext__content i{
+    color: var(--black-color);
+}

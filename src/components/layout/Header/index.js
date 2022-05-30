@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom'
+import logoSvg from '../../../assets/images/smartten_logo.svg'
 import './style.css'
 
 function Header( { languages} ) {
@@ -42,7 +43,7 @@ function Header( { languages} ) {
         <div className="header--container">
           <div className="header__logo">
               <Link className="logo-link" to="/">
-                  smartten
+                <img src={logoSvg} alt=""/>
               </Link>
           </div>
           <div className="header__navigation">
@@ -102,7 +103,7 @@ function Header( { languages} ) {
                             <ul>
                               {nav.childrenList.map((child, index1) => (
                                 <li key={index1}>
-                                  <Link to="/services/web-development">{child}</Link>
+                                  <Link to="/services/post">{child}</Link>
                                 </li>
                               ))}
                             </ul>

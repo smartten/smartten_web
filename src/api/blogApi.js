@@ -1,11 +1,14 @@
 import axios from './instance'
 // import apiKey from './instance'
 
-const logApi= {
+const blogApi= {
     getBlogs: (keyword)=>{
         return axios.get(`${keyword}`)
     },
+    postCustomersInfo: (keyword, customerInfo)=>{
+        return axios.post(`${keyword}`, customerInfo)
+    }
     
 }
 
-  export default logApi;
+  export default blogApi;
