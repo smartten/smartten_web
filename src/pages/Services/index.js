@@ -3,8 +3,9 @@ import ServiceRow from '../../components/layout/ServicesRow'
 import BlogBanner from '../../components/layout/BlogBanner'
 import './style.css'
 
-function Services() {
-    
+function Services({servicesData}) {
+  
+    console.log(servicesData);
 
   return (
     <div className="services">

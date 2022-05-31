@@ -9,6 +9,8 @@ import NotFound from "./pages/NotFound";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import blogApi from './api/blogApi'
+import Services from "./pages/Services";
+import Home from "./pages/Home";
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
   const [languages, setLanguages] = useState(languageData.en);
 
   const [posts, setPosts] = useState([])
+
+  const [services, setServices] = useState([])
 
   useEffect(() => {
     if (i18n.language === "en") {
@@ -34,6 +38,17 @@ function App() {
       return postsData
     }
     getPost()
+  },[])
+
+  useEffect(() => {
+    async function getServices(){
+      let servicesData = await blogApi.getServices('service')
+      console.log(servicesData);
+      let filteredServices = servicesData.filter(service => service.active === true)
+      setServices(filteredServices)
+      return filteredServices
+    }
+    getServices()
   },[])
   
 
@@ -57,6 +72,31 @@ function App() {
                     />
                   );
                 })}
+                
+                {/* {
+    path: "/services",
+    component: Services,
+  },
+  {
+    path: "/services/:linkUrl",
+    component: ServicePost,
+  }, */}
+                <Route
+                  path="/"
+                  element={
+                    <DefaultLayout>
+                      <Home postData={posts} servicesData={services} languages={languages} />
+                    </DefaultLayout>
+                  }
+                />
+                <Route
+                  path="/services"
+                  element={
+                    <DefaultLayout>
+                      <Services servicesData={services} languages={languages} />
+                    </DefaultLayout>
+                  }
+                />
                 <Route
                   path="/blog"
                   element={

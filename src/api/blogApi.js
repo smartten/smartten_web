@@ -5,6 +5,9 @@ const blogApi= {
     getBlogs: (keyword)=>{
         return axios.get(`${keyword}`)
     },
+    getServices: (keyword)=>{
+        return axios.get(`${keyword}`)
+    },
     postCustomersInfo: (keyword, customerInfo)=>{
         return axios.post(`${keyword}`, customerInfo)
     }
