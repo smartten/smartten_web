@@ -1,31 +1,23 @@
+
 import Header from "../Header";
-
 import Footer from "../Footer";
-import { FaAngleUp } from "react-icons/fa"
-
-
-
-
 import './style.css';
 
 
 
-function DefaultLayout({ children }) {
+function DefaultLayout({ children, menuList }) {
+  
   function handleSrollTop(){
     window.scrollTo({top: 0, behavior: 'smooth'});
   }
-
   return (
     <div>
-      <Header languages={children.props.languages} />
+      <Header languages={children.props.languages} navigation={menuList} />
       <div className="layout__content-main">{children}</div>
       <div onClick={handleSrollTop} className="layout__scrollTop">
-        <FaAngleUp  />
+        <i className="fa-solid fa-angle-up"></i>
       </div>
-      
-
-        
-      <Footer languages={children.props.languages} />
+      <Footer languages={children.props.languages} navigation={menuList} />
     </div>
 
 

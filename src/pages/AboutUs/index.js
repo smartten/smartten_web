@@ -13,59 +13,55 @@ function AboutUs() {
       <div className="about-banner">
           <Banner title="About Us" backgroundName="banner-about.jpg" description="A company with creative professionals, committed to deliver the products with excellence" />
       </div>
-      <div className="about-achivements">
-        <div className="about-achivements--container">
-          <div className="achivements-lists">
-            <div className="achivements-item ">
-              <i className="fa-regular fa-circle-check"></i>
-              <h3>
-                <CountUp start={0} end={300} duration={3.5} />
-                +
-              </h3>
-              <h2>Project Complete</h2>
+      <section className="p50 counter_section">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-sm-12 col-md-12 col-lg-5">
+              <div className="row align-items-center mt20 counter_factor">
+                <div className="col-xs-6 col-sm-6 col-lg-6 text-center pr-0">
+                  <div className="margin_top_bottom">
+                  <i className="fa-regular fa-circle-check"></i>
+                  <h3><span className="counter"><CountUp start={0} end={300} duration={3.5} /></span>+</h3>
+                  <h5>Project Complete</h5>
+                  </div>
+                  <div className="margin_top_bottom br_top pt-3">
+                  <i className="fa-regular fa-map"></i>
+                  <h3><span className="counter"><CountUp start={0} end={100} duration={3.5} /></span>+</h3>
+                  <h5>Satisfy Clients</h5>
+                  </div>
+                </div>
+                <div className="col-xs-6 col-sm-6 col-lg-6 br_left text-center pl-0">
+                  <div className="margin_top_bottom">
+                  <i className="fa-regular fa-face-smile"></i>
+                  <h3><span className="counter"><CountUp start={0} end={20} duration={3.5} /></span>+</h3>
+                  <h5>Countries</h5>
+                  </div>
+                  <div className="margin_top_bottom br_top pt-3">
+                  <i className="fa-regular fa-thumbs-up"></i>
+                  <h3><span className="counter"><CountUp start={0} end={82} duration={3.5} /></span>%</h3>
+                  <h5>Repeat Clients</h5>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="achivements-item border-left">
-            <i className="fa-regular fa-map"></i>
-              <h3>
-                <CountUp start={0} end={20} duration={3.5} />
-                +
-              </h3>
-              <h2>Project Complete</h2>
+            <div className="col-sm-12 col-md-12 col-lg-7">
+              <div className="title-headline">
+                <h6>Are you Ready</h6>
+                <h2>Welcome to our company</h2>
+                <p>Volan Software &amp; Technologies is one amongst the leading <a href="https://www.volansoft.com/services/mobile-app-development"><strong>Mobile Application Development Company</strong></a> and also <a href="https://www.volansoft.com/services/web-development"><strong>website development company</strong></a> which is excelled in developing exemplary IT solutions for various industries. Our competence is to fascinate customers, industrial edge and work towards greater satisfaction. We have experts professionals belonging to all leading technologies who are always curious to adapt according to varying technology requirements. Delivering commitments within the committed timeline are two major concerns which are considered while developing applications. We have been tagged as the favorite development partner by our clients as we have delivered some outstanding solutions in the span of our 5+ years of service where we seek for more in the further coming years. 
+                </p>
+              </div>
             </div>
-            <div className="achivements-item border-top">
-            <i className="fa-regular fa-face-smile"></i>
-              <h3>
-            <CountUp start={0} end={100} duration={3.5} />
-            +
-              </h3>
-              <h2>Project Complete</h2>
-            </div>
-            <div className="achivements-item border-left border-top">
-               <i className="fa-regular fa-thumbs-up"></i>
-              <h3>
-                <CountUp start={0} end={82} duration={3.5} />%
-              </h3>
-              <h2>Project Complete</h2>
-            </div>
-          </div>
-          <div className="achivements-details">
-            <Fade bottom>
-              <h3>Are you Ready</h3>
-              <h1>Welcome to our company</h1>
-            </Fade>
-            <p>
-              Volan Software & Technologies is one amongst the leading Mobile Application Development Company and also website development company which is excelled in developing exemplary IT solutions for various industries. Our competence is to fascinate customers, industrial edge and work towards greater satisfaction. We have experts professionals belonging to all leading technologies who are always curious to adapt according to varying technology requirements. Delivering commitments within the committed timeline are two major concerns which are considered while developing applications. We have been tagged as the favorite development partner by our clients as we have delivered some outstanding solutions in the span of our 5+ years of service where we seek for more in the further coming years.
-            </p>
           </div>
         </div>
-      </div>
-      <div className="about-mission">
+      </section>
+      <div className="about-mission ">
         <Fade left>
-          <div className="image">
+          <div className="image col-md-6 col-sm-12 col-xs-12 ">
             <img src={houseImg} alt="House Images" />
           </div>
         </Fade>
-        <div className="mission-details">
+        <div className="mission-details col-md-6 col-sm-12 col-xs-12">
         <Fade bottom>
           <h2>
               Our Mission
@@ -85,9 +81,9 @@ function AboutUs() {
           </p>
         </div>
       </div>
-      <div className="about-team">
-        <img src={ourTeam} alt="Our Team" />
-        <div className="team-details ">
+      <div className="about-team flex-sm-row">
+        <img className="col-md-6 col-sm-12 col-xs-12" src={ourTeam} alt="Our Team" />
+        <div className="team-details col-md-6 col-sm-12 col-xs-12">
           <Fade bottom>
             <h2 className="details-title">
               Our Team
@@ -102,7 +98,7 @@ function AboutUs() {
           <Link to="/team">meet our team</Link>
         </div>
       </div>
-      <div className="about-services-container">
+      <div className="container">
         <div className="about-services">
           <Fade bottom>
             <div className='services-header'>
@@ -111,40 +107,40 @@ function AboutUs() {
             </div>
           </Fade>
           <Fade  left>
-            <div className='services-content'>
-              <div className='content-item'>
+            <div className='services-content '>
+              <div className='content-item col-md-2 col-sm-12 col-xs-12'>
                   <div className='item-image'>
-                    <img src="https://www.volansoft.com/assets/images/industries/departures.png" alt="Industries" className="" />
+                    <img src={require('../../assets/images/departures.png')} alt="Industries" className="" />
                   </div>
                   <h5 >Travel</h5>
               </div>
-              <div className='content-item'>
+              <div className='content-item col-md-2 col-sm-12 col-xs-12'>
                   <div className='item-image' >
-                    <img src="https://www.volansoft.com/assets/images/industries/delivery-truck.png" alt="Industries" className="" />
+                    <img src={require('../../assets/images/delivery-truck.png')} alt="Industries" className="" />
                   </div>
                   <h5 >Transportation</h5>
               </div>
-              <div className='content-item'>
+              <div className='content-item col-md-2 col-sm-12 col-xs-12'>
                     <div className='item-image'>
-                      <img src="https://www.volansoft.com/assets/images/industries/pay.png" alt="Industries" className="" />
+                      <img src={require('../../assets/images/pay.png')}  alt="Industries" className="" />
                     </div>
                     <h5 >Banking</h5>
               </div>
-              <div className='content-item'>
+              <div className='content-item col-md-2 col-sm-12 col-xs-12'>
                     <div className='item-image'>
-                      <img src="https://www.volansoft.com/assets/images/industries/charity.png" alt="Industries" className="" />
+                      <img src={require('../../assets/images/charity.png')} alt="Industries" className="" />
                     </div>
                     <h5 >Healthcare</h5>
               </div>
-              <div className='content-item'>
+              <div className='content-item col-md-2 col-sm-12 col-xs-12'>
                   <div className='item-image'>
-                    <img src="https://www.volansoft.com/assets/images/industries/joystick.png" alt="Industries" className="" />
+                    <img src={require('../../assets/images/joystick.png')} alt="Industries" className="" />
                   </div>
                   <h5 >Entertainment</h5>
               </div>
-              <div className='content-item'>
+              <div className='content-item col-md-2 col-sm-12 col-xs-12'>
                   <div className='item-image'>
-                    <img src="https://www.volansoft.com/assets/images/industries/diploma.png" alt="Industries" className="" />
+                    <img src={require('../../assets/images/diploma.png')} alt="Industries" className="" />
                   </div>
                   <h5 >Education</h5>
               </div>
@@ -152,10 +148,6 @@ function AboutUs() {
           </Fade>
         </div>
       </div>
-					
-					
-				
-		
       <div className="about-reasons">
           <Fade bottom>
               <h1>why choose us</h1>

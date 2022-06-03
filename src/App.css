@@ -6,9 +6,9 @@
   --primary-color: #000000;
   --primary-color-rgb: rgb(0, 0, 0);
   --white-color: #fff;
-  --text-color:#000000;
+  --text-color:#000;
   --text-color-gray:#444444;
-  --black-color: #000000;
+  --black-color: #000;
 }
 
 .App-logo {

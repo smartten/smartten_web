@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useState, useEffect, useLayoutEffect } from "react";
+import { BrowserRouter as Router, Route, Routes, useLocation  } from "react-router-dom";
 import DefaultLayout from "./components/layout/DefaultLayout";
 import { useTranslation } from "react-i18next";
 import { publicRouter } from "./routers";
@@ -11,7 +11,7 @@ import BlogPost from "./pages/BlogPost";
 import blogApi from './api/blogApi'
 import Services from "./pages/Services";
 import Home from "./pages/Home";
-
+import ServicesPost from "./pages/ServicesPost";
 
 function App() {
   const { i18n } = useTranslation();
@@ -21,6 +21,18 @@ function App() {
   const [posts, setPosts] = useState([])
 
   const [services, setServices] = useState([])
+
+  const [menus, setMenus] = useState([])
+
+
+  const ScrollTop = ({children}) => {
+    const location = useLocation();
+    useLayoutEffect(() => {
+      document.documentElement.scrollTo(0, 0);
+    }, [location.pathname]);
+    return children
+  } 
+  
 
   useEffect(() => {
     if (i18n.language === "en") {
@@ -43,7 +55,6 @@ function App() {
   useEffect(() => {
     async function getServices(){
       let servicesData = await blogApi.getServices('service')
-      console.log(servicesData);
       let filteredServices = servicesData.filter(service => service.active === true)
       setServices(filteredServices)
       return filteredServices
@@ -52,76 +63,84 @@ function App() {
   },[])
   
 
+  useEffect(() => {
+    async function getMenus(){
+      let menuData = await blogApi.getMenus('menu')
+      // let filteredMenus = menuData.filter(menu => menu.active === true)
+      setMenus(menuData)
+      return menuData
+    }
+    getMenus()
+  },[])
+  
+
   return (
     <div className="App">
       <Router>
-        <div>
-          <Routes>
-            {publicRouter.map((route, index) => {
-              const Page = route.component;
-              const Layout = DefaultLayout;
-              return (
-                <Route
-                  key={index}
-                  path={route.path}
-                  element={
-                    <Layout>
-                      <Page languages={languages} />
-                    </Layout>
-                  }
-                    />
-                  );
-                })}
-                
-                {/* {
-    path: "/services",
-    component: Services,
-  },
-  {
-    path: "/services/:linkUrl",
-    component: ServicePost,
-  }, */}
-                <Route
-                  path="/"
-                  element={
-                    <DefaultLayout>
-                      <Home postData={posts} servicesData={services} languages={languages} />
-                    </DefaultLayout>
-                  }
-                />
-                <Route
-                  path="/services"
-                  element={
-                    <DefaultLayout>
-                      <Services servicesData={services} languages={languages} />
-                    </DefaultLayout>
-                  }
-                />
-                <Route
-                  path="/blog"
-                  element={
-                    <DefaultLayout>
-                      <Blog postsData={posts} languages={languages} />
-                    </DefaultLayout>
-                  }
-                />
-                <Route 
-                  path="/blog/post/:blogIndex"
-                  element={
-                    <DefaultLayout>
-                      <BlogPost postsData={posts} languages={languages} />
-                    </DefaultLayout>
-                  }
-                >
-                </Route>
-                <Route
-                  path="*"
-                  element={<NotFound />}
-                >
-
-                </Route>
+        <ScrollTop>
+          <div>
+            <Routes>
+              {publicRouter.map((route, index) => {
+                const Page = route.component;
+                const Layout = DefaultLayout;
+                return (
+                  <Route
+                    key={index}
+                    path={route.path}
+                    element={
+                      <Layout menuList={menus}>
+                        <Page languages={languages} />
+                      </Layout>
+                    }
+                      />
+                    );
+                  })},
+                  <Route
+                    path="/"
+                    element={
+                      <DefaultLayout menuList={menus}>
+                        <Home postsData={posts} servicesData={services} languages={languages} />
+                      </DefaultLayout>
+                    }
+                  />
+                  <Route
+                    path="/service"
+                    element={
+                      <DefaultLayout menuList={menus}>
+                        <Services servicesData={services} languages={languages} />
+                      </DefaultLayout>
+                    }
+                  />
+                  <Route
+                    path="/services/post/:serviceIndex"
+                    element={
+                      <DefaultLayout menuList={menus}>
+                        <ServicesPost servicesData={services} languages={languages} />
+                      </DefaultLayout>}
+                  />
+                  <Route
+                    path="/blog"
+                    element={
+                      <DefaultLayout menuList={menus}>
+                        <Blog postsData={posts} languages={languages} />
+                      </DefaultLayout>}
+                  />
+                  <Route 
+                    path="/blog/post/:blogIndex"
+                    element={
+                      <DefaultLayout menuList={menus}>
+                        <BlogPost postsData={posts} languages={languages} />
+                      </DefaultLayout>}
+                  >
+                  </Route>
+                  <Route
+                    path="*"
+                    element={<NotFound />}
+                  >
+                  </Route>
             </Routes>
-        </div>
+          </div>
+        </ScrollTop>
       </Router>
     </div>
   );

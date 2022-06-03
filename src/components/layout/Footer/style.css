@@ -1,6 +1,7 @@
 .footer-container{
     width: 100%;
     background-color:var(--primary-color);
+    padding:30px 0;
 }
 .footer{
     display: flex;
@@ -25,17 +26,20 @@
     letter-spacing: 8px;
     font-weight: 100;
     font-size: 22px;
-    height: 55px;
     line-height: 55px;
     right: 5px;
 }
 .footer_logo a{
     text-transform: uppercase;
+    text-align: right;
+    display: block;
+}
+.footer_logo .logo-link img{
+    height: 55px;
 }
 .footer__top{
     display: flex;
-    justify-content: space-between;
-    margin: 0 80px;
+    flex-wrap: wrap;
 }
 
 .widget-navigation li{
@@ -46,6 +50,7 @@
 
 .footer-address{
     display: flex;
+    padding: 18px 0;
 }
 .footer-address span{
     width: 250px;
@@ -67,7 +72,9 @@
 }
 
 .footer_bussinesses{
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     border-top: 1px solid #343231;
     padding: 0;
 }
@@ -102,7 +109,10 @@
 }
 
 .business-icon i{
-    margin-right:10px;
+    top: 0;
+    left: 0;
+    font-size: 22px;
+    color: #fff;
 }
 .location_section h4{
     text-align: start;
@@ -112,6 +122,64 @@
 .fa-solid{
     color: var(--white-color);
 }
+.social_link{
+    padding:0;
+    float: right;
+}
 .social_link li{
     background-color: var(--white-color);
+}
+.footer-widget{
+
+}
+.map_location{
+    position: relative;
+}
+.map_location img{
+    width: 100%;
+    height: 100%;
+}
+.map_location::before{
+    position: absolute;
+    content: "";
+    width: 100%; 
+    height:100%;
+    background-color: var(--black-color);
+    opacity:0.4;
+}
+@media (max-width: 768px){
+    .footer_bussinesses{
+        display:inherit !important;
+        text-align: center;
+    }
+    .footer__top{
+        display:block;
+    }
+    .footer-address{
+        flex-direction: column;
+    }
+    .footer-address span{
+        width: 100%;
+    }
+    .footer-address h4{
+        font-size: 24px;
+        line-height: 26px;    
+        margin: 0 0 15px;
+        font-weight: 500;
+        font-family: brandon,serif;
+        letter-spacing: 1.5px;
+
+    }
+    .footer_bussinesses .business_info{
+        border: none !important;;
+
+    }
+   
+    .footer__bottom{
+        margin:0;
+        display:block;
+    }
+    .bottom__navigation{
+        padding:0;
+    }
 }

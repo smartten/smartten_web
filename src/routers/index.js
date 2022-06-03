@@ -1,6 +1,4 @@
-import Home from "../pages/Home";
 import AboutUs from "../pages/AboutUs";
-
 import Career from "../pages/Career";
 import Solutions from "../pages/Solutions"
 import ContactUs from "../pages/ContactUs";
@@ -22,8 +20,7 @@ const publicRouter = [
   {
     path:"/contact-us",
     component:ContactUs,
-  }
-
+  },
   
   
 ];

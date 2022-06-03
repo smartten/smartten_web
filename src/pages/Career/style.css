@@ -1,12 +1,25 @@
-.career .container{
-    display:flex;
-}
-.container .career-content{
-    max-width: 1200px;
-    margin: 45px auto;
+.career .career-content{
     display: flex;
-
 }
-.wrap-sidetext__content i{
+.upload {
+    position: relative
+}
+.upload label {
+    width: 100%;
+    border: 1px solid rgba(72,72,72,.3);
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+}
+
+.upload-type-btn i {
     color: var(--black-color);
+    
+}
+
+
+@media (max-width: 768px) {
+    .career .career-content{
+        display: block;
+    }
 }

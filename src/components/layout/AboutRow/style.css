@@ -18,6 +18,16 @@
     width: 680px;
     height: 220px;
 }
+@media (max-width: 768px) {
+    .about-row:after, .about-row:before{
+     width: 130px;
+     height: 80px;
+
+    }
+    .about-row{
+        display: inherit!important;
+    }
+}
 
 .about-row:nth-child(odd){
     flex-direction: row-reverse;
@@ -72,7 +82,7 @@
     height: 2px;
     content: "";
     display: inherit;
-    background-color: #000;
+    background-color: var(--primary-color);
     transform: none;
 }
 .details-li{

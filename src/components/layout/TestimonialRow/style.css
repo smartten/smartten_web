@@ -1,0 +1,186 @@
+.testimonial{
+    background: url(../../../assets/images/background-testimonial.jpeg) center center no-repeat;
+    background-size: cover;
+    z-index: 1;
+    padding: 40px 0 30px;
+    position: relative;
+}
+.testimonial::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .9;
+    content: "";
+}
+.testimonial-info {
+    overflow: hidden;
+    background: rgba(189,189,189,.07);
+    padding: 35px 30px 10px;
+    border-radius: 0;
+    line-height: 30px;
+    margin-top: 0;
+    text-indent: 30px;
+    z-index: 0;
+    position: relative;
+}
+.testimonial-info {
+    background: rgba(189,189,189,.07);
+    padding: 35px 30px 10px;
+    border-radius: 0;
+    line-height: 30px;
+    margin-top: 0;
+    text-indent: 30px;
+    z-index: 0;
+    position: relative
+}
+
+.testimonial-info:after,.testimonial-info:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #252525
+}
+
+.testimonial-info:before {
+    top: 0
+}
+
+.testimonial-info:after {
+    bottom: 0
+}
+
+.testimonial-info:hover>*>*>:after,.testimonial-info:hover>*>*>:before,.testimonial-info:hover>*>:after,.testimonial-info:hover>*>:before {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.testimonial-info>:after,.testimonial-info>:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #252525
+}
+
+.testimonial-info>:before {
+    left: 0
+}
+
+.testimonial-info>:after {
+    right: 0
+}
+
+.testimonial-info>*>:after,.testimonial-info>*>:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: 9;
+    height: 1px;
+    width: 100%;
+    background-color: #f5f5f5
+}
+
+.testimonial-info>*>:before {
+    top: 0;
+    -webkit-transform: translate3d(-105%,0,0);
+    transform: translate3d(-105%,0,0);
+    transition: transform .8s cubic-bezier(.4,0,.2,1);
+    transition: transform .8s cubic-bezier(.4,0,.2,1),-webkit-transform .8s cubic-bezier(.4,0,.2,1)
+}
+
+.testimonial-info>*>*>:before,.testimonial-info>*>:after {
+    transition: -webkit-transform .8s cubic-bezier(.4,0,.2,1)
+}
+
+.testimonial-info>*>:after {
+    bottom: 0;
+    -webkit-transform: translate3d(105%,0,0);
+    transform: translate3d(105%,0,0);
+    transition: transform .8s cubic-bezier(.4,0,.2,1);
+    transition: transform .8s cubic-bezier(.4,0,.2,1),-webkit-transform .8s cubic-bezier(.4,0,.2,1)
+}
+
+.testimonial-info>*>*>:after,.testimonial-info>*>*>:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    height: 100%;
+    width: 1px;
+    background-color: #f5f5f5
+}
+
+.testimonial-info>*>*>:before {
+    left: 0;
+    -webkit-transform: translate3d(0,105%,0);
+    transform: translate3d(0,105%,0);
+    transition: transform .8s cubic-bezier(.4,0,.2,1);
+    transition: transform .8s cubic-bezier(.4,0,.2,1),-webkit-transform .8s cubic-bezier(.4,0,.2,1)
+}
+
+.testimonial-info>*>*>:after {
+    right: 0;
+    -webkit-transform: translate3d(0,-105%,0);
+    transform: translate3d(0,-105%,0);
+    transition: -webkit-transform .8s cubic-bezier(.4,0,.2,1);
+    transition: transform .8s cubic-bezier(.4,0,.2,1);
+    transition: transform .8s cubic-bezier(.4,0,.2,1),-webkit-transform .8s cubic-bezier(.4,0,.2,1)
+}
+
+.testimonial-info p {
+    color: #fff;
+    font-size: 16px;
+    font-style: italic;
+    text-align: justify;
+    margin-left: 24px
+}
+
+.client-info {
+    display: inline-block;
+    margin-left: -4.8%;
+    margin-top: 3%;
+    width: 25%;
+    z-index: 9
+}
+
+.test-img {
+    width: 95px;
+    height: 95px;
+    position: absolute;
+    margin-right: 10px;
+    top: 0
+}
+
+.test-img>img {
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,.19);
+    background: padding-box;
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%
+}
+
+.test-info {
+    display: block;
+    text-align: right
+}
+
+.test-info>h6 {
+    font-weight: 700;
+    font-size: 13px;
+    color:var(--white-color);
+}
+
+.test-info>h5 {
+    font-style: italic;
+    font-size: 12px;
+    color:var(--white-color);
+
+}

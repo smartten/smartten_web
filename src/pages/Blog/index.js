@@ -8,7 +8,6 @@ function Blog( { languages, postsData } ) {
     const [postIndex, setPostIndex] = useState(0)
     let postsPerPages = 3
 
-    console.log(postsData);
 
     useEffect(() => {
         async function slicePosts(){
@@ -21,7 +20,7 @@ function Blog( { languages, postsData } ) {
 
   return (
     <div className="blog">
-        <BlogBanner title="Blog" backgroundName="banner-about.jpg" description="Our aim is to apply Technological Solutions to your Business Objectives & Ideas" />
+        <BlogBanner title="Blog" backgroundName="banner-blog.jpeg" description="Our aim is to apply Technological Solutions to your Business Objectives & Ideas" />
         <div className="blog-posts">
             <ul className="posts-lists">
                 {postsDisplay && postsDisplay.map((post,index) =>(

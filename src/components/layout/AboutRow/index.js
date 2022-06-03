@@ -6,16 +6,15 @@ function AboutRow({ title, imgSrc, details }) {
   
   return (
       <div className="about-row">
-        <div className="row-img">
+        <div className="row-img col-md-4 col-sm-4 col-xs-12">
         <Fade bottom>
           <img src={require(`../../../assets/images/${imgSrc}`)} alt="Trust" />
             
             </Fade>
         </div>
-        <div className="row-details">
+        <div className="row-details col-md-8 col-sm-8 col-xs-12">
           <Fade bottom>
             <h2>{title}</h2>	
-
           </Fade>
           <ul className="details-ul">			
             {details.map((detail,index) => (

@@ -1,7 +1,7 @@
 #notfound {
     position: relative;
     height: 100vh;
-    background-color: var(--black-color);
+    background-color: var(--primary-color);
   }
   
   #notfound .notfound {
@@ -48,7 +48,7 @@
     font-weight: 400;
     text-transform: uppercase;
     color: #ffffff;
-    background: #000000;
+    background: var(--primary-color);
     padding: 10px 5px;
     margin: auto;
     display: inline-block;
@@ -63,7 +63,7 @@
       display: inline-block;
       font-weight: 700;
       text-decoration: none;
-      color: #000;
+      color: var(--primary-color);
       text-transform: uppercase;
       padding: 13px 23px;
       background: #ffffff;
@@ -73,7 +73,7 @@
   }
   
   .notfound a:hover {
-    color: #000000;
+    color: var(--primary-color);
     background: #ffffff;
   }
   

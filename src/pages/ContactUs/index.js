@@ -23,10 +23,10 @@ function ContactUs() {
   return (
     <div className="contact-us">
         <BlogBanner title="Contact Us" backgroundName="banner-contact.jpeg" description="Our aim is to apply Technological Solutions to your Business Objectives & Ideas"/>
-        <div className="contact-us-info-container">
+        <div className="container">
           <div className="contact-us-info">
             <Fade left>
-              <div className="info-text">
+              <div className="info-text col-md-6 col-sm-12 col-xs-12">
                 <div className="text-item">
                   <h2>
                   phone number
@@ -57,12 +57,10 @@ function ContactUs() {
               </div>
             </Fade>
             <Fade right>
-              <div className="info-map">
+              <div className="info-map col-md-6 col-sm-12 col-xs-12">
                 <iframe 
                   title="myFrame"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6392316351735!2d105.83811861546754!3d21.00709389389208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac7818f13cb3%3A0x91fda0d22d1680d8!2zT2NlYW4gUGFyayBCdWlsZGluZywgMSDEkMOgbyBEdXkgQW5oLCBQaMawxqFuZyBNYWksIMSQ4buRbmcgxJBhLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1653875276675!5m2!1svi!2s" 
-                  width="600" 
-                  height="450" 
                   allowFullScreen="" 
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade">  
@@ -71,11 +69,11 @@ function ContactUs() {
             </Fade>
           </div>
         </div>
-        <div className="contact-us-input-container">
+        <div className="container">
           <div className="contact-us-input">
             <Fade bottom>
-              <div className="wrap-sidetext">
-                <div className="wrap-sidetext__content aos-init aos-animate" data-aos-once="true" data-aos="fade-up">
+              <div className="wrap-sidetext col-md-6 col-sm-12 col-xs-12">
+                <div className="wrap-sidetext__content aos-init aos-animate" >
                   <div className="title-headline">
                     <h3>What happens next</h3>
                   </div>
@@ -85,7 +83,7 @@ function ContactUs() {
               </div>
             </Fade>
             <Fade right>
-              <form className="input-form" method="post" >
+              <form className="input-form col-md-6 col-sm-12 col-xs-12" method="post" >
                 <h3>Let us know how we can help!</h3>
                 <div className="form-group">
                   <input onChange={e => setName(e.target.value)} type="text" className="form-control" placeholder="Your Name" name="name" id="name" />
@@ -100,7 +98,7 @@ function ContactUs() {
                   <textarea onChange={e => setMessage(e.target.value)} rows="5" className="form-control " placeholder="Your Message" name="message" id="message"></textarea>
                 </div>
                 <div className="form-group button">
-                  <button  type="submit"  onClick={postCustomersData}>Send</button>
+                  <button className=" btn_black btn_m3"  type="submit"  onClick={postCustomersData}>Send</button>
                 </div>
               </form>
             </Fade>

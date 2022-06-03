@@ -26,8 +26,8 @@ function Career() {
     <div className="career">
         <BlogBanner title="Career" backgroundName="banner-career.jpg" description="Our aim is to apply Technological Solutions to your Business Objectives & Ideas" />
         <div className="container">
-            <div className="career-content">
-              <div className="wrap-sidetext">
+            <div className="career-content p50">
+              <div className="wrap-sidetext col-md-6 col-sm-12 col-xs-12">
                 <div className="wrap-sidetext__content">
                   <h5>Why join VolanSoft???</h5>
                   <p>Simple. <strong>We love what we do.</strong><br /> We’ve been creating amazing mobile and connected experiences since 5+ years. We are working in a direction to set some era in the web/mobile app development field. </p>
@@ -43,7 +43,7 @@ function Career() {
                   <p>Grow your career at VolanSoft. Come work and play with the very best developers, designers and strategists. Don’t just take our word for it: We’ve been named a Great Place to Work, come here and you’ll see how much we love working.</p>
                 </div>
               </div>
-              <div className="career-input">
+              <div className="career-input col-md-6 col-sm-12 col-xs-12" >
                 <h3>Apply Now</h3>
                 <div>
                   <form method="post" id="careerFrm" name="careerFrm" >
@@ -68,11 +68,11 @@ function Career() {
                       </select>
                     </div>
                     <div className="form-group">
-                      <textar onChange={e => setMessage(e.target.value)}ea cols="30" rows="8" className="form-control " placeholder="Your Message" name="message" id="message"></textar>
+                      <textarea onChange={e => setMessage(e.target.value)} cols="30" rows="8" className="form-control " placeholder="Your Message" name="message" id="message"></textarea>
                     </div>
                     <div className="form-group">
-                      <div cl onChange={e => setUploadFile(e.target.value)}assName="upload upload-type-btn">
-                      <input type="file" className="invisible" name="uploadCarrer" id="uploadCarrer" onchange="return validateImageExtensionOther(this.value)" />
+                      <div onChange={e => setUploadFile(e.target.value)} className="upload upload-type-btn">
+                      <input type="file" className="d-none" name="uploadCarrer" id="uploadCarrer" onchange="return validateImageExtensionOther(this.value)" />
                       <label for="uploadCarrer" className="ftr-icons upload-icon">
                           <span><i className="fa-solid fa-upload"></i>&nbsp; Upload Attachment</span>
                       </label>
@@ -81,7 +81,7 @@ function Career() {
                     </div>
                     <div className="form-group">
                       <button onClick={postCustomersData}  type="submit" id="submitBtn" className="btn btn_m3 btn-black">Apply Now</button>
-                      <button type="reset" className="btn btn_m3 btn-btn-danger">Reset</button>
+                      <button className="btn btn_m3 btn-black" type="reset">Reset</button>
                     </div>
                   </form>				
                 </div>

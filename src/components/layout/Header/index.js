@@ -4,22 +4,19 @@ import { Link } from 'react-router-dom'
 import logoSvg from '../../../assets/images/smartten_logo.svg'
 import './style.css'
 
-function Header( { languages} ) {
+function Header( { languages, navigation} ) {
   const { i18n } = useTranslation();
-  const [currentLang, setCurrentLang] = useState("vi");
+  const [currentLang, setCurrentLang] = useState("en");
 
   useEffect(() => {
     setCurrentLang(i18n.language);
   }, [i18n]);
-  const changeLanguageVI = () => {
-    i18n.changeLanguage("vi");
-    setCurrentLang("vi");
+  
+  const changeLanguage = (e) => {
+    i18n.changeLanguage(e.target.value);
+    setCurrentLang(e.target.value);
   };
 
-  const changeLanguageEN = () => {
-    i18n.changeLanguage("en");
-    setCurrentLang("en");
-  };
 
   function handleBurgerMenu(){
     document.querySelector(".header__burgerMenu").classList.toggle('openBurgerMenu')
@@ -46,8 +43,8 @@ function Header( { languages} ) {
                 <img src={logoSvg} alt=""/>
               </Link>
           </div>
-          <div className="header__navigation">
-            <ul className="nav__lists">
+          <div className="header__navigation d-md-flex">
+            <ul className="nav__lists d-none d-md-flex">
               <li className="lists-item"  >
                   <a href="#getQuoteModal" >
                     <i className="fa fa-check-square"/>
@@ -72,17 +69,17 @@ function Header( { languages} ) {
                       Skype
                   </a>
               </li>
-              <li  className="lists-item">
-                <div className="header__menuButtonOpen" onClick={handleBurgerMenu}>
-                  Menu &nbsp; 
-                  <div className="hamburger">
-                      <div className="top-bun"></div>
-                      <div className="meat"></div>
-                      <div className="bottom-bun"></div>
-									</div>
-                </div>
-              </li>
             </ul>
+            <div className="header__menuButtonOpen" onClick={handleBurgerMenu}>
+              <span className="lh-md-50">
+              Menu 
+              </span>
+              <div className="hamburger">
+                  <div className="top-bun"></div>
+                  <div className="meat"></div>
+                  <div className="bottom-bun"></div>
+              </div>
+            </div>
           </div>
           <div className="header__burgerMenu">
             <div className="header__menuList" >
@@ -92,18 +89,18 @@ function Header( { languages} ) {
               </div>
               <div className="menuLists-lists">
                 <ul className="menuLists-lists-inner">
-                  {languages.navigation.map((nav, index) =>(
-                    <li key={index} className={nav.hasChild}>
+                  { navigation && navigation.map((nav, index) =>(
+                    <li key={index} onClick={handleBurgerMenu} className={nav.subMenu.length >0 ?"has-child": ""}>
                       <Link to={nav.linkUrl}>
-                        {nav.hasChild && <i className="fa-solid fa-left-long"></i>}
-                        {nav.title}
+                        {nav.subMenu.length > 0 && <i className="fa-solid fa-left-long"></i>}
+                        {nav.lang[languages.lang]}
                       </Link>
-                      {nav.hasChild && 
-                      <div className="menu-display-table">
+                      {nav.subMenu.length > 0 && 
+                      <div className="menu-display-table" >
                             <ul>
-                              {nav.childrenList.map((child, index1) => (
-                                <li key={index1}>
-                                  <Link to="/services/post">{child}</Link>
+                              {nav.subMenu.map((child, index1) => (
+                                <li key={index1}  >
+                                  <Link  to={`/services/post/${index1}`}> {child.lang[languages.lang]} </Link>
                                 </li>
                               ))}
                             </ul>
@@ -114,10 +111,15 @@ function Header( { languages} ) {
               </div>
             </div>
           </div>
-
-          <div className="header__language">
-            <button onClick={changeLanguageVI}>VI</button>
-            <button onClick={changeLanguageEN}>EN</button>
+          <div className="header__language d-md-block d-sm-none d-none">
+            <select  onChange={changeLanguage} className="selectpicker" value={currentLang}>
+              <option value="en" >
+                  English
+              </option>
+              <option value="vi" >
+                  Tiếng Việt
+                </option>
+            </select>
           </div>
         </div>
     </div>

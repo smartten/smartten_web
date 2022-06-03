@@ -2,9 +2,18 @@
     display: flex;
     flex-direction: column;
 }
+.services .blog-banner{
+    position: relative;
+}
+.services .blog-banner img::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    content: "";
+}
 .services .service__content{
-    max-width:1300px;
-    margin: auto;
+    
 
 }
 .services .banner-container h2{

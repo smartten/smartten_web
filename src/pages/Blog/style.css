@@ -43,7 +43,7 @@
 .pagination-container button{
     width: 120px;
     height: 60px;
-    background-color: var(--black-color);
+    background-color: var(--primary-color);
     color: var(--white-color);
     font-size: 18px;
     text-transform: uppercase;
@@ -59,7 +59,7 @@
     font-size: 24px;
     text-transform: inherit;
     font-weight: 600;
-    color: #000;
+    color: var(--primary-color);
     line-height: 28px;
     margin: 10px 0
 }
@@ -80,7 +80,7 @@
 }
 .post-entry-content a h2 {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #000;
+    color: var(--primary-color);
     font-size: 20px;
     letter-spacing: 0;
     font-weight: 700;
@@ -89,7 +89,7 @@
 }
 
 .post-entry-content p {
-    color: #000;
+    color: var(--primary-color);
 }
 
 .post-entry-content .post-detail-ul {

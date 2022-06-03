@@ -24,13 +24,25 @@
 .about-services .services-header p{
     font-size: 16px;
 }
+
 .about-services .services-content{
     display: flex;
 }
-.services-content .content-item{
-    margin: 5px 45px;
+@media only screen and (max-width: 767px) {
+    .about-services .services-content{
+        display: inherit !important;
+        margin-top: 50px;
+    }
 }
+.services-content .content-item{
+    padding: 45px;
+}
+.content-item h5{
+    text-align: center;
+    font-size: 18px;
+    margin: 15px 5px;
 
+}
 .about-reasons{
     justify-content:center;
 }
@@ -48,72 +60,48 @@
     font-size:25px;
     font-weight: 300;
 }
-.about-achivements{
-    display: flex;
-    width: 100%;
-    margin:50px 0;
-    font-weight: 250;
-    
+/* About achivements */
+.margin_top_bottom {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
-.about-achivements--container{
-    display: flex;
-    max-width: 1100px;
-    margin:auto;
-    justify-content: space-between;
-}
-.achivements-lists{
-    display: flex;
-    max-width: 500px;
-    height: 280px;
-    flex-wrap: wrap;
-    justify-content:center;
-}
-.achivements-item{
-    width: 200px;
-    height: 130px ;
-    display: flex;
-    font-size: 20px;
-    font-weight: 150;
-    flex-direction: column;
-    align-items: center;
-    padding-top:15px ;
-    margin: 0;
-}
-.achivements-item svg{
-    font-size: 34px;
-}
-.achivements-item h3{
-    font-size: 30px;
+.margin_top_bottom i{
     font-weight: 300;
-    margin:1px 8px;
 }
-.achivements-item h2{
-    font-size: 23px;
+.margin_top_bottom h3,
+.margin_top_bottom h5{
     font-weight: 300;
 }
 
-.achivements-item.border-left{
+.counter_factor i {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.counter_factor h3 {
+    margin: 0;
+    /*  line-height: 48px; */
+    margin-top: 8px;
+}
+
+.counter_factor h5 {
+    margin-top: 8px;
+}
+
+.br_top {
+    border-top: 2px solid #e3e3e1;
+}
+.br_left {
     border-left: 2px solid #e3e3e1;
 }
-.achivements-item.border-top{
-    border-top: 2px solid #e3e3e1;
-
+.title-headline p{
+    text-align:justify
 }
-.achivements-details{
-    max-width:57%;
-    text-align: start;
-    line-height: 27px;
-
-}
-.achivements-details h3{
-    font-size: 16px ;
-
-}
-.about-achivements h1{
+.title-headline h2 {
     font-size: 34px;
-    font-weight: 300;
-
+    line-height: 36px
 }
+/* About mission */
 .about-mission{
     display: flex;
     margin: 30px 10px;
@@ -127,10 +115,7 @@
 .mission-details h2{
     font-size: 34px;
 }
-.about-mission .image{
-    max-width:41%;
 
-}
 .about-mission .image img{
     width: 100%;
 }
@@ -147,19 +132,21 @@
 
 .about-team{
     display: flex;
-    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    flex-direction:row-reverse;
+    margin: 25px 0;
 }
 .about-team img{
-    width: 50%;
-
+    padding:0;
 }
+
 .team-details{
     display: flex;
     flex-direction: column;
     text-align: start;
     background: var(--primary-color);
     color: white;
-    padding:30px;
+    padding:25px 25px;
     line-height: 27px;
 }
 .team-details .details-title{

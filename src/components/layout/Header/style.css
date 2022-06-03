@@ -1,19 +1,19 @@
 .header{
     position: absolute;
     display: flex;
-    z-index: 1;
+    z-index: 5;
     width: 100%;
     height: 90px;
 }
 .header--container{
     width: 1200px; 
     display: flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
     margin: auto;
     
 }
 .backgroundBlack{
-    background-color: var(--black-color);
+    background-color: var(--primary-color);
     position: fixed;
 }
 .header__navigation a{
@@ -24,7 +24,9 @@
 .nav__lists{
     display: flex;
 }
+
 .lists-item{
+    line-height: 75px;
     padding: 10px 15px;
 }
 .lists-item a i{
@@ -32,7 +34,7 @@
 }
 
 .header__logo{
-    margin:10px 15px;
+    margin:18px 30px;
 }
 .logo-link{
     color: var(--white-color);
@@ -42,12 +44,12 @@
     text-transform: uppercase;
     text-shadow: 0 1px 2px rgb(0 0 0 / 65%);
 }
-.logo-link img{
-    width: 80%;
-    height: 80%;
+.header__logo .logo-link img{
+    width: 147px;
+    height: 51px;
 }
 .header__burgerMenu{
-    background: #000;
+    background: var(--primary-color);
     position: absolute;
     top: 0;
     right: 0;
@@ -61,10 +63,17 @@
 }
 .header__menuButtonOpen{
     color: var(--white-color);
+    display: flex;
     cursor: pointer;
-    display:flex;
-    flex-direction: row;
-    justify-content:space-between;
+    margin-right: 10px;
+}
+.header__menuButtonOpen span{
+    line-height:75px;
+    margin-top: 10px;
+    margin: 11px 15px;
+}
+.header__menuButtonOpen .hamburger{
+    margin: 0;
 }
 .header__menuList{
     color: var(--white-color);
@@ -88,6 +97,9 @@
 .menuButton__close i{
     margin: 0 10px;
     font-size: 28px;
+}
+.header__language{
+    line-height:98px;
 }
 .header__language button{
     padding: 10px;
@@ -136,9 +148,10 @@
 .menuLists-lists-inner>li>a:hover{
     color: var(--black-color);
 }
-
-.has-child:hover .menu-display-table{
-    display:block;
+@media (min-width: 768px){
+    .has-child:hover .menu-display-table{
+        display:block;
+    }
 }
 .has-child>a{
     display: block;
@@ -206,6 +219,8 @@
     width: 16px;
     height: 16px;
     cursor: pointer;
+    margin-top: -15px;
+    margin-right: 20px;
 }
 
 .hamburger div {
@@ -229,3 +244,16 @@
 }
 
 
+@media (max-width: 768px) {
+    .header__burgerMenu{
+        width: 100%;
+    }
+    .has-child .menu-display-table{
+        width: 100%;
+        right: 0;
+        z-index: 3;
+    }
+    .has-child .menu-display-table{
+        display: none!important;
+    }
+}

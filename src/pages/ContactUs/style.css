@@ -1,20 +1,13 @@
 .contact-us{
+}
+
+.contact-us .contact-us-info{
+    display: flex;
+    color:var(--text-color-gray);
+    padding:45px 0;
 
 }
-.contact-us-info-container{
-    display:flex;
-    flex-direction: column;
-    background-color: #fafafa;
-    padding:35px 0;
-}
-.contact-us .contact-us-info{
-    max-width: 1300px;
-    margin: auto;
-    display: flex;
-    color:var(--text-color-gray)
-}
 .contact-us-info .info-text{
-    margin: 0 45px;
 }
 .info-text .text-item {
     display: flex;
@@ -39,23 +32,21 @@
 .info-text .text-item a{
     display: block;
     margin-bottom: 25px;
-    color: #000;
+    color: var(--primary-color);
     font-size: 20px;
     line-height: 18px;
 
 }
-.contact-us-input-container{
-    display: flex;
-
+.info-map iframe{
+    width: 100%;
+    height: 100%;
 }
 .contact-us-input{
     display: flex;
-    width: 970px;
     justify-content: space-between;
     margin: 45px auto;
 }
 .wrap-sidetext{
-    width: 50%;
     position: relative;
     color:var(--text-color);
 }
@@ -85,7 +76,7 @@
 }
 .contact-us-input .input-text h1{
     margin: 0 0 15px;
-    color: #000;
+    color: var(--primary-color);
     font-weight: 500;
     font-family: brandon,serif;
     letter-spacing: 1.5px;
@@ -97,41 +88,30 @@
 }  
 
 .contact-us-input .input-form{
-    width: 50%;
-    margin: 0 55px;
 }
 .contact-us-input .input-form h3{
     margin: 0 0 15px;
-    color: #000;
+    color: var(--primary-color);
     font-weight: 500;
     font-size: 30px;
     line-height: 32px;
     letter-spacing: 1.5px;
 }
 
-
 .form-control {
-    display: block;
-    width: 100%;
-    height: 34px;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
-    background-image: none;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
-    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
-}
-.form-control:focus {
-    border-color: rgb(0, 0, 0);
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 0, 0, 0.6);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(0, 0, 0, 0.6)
+    border-radius: 0;
+    height: 44px;
+    padding-left: 20px;
+    width: 100%;
+    background: 0 0;
 }
 
+@media (max-width: 768px){
+    .contact-us .contact-us-info{
+        display: block;
+    }
+    .contact-us .contact-us-input{
+        display: block;
+    }
+}

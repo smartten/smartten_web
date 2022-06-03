@@ -1,43 +1,43 @@
 import { Link } from "react-router-dom";
-import { FiMapPin } from 'react-icons/fi';
-import locationMap from '../../../assets/images/location_map.png';
-import SocialLink from '../../../components/layout/SocialLink/index'
+import locationMap from '../../../assets/images/location_map.jpg';
+import SocialLink from '../../../components/layout/SocialLink/index';
+import logoSvg from '../../../assets/images/smartten_logo.svg';
 import './style.css'
 
-function Footer({ languages}) {
-
+function Footer({ languages, navigation}) {
+  
   return (
       <div className="footer-container">
         <div className="footer">
           <div className="footer__top">
-              <div className="footer-widget">
+              <div className="footer-widget col-md-4 col-sm-12 col-xs-12">
                 <div className="footer_logo">
-                  <Link to="/" >
-                    <span>smartten</span>
+                  <Link to="/" className="logo-link" >
+                  <img src={logoSvg} alt=""/>
                   </Link>
                 </div>
                 <ul className="widget-navigation">
-                  {languages.navigation.map((nav, index) => (
+                  {navigation.map((nav, index) => (
                     <li key={index}>
-                      <Link to={nav.linkUrl}>{nav.title}</Link></li>
+                      <Link to={nav.linkUrl}>{nav.lang[languages.lang]}</Link></li>
                     ))}
                   <SocialLink />
                 </ul>
               </div>
-              <div className="location_section">
-                  <h4 >India</h4>
+              <div className="location_section col-md-8 col-sm-12 col-xs-12 ">
+                  <h4 >VietNam</h4>
                   <div className="footer-address">
-                    <span>
-                      <FiMapPin />
+                    <span className="col-md-4 col-sm-12 col-xs-12">
+                    <i className="pe-7s-map-marker"></i>
                       {languages.address}
                     </span>
-                    <div className="map_location">
+                    <div className="map_location col-md-8 col-sm-12 col-xs-12">
                       <img src={locationMap} alt="location_map" />
                     </div>
                   </div>
                   <ul className="footer_bussinesses">
-                    {languages.bussiness.map((business, index) => (
-                        <li key={index} className="business_info">
+                    {languages.bussiness.map((business, index) =>(
+                        <li key={index} className="business_info col-md-4 col-sm-12 col-xs-12 ">
                           <span className="business-icon">
                             <i className={business.icon}></i>
                             {business.title}
@@ -60,9 +60,9 @@ function Footer({ languages}) {
                 </span>
               </div>
               <ul className="bottom__navigation">
-              {languages.navigation.map((nav, index) => (
+                {navigation.map((nav, index) => index<5 &&  (
                   <li key={index}>
-                    <Link to={nav.linkUrl} > {nav.title}</Link>
+                    <Link to={nav.linkUrl} > {nav.lang[languages.lang]}</Link>
                   </li>
                 ))}
               </ul>
