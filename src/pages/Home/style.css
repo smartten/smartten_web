@@ -191,6 +191,7 @@
         display: inherit !important;
         margin-top: 50px;
     }
+    
 }
 .port_sec_right {
     width: 100%;
@@ -917,6 +918,9 @@
     padding: 10px;
     margin: 0 5px;
     background-color: #ddd
+}
+.single-client img{
+    width: auto;
 }
 
 /* Home feedback */

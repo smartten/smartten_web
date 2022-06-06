@@ -84,7 +84,9 @@ function Header( { languages, navigation} ) {
           <div className="header__burgerMenu">
             <div className="header__menuList" >
               <div className="menuLists__close" onClick={handleBurgerMenu}>
-                Close
+                <span>
+                  Close
+                </span>
                 <i className="fa-solid fa-xmark"></i>
               </div>
               <div className="menuLists-lists">

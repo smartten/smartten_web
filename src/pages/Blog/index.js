@@ -46,12 +46,31 @@ function Blog( { languages, postsData } ) {
         </div>
         <div className="blog-pagination">
             <div className="pagination-container">
-                <button onClick={() => postIndex <= 0 ? setPostIndex(0) : (setPostIndex(postIndex - postsPerPages))}>
-                    Previous
-                </button>
-                <button onClick={() => setPostIndex(postIndex + 3)}> 
-                    Next
-                </button>
+                <nav aria-label="Page navigation example">
+                <ul className="pagination">
+                    <li className="page-item" style={{cursor: 'pointer'}} >
+                    <div className="page-link" href="#" aria-label="Previous" onClick={() => postIndex <= 0 ? setPostIndex(0) : (setPostIndex(postIndex - postsPerPages))}>
+                        <span aria-hidden="true">&laquo;</span>
+                        <span className="sr-only">Previous</span>
+                    </div>
+                    </li>
+                    <li className="page-item"  style={{cursor: 'pointer'}} >
+                        <div className="page-link" onClick={() => setPostIndex(0)} >1</div>
+                    </li>
+                    <li className="page-item"  style={{cursor: 'pointer'}} >
+                        <div className="page-link"  onClick={() => setPostIndex(3)} >2</div>
+                    </li>
+                    <li className="page-item" style={{cursor: 'pointer'}} >
+                        <div className="page-link" onClick={() => setPostIndex(6)}>3</div>
+                    </li>
+                    <li className="page-item" style={{cursor: 'pointer'}} >
+                    <div className="page-link" href="#" aria-label="Next" onClick={() => setPostIndex(postIndex + 3)}>
+                        <span aria-hidden="true">&raquo;</span>
+                        <span className="sr-only">Next</span>
+                    </div>
+                    </li>
+                </ul>
+                </nav>
             </div>
         </div>
     </div>

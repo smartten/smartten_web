@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
 
-function ServicePostBanner( {title, description}) {
+function ServicePostBanner( {title, description, img}) {
   return (
         <section className="banner_star">
           <div className="inner-bannner-sec">
@@ -13,7 +13,7 @@ function ServicePostBanner( {title, description}) {
             <div className="bg center"></div>
             <div className="container">
               <div className="banner-logo-sec">
-                <img src={require('../../../assets/images/service-post-image1.png')} alt="service post" />
+                <img src={img} alt="service post" />
               </div>
               <div className="banner-content-sec">
                 <h1>{title}</h1>

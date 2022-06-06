@@ -147,11 +147,12 @@ function Home({postsData, languages, servicesData}) {
 						slidesPerView={1}
 						spaceBetween={30}
 						slidesPerGroup={1}
-						loop={true}
-						loopFillGroupWithBlank={true}
-						
-						navigation={true}
-						modules={[ Navigation]}
+						loop={true}		
+						modules={[ Navigation]}				
+						navigation= {{
+							nextEl: '.swiper-button-next',
+							prevEl: '.swiper-button-prev',
+							}}
 						className="mySwiper"
 						breakpoints={{
 							786: {
@@ -185,6 +186,8 @@ function Home({postsData, languages, servicesData}) {
 							</SwiperSlide>
 						))}
 					</Swiper>
+					<div className="swiper-button-prev" style={{left:"80px", color:"#fff"}}></div>
+       				<div className="swiper-button-next" style={{right:"80px", color:"#fff"}}></div>
 				</div>
 			</div>
 		</div>
@@ -407,7 +410,7 @@ function Home({postsData, languages, servicesData}) {
 					<p>We love our clients and the feeling is mutual.</p>
 				</div>
 				<div className="container">
-					<div className="home-our-clients">
+					<div className="home-our-clients" >
 						<Swiper 
 						loop={true}
 						pagination={true}
@@ -432,13 +435,6 @@ function Home({postsData, languages, servicesData}) {
 								},
 						}}
 						>
-							<SwiperSlide>
-								<div className="owl-item" >
-									<div className="single-client">
-											<img src={require('../../assets/images/2407732058929887856.png')} alt="Our Clients" />
-									</div>
-								</div>
-							</SwiperSlide>
 							<SwiperSlide>
 								<div className="owl-item" >
 									<div className="single-client">

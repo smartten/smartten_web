@@ -40,3 +40,10 @@
     font-size: 24px;
     font-weight: 300;
 }
+
+@media (max-width: 768px){
+    .banner-container{
+        margin: auto 10px;
+        padding-top: 150px;
+    }
+}

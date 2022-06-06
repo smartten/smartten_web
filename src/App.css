@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   overflow: hidden;
+  font-family: karla,serif;
+
 }
 :root{
   --primary-color: #000000;

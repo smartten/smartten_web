@@ -27,7 +27,7 @@ function ServicesPost( {children, servicesData} ) {
 
   return (
     <div className="service-post">
-        {service && <ServicePostBanner title={service.title} description={service.subTitle} />}
+        {service && <ServicePostBanner title={service.title} description={service.subTitle} img={service.image} />}
         <div className="container">
 			<div className="service-post-content" >
 				<Fade bottom>
