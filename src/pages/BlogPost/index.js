@@ -25,9 +25,9 @@ function BlogPost({ languages, postsData }) {
   return (
     <div className="post">
         <Banner title="Blog" backgroundName="banner-about.jpg"  description="Our aim is to apply Technological Solutions to your Business Objectives & Ideas"  />
-        <div className="post-content-container">
+        <div className="container">
           <div className="post-content">
-            <div  className="post-content-left">
+            <div  className="post-content-left col-md-8 col-sm-12 col-12">
               {post && <div className="content-details">
                 <img src={post.image} alt="Thumbnail" />
                 <div dangerouslySetInnerHTML={{ __html: post.lang[languages.lang].content }}>
@@ -39,7 +39,7 @@ function BlogPost({ languages, postsData }) {
                 <Link className="content-navigation-button" to={`/blog/post/${currentIndex+1}`}>next</Link>
               </div>
             </div>
-            <div className="post-content-right">
+            <div className="post-content-right col-md-4 col-sm-12 col-12">
               <div className="content-suggestion">
                 <h4>recent post</h4>
                 <ul className="suggestion-lists">

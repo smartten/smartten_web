@@ -1,32 +1,30 @@
 .post{
-
+    width: 100%;
 }
 .post-banner{
     background-color: var(--primary-color);
 }
-.post .post-content-container{
-    width: 100%;
-    display: flex;
-    margin: 30px 30px;
-    box-shadow: 1px 1px 20px #f3f3f3, -1px -1px 20px #f3f3f3;
-}
+
 .post-content{
     display: flex;
-    max-width:1300px;
-    margin: auto;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px auto;
 }
 
 .post-content-left{
-    width: 66%;
+    box-shadow: 1px 1px 20px #f3f3f3, -1px -1px 20px #f3f3f3;
+    padding:25px 5px;
 }
 
 .post-content-right{
-    width: 33%;
-    margin:0 20px;
+    margin: 15px 0;
+    padding:15px 0;
 }
 
 .content-details{
     text-align:justify;
+    width: 100%;
 }
 
 .content-details h2{
@@ -98,18 +96,18 @@
 .suggestion-item a img{
     width: 80px;
     height: 80px;
-    margin:10px;
+    margin:10px 0 ;
     border-radius: 5px;
 }
 .suggestion-item a span{
     color: var(--primary-color);
     margin-top:20px;
+    margin-left: 20px;
     font-size: 15px;
     font-weight: 600;
 }
 .contact-form-container{
     border: 1px solid #ccc;
-    padding:10px;
     margin: 35px 0;
 }
 .contact-form-container h4{
@@ -118,7 +116,7 @@
 
 }
 .contact-form{
-    margin:10px;
+    margin:10px 0;
     display: flex;
     flex-direction: column;
 }

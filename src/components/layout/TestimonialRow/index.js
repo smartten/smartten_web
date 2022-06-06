@@ -25,7 +25,7 @@ function TestimonialRow() {
             modules={[Pagination]}
           >
             <SwiperSlide>
-              <div className="col-md-10 col-sm-12 col-xs-12 mx-auto "  >
+              <div className="col-md-10 col-sm-12 col-12 mx-auto "  >
 							<div className="testimonial-info">
 								<span>
 									<span>
@@ -48,7 +48,7 @@ function TestimonialRow() {
 						</div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="col-md-10 col-sm-12 col-xs-12 mx-auto "  >
+              <div className="col-md-10 col-sm-12 col-12 mx-auto "  >
 							<div className="testimonial-info">
 								<span>
 									<span>
@@ -71,7 +71,7 @@ function TestimonialRow() {
 						</div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="col-md-10 col-sm-12 col-xs-12 mx-auto "  >
+              <div className="col-md-10 col-sm-12 col-12 mx-auto "  >
 							<div className="testimonial-info">
 								<span>
 									<span>

@@ -10,7 +10,7 @@ function Footer({ languages, navigation}) {
       <div className="footer-container">
         <div className="footer">
           <div className="footer__top">
-              <div className="footer-widget col-md-4 col-sm-12 col-xs-12">
+              <div className="footer-widget col-md-4 col-sm-12 col-12">
                 <div className="footer_logo">
                   <Link to="/" className="logo-link" >
                   <img src={logoSvg} alt=""/>
@@ -24,20 +24,20 @@ function Footer({ languages, navigation}) {
                   <SocialLink />
                 </ul>
               </div>
-              <div className="location_section col-md-8 col-sm-12 col-xs-12 ">
+              <div className="location_section col-md-8 col-sm-12 col-12 ">
                   <h4 >VietNam</h4>
                   <div className="footer-address">
-                    <span className="col-md-4 col-sm-12 col-xs-12">
+                    <span className="col-md-4 col-sm-12 col-12">
                     <i className="pe-7s-map-marker"></i>
                       {languages.address}
                     </span>
-                    <div className="map_location col-md-8 col-sm-12 col-xs-12">
+                    <div className="map_location col-md-8 col-sm-12 col-12">
                       <img src={locationMap} alt="location_map" />
                     </div>
                   </div>
                   <ul className="footer_bussinesses">
                     {languages.bussiness.map((business, index) =>(
-                        <li key={index} className="business_info col-md-4 col-sm-12 col-xs-12 ">
+                        <li key={index} className="business_info col-md-4 col-sm-12 col-12 ">
                           <span className="business-icon">
                             <i className={business.icon}></i>
                             {business.title}

@@ -64,6 +64,7 @@
     text-align: left;
     font-size: 20px;
     margin-left: 45px;
+    padding-top: 12px;
 }
 .row--list--content ul{
     display: flex;

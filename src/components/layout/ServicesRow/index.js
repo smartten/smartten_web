@@ -7,13 +7,13 @@ function ServiceRow( { titleParagraph, paragraph, titleList, list, imageName, se
   return (
     <Fade bottom>
       <div className="service__row">
-          <div className="service__row-paragraph col-md-8 col-sm-12 col-xs-12">
+          <div className="service__row-paragraph col-md-8 col-sm-12 col-12">
             <Link to={`/services/post/${servicePostIndex}`}>
               <h3>{titleParagraph}</h3>
             </Link>
             <p>{paragraph}</p>
           </div>
-          <div className="service__row--list col-md-4 col-sm-12 col-xs-12">
+          <div className="service__row--list col-md-4 col-sm-12 col-12">
               
               <div className="row--list--content">
                 <h3>{titleList}</h3>

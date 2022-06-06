@@ -71,7 +71,7 @@ function Home({postsData, languages, servicesData}) {
 		</section>
 		<div className="who-we-are">   
 			<div className="d-inline port-section-wrapper">
-						<Fade left className="col-md-6 col-xs-12">
+						<Fade left className="col-md-6 col-12">
 							<div className="services-image">
 									<div className="img-gray-layer ">
 										<img src={require('../../assets/images/explore.jpeg')} alt="explore"  />
@@ -80,7 +80,7 @@ function Home({postsData, languages, servicesData}) {
 						</Fade>
 				<Fade bottom>
 					<div className="container">
-						<div className="col-md-6 col-xs-12 port_sec_right">
+						<div className="col-md-6 col-12 port_sec_right">
 							<div className="title-headline ">
 								<h6>WHO WE ARE</h6>
 								<p className="text-justify">
@@ -106,7 +106,7 @@ function Home({postsData, languages, servicesData}) {
 		<div className="services-area p50" id="our-services">
 				<Fade bottom>
 					<div className="row">
-						<div className="col-md-12 col-sm-12 col-xs-12">
+						<div className="col-md-12 col-sm-12 col-12">
 							<div className="center-headline">
 								<h3   className="">Our Services</h3>
 							</div>
@@ -117,7 +117,7 @@ function Home({postsData, languages, servicesData}) {
 					<Fade bottom >
 						<div className="services-list ">
 								{servicesData.map((service, index) => (
-									<div key={index} className="service-item col-md-4 col-sm-6 col-xs-12">
+									<div key={index} className="service-item col-md-4 col-sm-6 col-12">
 										<Link to={`/services/post/${index}`} className="single-service"  >
 											<div className="single-service-inner single-service-inner-2">
 												<div className="service-content">
@@ -192,7 +192,7 @@ function Home({postsData, languages, servicesData}) {
 			<div className="container">
 				<Fade bottom>
 					<div className="row">
-						<div className="col-md-12 col-sm-12 col-xs-12">
+						<div className="col-md-12 col-sm-12 col-12">
 							<div className="center-headline">
 								<h3   className="">Web and Mobile App Development Process</h3>
 								<p   className="">We are well-known for crafting eye catchy and most innovative Web &amp; Mobile Apps. We provide our clients with a wide array of customized software services in the <a href="https://www.volansoft.com/services"><strong>mobile and web app development</strong></a> realm. Our products and skilled team are engineered for bringing growth to our clients’ businesses. Moreover, we understand that it is the most important thing to deliver services without making any compromise on quality and time.</p>
@@ -313,7 +313,7 @@ function Home({postsData, languages, servicesData}) {
 		<section className="dark_main_bg p50">
 				<div className="container">
 					<div className="row">
-						<div className="col-xs-12">
+						<div className="col-12">
 							<Fade bottom>
 								<div className="center-headline white-headline">
 									<h3 className="">How We Stand Out</h3>
@@ -322,7 +322,7 @@ function Home({postsData, languages, servicesData}) {
 						</div>
 					</div>
 					<div className="row row_col">
-						<div className="col-md-4 col-sm-6 col-xs-12 mb-30">
+						<div className="col-md-4 col-sm-6 col-12 mb-30">
 						<div className="service2-item-box text-center">
 							<div className="svg-icon">
 								<i className="fa-solid fa-layer-group"></i>
@@ -334,7 +334,7 @@ function Home({postsData, languages, servicesData}) {
 						</div>
 						</div>
 
-						<div className="col-md-4 col-sm-6 col-xs-12 mb-30">
+						<div className="col-md-4 col-sm-6 col-12 mb-30">
 						<div className="service2-item-box text-center">
 
 							<div className="svg-icon">
@@ -347,7 +347,7 @@ function Home({postsData, languages, servicesData}) {
 						</div>
 						</div> 
 
-						<div className="col-md-4 col-sm-6 col-xs-12 mb-30">
+						<div className="col-md-4 col-sm-6 col-12 mb-30">
 						<div className="service2-item-box text-center">
 
 							<div className="svg-icon">
@@ -359,7 +359,7 @@ function Home({postsData, languages, servicesData}) {
 							</div>
 						</div>
 						</div> 
-							<div className="col-md-4 col-sm-6 col-xs-12 mb-30">
+							<div className="col-md-4 col-sm-6 col-12 mb-30">
 							<div className="service2-item-box text-center">
 
 								<div className="svg-icon">
@@ -372,7 +372,7 @@ function Home({postsData, languages, servicesData}) {
 							</div>
 							</div> 
 
-							<div className="col-md-4 col-sm-6 col-xs-12 mb-30">
+							<div className="col-md-4 col-sm-6 col-12 mb-30">
 							<div className="service2-item-box text-center">
 
 								<div className="svg-icon">
@@ -385,7 +385,7 @@ function Home({postsData, languages, servicesData}) {
 							</div>
 							</div> 
 
-							<div className="col-md-4 col-sm-6 col-xs-12 mb-30">
+							<div className="col-md-4 col-sm-6 col-12 mb-30">
 							<div className="service2-item-box text-center">
 
 								<div className="svg-icon">

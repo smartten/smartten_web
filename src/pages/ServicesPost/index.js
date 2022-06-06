@@ -39,7 +39,7 @@ function ServicesPost( {children, servicesData} ) {
 					<Fade bottom>
 						<div className="content-list">
 							{service && service.subService.map((sub,index) => (
-								<div key={index} className="content-item-container col-md-6 col-sm-12 col-xs-12">
+								<div key={index} className="content-item-container col-md-6 col-sm-12 col-12">
 									<div className="content-item" >
 										<h3>{sub.title}</h3>
 										<p>{sub.description}</p>

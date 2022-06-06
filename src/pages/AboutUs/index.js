@@ -57,11 +57,11 @@ function AboutUs() {
       </section>
       <div className="about-mission ">
         <Fade left>
-          <div className="image col-md-6 col-sm-12 col-xs-12 ">
+          <div className="image col-md-6 col-sm-12 col-12 ">
             <img src={houseImg} alt="House Images" />
           </div>
         </Fade>
-        <div className="mission-details col-md-6 col-sm-12 col-xs-12">
+        <div className="mission-details col-md-6 col-sm-12 col-12">
         <Fade bottom>
           <h2>
               Our Mission
@@ -82,8 +82,8 @@ function AboutUs() {
         </div>
       </div>
       <div className="about-team flex-sm-row">
-        <img className="col-md-6 col-sm-12 col-xs-12" src={ourTeam} alt="Our Team" />
-        <div className="team-details col-md-6 col-sm-12 col-xs-12">
+        <img className="col-md-6 col-sm-12 col-12" src={ourTeam} alt="Our Team" />
+        <div className="team-details col-md-6 col-sm-12 col-12">
           <Fade bottom>
             <h2 className="details-title">
               Our Team
@@ -108,37 +108,37 @@ function AboutUs() {
           </Fade>
           <Fade  left>
             <div className='services-content '>
-              <div className='content-item col-md-2 col-sm-12 col-xs-12'>
+              <div className='content-item col-md-2 col-sm-12 col-12'>
                   <div className='item-image'>
                     <img src={require('../../assets/images/departures.png')} alt="Industries" className="" />
                   </div>
                   <h5 >Travel</h5>
               </div>
-              <div className='content-item col-md-2 col-sm-12 col-xs-12'>
+              <div className='content-item col-md-2 col-sm-12 col-12'>
                   <div className='item-image' >
                     <img src={require('../../assets/images/delivery-truck.png')} alt="Industries" className="" />
                   </div>
                   <h5 >Transportation</h5>
               </div>
-              <div className='content-item col-md-2 col-sm-12 col-xs-12'>
+              <div className='content-item col-md-2 col-sm-12 col-12'>
                     <div className='item-image'>
                       <img src={require('../../assets/images/pay.png')}  alt="Industries" className="" />
                     </div>
                     <h5 >Banking</h5>
               </div>
-              <div className='content-item col-md-2 col-sm-12 col-xs-12'>
+              <div className='content-item col-md-2 col-sm-12 col-12'>
                     <div className='item-image'>
                       <img src={require('../../assets/images/charity.png')} alt="Industries" className="" />
                     </div>
                     <h5 >Healthcare</h5>
               </div>
-              <div className='content-item col-md-2 col-sm-12 col-xs-12'>
+              <div className='content-item col-md-2 col-sm-12 col-12'>
                   <div className='item-image'>
                     <img src={require('../../assets/images/joystick.png')} alt="Industries" className="" />
                   </div>
                   <h5 >Entertainment</h5>
               </div>
-              <div className='content-item col-md-2 col-sm-12 col-xs-12'>
+              <div className='content-item col-md-2 col-sm-12 col-12'>
                   <div className='item-image'>
                     <img src={require('../../assets/images/diploma.png')} alt="Industries" className="" />
                   </div>

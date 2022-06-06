@@ -14,11 +14,11 @@ function Solutions() {
       </div>
       <div className="container">
         <div className="solutions-table">
-          <div className="description col-md-8 col-sm-12 col-xs-12">
+          <div className="description col-md-8 col-sm-12 col-12">
             <h2>Rummy Game Development Solution</h2>
             <p>Volan Software & Technologies will help start your own gaming platform in the shortest possible time. The platform offers some of the best tools and features that can help run your rummy game with minimal downtime. Our ready-to-use online rummy platform can be customized for branding, features & functionality and more. Our team offers all-inclusive rummy solutions covering all aspects of the game including payment gateway integration for Fiat currency, and cryptocurrencies like Bitcoin. The platform offers payment transactions in a safe and secured ecosystem with a transaction tracking system.</p>
           </div>
-          <div className="image col-md-4 col-sm-12 col-xs-12">
+          <div className="image col-md-4 col-sm-12 col-12">
             <img alt="img" src={require('../../assets/images/solutions-table.png')}/>
           </div>
         </div>
@@ -29,7 +29,7 @@ function Solutions() {
           <h3>Our Rummy Game Feature</h3>
         </div>
         <div className="game-list">
-          <div className="game-item col-md-4 col-sm-6 col-xs-12">
+          <div className="game-item col-md-4 col-sm-6 col-12">
             <div className="sbox-container">
 
               <div className="sbox"> 
@@ -50,7 +50,7 @@ function Solutions() {
             </div>
           </div>
           
-          <div className="game-item col-md-4 col-sm-6 col-xs-12">
+          <div className="game-item col-md-4 col-sm-6 col-12">
             <div className="sbox-container">
 
               <div className="sbox"> 
@@ -71,7 +71,7 @@ function Solutions() {
             </div>
           </div>
           
-          <div className="game-item col-md-4 col-sm-6 col-xs-12">
+          <div className="game-item col-md-4 col-sm-6 col-12">
             <div className="sbox-container">
 
               <div className="sbox"> 
@@ -92,7 +92,7 @@ function Solutions() {
             </div>
           </div>
           
-          <div className="game-item col-md-4 col-sm-6 col-xs-12">
+          <div className="game-item col-md-4 col-sm-6 col-12">
             <div className="sbox-container">
 
               <div className="sbox"> 
@@ -113,7 +113,7 @@ function Solutions() {
             </div>
           </div>
           
-          <div className="game-item col-md-4 col-sm-6 col-xs-12">
+          <div className="game-item col-md-4 col-sm-6 col-12">
             <div className="sbox-container">
 
               <div className="sbox"> 
@@ -134,7 +134,7 @@ function Solutions() {
             </div>
           </div>
           
-          <div className="game-item col-md-4 col-sm-6 col-xs-12">
+          <div className="game-item col-md-4 col-sm-6 col-12">
             <div className="sbox-container">
 
               <div className="sbox"> 
@@ -155,7 +155,7 @@ function Solutions() {
             </div>
           </div>
           
-          <div className="game-item col-md-4 col-sm-6 col-xs-12">
+          <div className="game-item col-md-4 col-sm-6 col-12">
             <div className="sbox-container">
 
               <div className="sbox"> 
@@ -176,7 +176,7 @@ function Solutions() {
             </div>
           </div>
           
-          <div className="game-item col-md-4 col-sm-6 col-xs-12">
+          <div className="game-item col-md-4 col-sm-6 col-12">
             <div className="sbox-container">
 
               <div className="sbox"> 
@@ -197,7 +197,7 @@ function Solutions() {
             </div>
           </div>
           
-          <div className="game-item col-md-4 col-sm-6 col-xs-12">
+          <div className="game-item col-md-4 col-sm-6 col-12">
             <div className="sbox-container">
 
               <div className="sbox"> 

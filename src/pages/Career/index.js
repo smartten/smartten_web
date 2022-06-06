@@ -27,7 +27,7 @@ function Career() {
         <BlogBanner title="Career" backgroundName="banner-career.jpg" description="Our aim is to apply Technological Solutions to your Business Objectives & Ideas" />
         <div className="container">
             <div className="career-content p50">
-              <div className="wrap-sidetext col-md-6 col-sm-12 col-xs-12">
+              <div className="wrap-sidetext col-md-6 col-sm-12 col-12">
                 <div className="wrap-sidetext__content">
                   <h5>Why join VolanSoft???</h5>
                   <p>Simple. <strong>We love what we do.</strong><br /> We’ve been creating amazing mobile and connected experiences since 5+ years. We are working in a direction to set some era in the web/mobile app development field. </p>
@@ -43,7 +43,7 @@ function Career() {
                   <p>Grow your career at VolanSoft. Come work and play with the very best developers, designers and strategists. Don’t just take our word for it: We’ve been named a Great Place to Work, come here and you’ll see how much we love working.</p>
                 </div>
               </div>
-              <div className="career-input col-md-6 col-sm-12 col-xs-12" >
+              <div className="career-input col-md-6 col-sm-12 col-12" >
                 <h3>Apply Now</h3>
                 <div>
                   <form method="post" id="careerFrm" name="careerFrm" >
