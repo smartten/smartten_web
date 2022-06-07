@@ -4,10 +4,13 @@ import { Fade } from 'react-reveal';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import ReactVivus from 'react-vivus';
+import standOutSvg1 from '../../assets/icons/how-we-stand-out/stand-out-service1.svg';
+import standOutSvg2 from '../../assets/icons/how-we-stand-out/stand-out-service2.svg';
+import standOutSvg3 from '../../assets/icons/how-we-stand-out/stand-out-service3.svg';
+import standOutSvg4 from '../../assets/icons/how-we-stand-out/stand-out-service4.svg';
+import standOutSvg5 from '../../assets/icons/how-we-stand-out/stand-out-service5.svg';
+import standOutSvg6 from '../../assets/icons/how-we-stand-out/stand-out-service6.svg';
 
 
 // import required modules
@@ -20,7 +23,6 @@ function Home({postsData, languages, servicesData}) {
 
 
 
-
   return (
     <div className="home">
       	<section className="main_banner">
@@ -29,7 +31,7 @@ function Home({postsData, languages, servicesData}) {
 				<div className="col-md-12">
 				<div className="main_banner_top_part d-table">
 					<div className="d-table-cell">
-					<h1 className="mbt_title">encode Innovation<br/>into your business</h1>
+					<h1 className="mbt_title">TRUSTED SOFTWARE DEVELOPMENT<br/> COMPANY IN SMARTTEN</h1>
 					<p className="mbt_subtitle">We love helping start-up become brand names<br/>and corporation launch new products</p>
 					<a href="#getQuoteModal" data-toggle="modal" className="btn mbt_btn btn-black">Get a free quote</a>
 					</div>
@@ -103,7 +105,101 @@ function Home({postsData, languages, servicesData}) {
 				</Fade>
 			</div>
 		</div>
-		<div className="services-area p50" id="our-services">
+		<div className="home-services">
+			<div className="container">
+				<div className="services-title">
+					<h2>Our Services</h2>
+					<p>At Smartten, we primarily focus on adding extra value to your business by using up-to-date Technologies, which results in higher profitability & company evaluation.</p>
+				</div>
+				<div className="services-list">
+					<div className="col-md-4 col-sm-6 col-12">
+						<div className="service-item">
+							<h3>
+							Dedicated Development Team
+							</h3>
+							<p>
+							We quickly allocate independent software developers for your internal projects with a focus on communication processes & detailed development phases.
+							</p>
+							<img src={require('../../assets/images/Savvycom-Services-1000-6.jpeg')} alt=" " />
+							<Link to="/services"><i className='ti ti-arrow-right'></i></Link>
+						</div>
+					</div>
+					<div className="col-md-4 col-sm-6 col-12">
+						<div className="service-item">
+							<h3>
+							Web App Development
+							</h3>
+							<p>
+							We always keep up with the latest Front & Back-end Web Development technologies to create high-quality Web Applications in a constantly changing business environment.
+
+							</p>
+							<img src={require('../../assets/images/Savvycom-Services-1000-3.jpeg')} alt=" " />
+							<Link to="/services"><i className='ti ti-arrow-right'></i></Link>
+
+						</div>
+					</div>
+					<div className="col-md-4 col-sm-6 col-12">
+						<div className="service-item">
+							<h3>
+							Mobile App Development
+							</h3>
+							<p>
+							Being the top 30 Global App Developers, Savvycom has immense experience creating feature-rich & high-performing Mobile Apps for iOS and Android platforms.
+							</p>
+							<img src={require('../../assets/images/Savvycom-Services-1000-1.jpeg')} alt=" " />
+							<Link to="/services"><i className='ti ti-arrow-right'></i></Link>
+
+						</div>
+					</div>
+					<div className="col-md-4 col-sm-6 col-12">
+						<div className="service-item">
+							<h3>
+							Quality Assurance and Testing
+
+							</h3>
+							<p>
+							Rigorous testing and stringent quality assurance at every stage ensure zero defects after releaseIN.
+							</p>
+							<img src={require('../../assets/images/Savvycom-Services-1000-5.jpeg')} alt=" " />
+							<Link to="/services"><i className='ti ti-arrow-right'></i></Link>
+
+						</div>
+					</div>
+					<div className="col-md-4 col-sm-6 col-12">
+						<div className="service-item">
+							<h3>
+							Cloud Services
+							</h3>
+							<p>
+							Our Cloud services are wide-ranging and innovative. So no matter where you are on your Cloud journey, Rikkeisoft will help build a practical solution and fulfill your business requirements.
+							</p>
+							<img src={require('../../assets/images/Savvycom-Services-1000-4.jpeg')} alt=" " />
+							<Link to="/services"><i className='ti ti-arrow-right'></i></Link>
+
+						</div>
+					</div>
+					
+					<div className="col-md-4 col-sm-6 col-12">
+						<div className="service-item">
+							<h3>
+							Custom Software Development
+
+							</h3>
+							<p>
+							We design bold and unique digital products that help you achieve your business goals. Every feature included in each product is designed to boost your company’s value, customer base, and profitability.
+
+							</p>
+							<img src={require('../../assets/images/Savvycom-Services-1000-2.jpeg')} alt=" " />
+							<Link to="/services"><i className='ti ti-arrow-right'></i></Link>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		{/* <div className="services-area p50" id="our-services">
 				<Fade bottom>
 					<div className="row">
 						<div className="col-md-12 col-sm-12 col-12">
@@ -136,7 +232,7 @@ function Home({postsData, languages, servicesData}) {
 						</div>
 					</Fade>
 				</div>
-		</div>
+		</div> */}
 		<div className="home-blog">
 			<div className="container">
 				<div className="home-blog-content">
@@ -327,8 +423,20 @@ function Home({postsData, languages, servicesData}) {
 					<div className="row row_col">
 						<div className="col-md-4 col-sm-6 col-12 mb-30">
 						<div className="service2-item-box text-center">
-							<div className="svg-icon">
-								<i className="fa-solid fa-layer-group"></i>
+							<div className="svg-image" style={{width:"100%", height:"55px"}}>
+
+										<ReactVivus
+
+											
+											id=" svg-icon1"
+											option={{
+											file: standOutSvg1,
+											animTimingFunction: 'EASEIN',
+											type: 'oneByOne',
+											}}
+											style={{ height: '100%', width: '100%' }}
+											
+										/>
 							</div>
 							<div className="service2-text">
 							<h3 className="white">Full-Stack Development</h3>
@@ -340,9 +448,21 @@ function Home({postsData, languages, servicesData}) {
 						<div className="col-md-4 col-sm-6 col-12 mb-30">
 						<div className="service2-item-box text-center">
 
-							<div className="svg-icon">
-							 <i className="fa-solid fa-screwdriver-wrench"></i>
-							</div>
+								<div className="svg-image" style={{width:"100%", height:"55px"}}>
+
+										<ReactVivus
+
+											
+												id=" svg-icon2"
+												option={{
+												file: standOutSvg2,
+												animTimingFunction: 'EASEIN',
+												type: 'oneByOne',
+												}}
+												style={{ height: '100%', width: '100%' }}
+												
+											/>
+								</div>
 							<div className="service2-text">
 							<h3 className="white">Easily Updatable</h3>
 							<p className="white">We build with the future in mind by ensuring future updates are easy and quick</p>
@@ -353,9 +473,21 @@ function Home({postsData, languages, servicesData}) {
 						<div className="col-md-4 col-sm-6 col-12 mb-30">
 						<div className="service2-item-box text-center">
 
-							<div className="svg-icon">
-								<i className="fa-solid fa-pen-nib"></i>
-							</div>
+									<div className="svg-image" style={{width:"100%", height:"55px"}}>
+
+									<ReactVivus
+
+										
+											id=" svg-icon3"
+											option={{
+											file: standOutSvg3,
+											animTimingFunction: 'EASEIN',
+											type: 'oneByOne',
+											}}
+											style={{ height: '100%', width: '100%' }}
+											
+										/>
+									</div>
 							<div className="service2-text">
 							<h3 className="white">Fabulous Design</h3>
 							<p className="white">We focus a lot of effort on design. What looks good, feels good.</p>
@@ -365,8 +497,20 @@ function Home({postsData, languages, servicesData}) {
 							<div className="col-md-4 col-sm-6 col-12 mb-30">
 							<div className="service2-item-box text-center">
 
-								<div className="svg-icon">
-									<i className="fa-regular fa-clock"></i>
+								<div className="svg-image" style={{width:"100%", height:"55px"}}>
+
+										<ReactVivus
+
+											
+											id=" svg-icon4"
+											option={{
+											file: standOutSvg4,
+											animTimingFunction: 'EASEIN',
+											type: 'oneByOne',
+											}}
+											style={{ height: '100%', width: '100%' }}
+											
+										/>
 								</div>
 								<div className="service2-text">
 								<h3 className="white">Performance</h3>
@@ -378,8 +522,20 @@ function Home({postsData, languages, servicesData}) {
 							<div className="col-md-4 col-sm-6 col-12 mb-30">
 							<div className="service2-item-box text-center">
 
-								<div className="svg-icon">
-								<i className="fa-solid fa-mobile-screen"></i>
+								<div className="svg-image" style={{width:"100%", height:"55px"}}>
+
+										<ReactVivus
+
+											
+											id=" svg-icon5"
+											option={{
+											file: standOutSvg5,
+											animTimingFunction: 'EASEIN',
+											type: 'oneByOne',
+											}}
+											style={{ height: '100%', width: '100%' }}
+											
+										/>
 								</div>
 								<div className="service2-text">
 								<h3 className="white">Fully Responsive</h3>
@@ -391,8 +547,20 @@ function Home({postsData, languages, servicesData}) {
 							<div className="col-md-4 col-sm-6 col-12 mb-30">
 							<div className="service2-item-box text-center">
 
-								<div className="svg-icon">
-									<i className="fa-solid fa-headset"></i>
+								<div className="svg-image" style={{width:"100%", height:"55px"}}>
+
+										<ReactVivus
+
+											
+											id=" svg-icon6"
+											option={{
+											file: standOutSvg6,
+											animTimingFunction: 'EASEIN',
+											type: 'oneByOne',
+											}}
+											style={{ height: '100%', width: '100%' }}
+											
+										/>
 								</div>
 								<div className="service2-text">
 								<h3 className="white">Support</h3>

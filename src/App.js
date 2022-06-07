@@ -104,7 +104,7 @@ function App() {
                     }
                   />
                   <Route
-                    path="/service"
+                    path="/services"
                     element={
                       <DefaultLayout menuList={menus}>
                         <Services servicesData={services} languages={languages} />

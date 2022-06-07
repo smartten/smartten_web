@@ -5,8 +5,12 @@ import BlogBanner from '../../components/layout/BlogBanner'
 
 function Blog( { languages, postsData } ) {
     const [postsDisplay, setPostsDisplay] = useState()
+
     const [postIndex, setPostIndex] = useState(0)
+
     let postsPerPages = 3
+
+
 
 
     useEffect(() => {
@@ -54,15 +58,12 @@ function Blog( { languages, postsData } ) {
                         <span className="sr-only">Previous</span>
                     </div>
                     </li>
+                  
                     <li className="page-item"  style={{cursor: 'pointer'}} >
                         <div className="page-link" onClick={() => setPostIndex(0)} >1</div>
                     </li>
-                    <li className="page-item"  style={{cursor: 'pointer'}} >
-                        <div className="page-link"  onClick={() => setPostIndex(3)} >2</div>
-                    </li>
-                    <li className="page-item" style={{cursor: 'pointer'}} >
-                        <div className="page-link" onClick={() => setPostIndex(6)}>3</div>
-                    </li>
+
+                      
                     <li className="page-item" style={{cursor: 'pointer'}} >
                     <div className="page-link" href="#" aria-label="Next" onClick={() => setPostIndex(postIndex + 3)}>
                         <span aria-hidden="true">&raquo;</span>

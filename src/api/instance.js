@@ -5,7 +5,7 @@ import axios from "axios"
 // export const apiKey = ''
 
 const instance = axios.create({
-    baseURL: "http://localhost:8000/api/",
+    baseURL: process.env.REACT_APP_API,
     timeout: 20000,
     // paramsSerializer: params => queryString.stringify({...params, api_key: apiKey}),
 });
