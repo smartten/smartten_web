@@ -1,0 +1,93 @@
+.team{
+    
+}
+.team-achievements .achievements-top{
+
+}
+.team-achievements .achievements-top h1{
+    max-width: 670px;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 20px auto ;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: brandon,serif;
+    letter-spacing: 1.5px;
+}
+.team-achievements .achievements-top p{
+    padding: 0 auto;
+    margin: 15px 0 ;
+    color: #333;
+    text-align:center;
+
+}
+.team-achievements .achievements-bottom{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 25px;
+    justify-content:center;
+    margin:35px 0;
+}
+.team-achievements .achievements-bottom h4{
+    font-size: 45px;
+
+}
+.team .team-services{
+    background-color: #f2f2f2;
+    padding: 25px 0;
+}
+.team-services .row-list h2{
+    font-size: 20px;
+}
+.team-services .row-list p{
+    font-size: 14px;
+}
+.team-services .row-list .line{
+    margin: 2.8rem 0;
+    width: 12.8rem;
+    height: 0.1rem;
+    background-color: var(--primary-color);
+}
+.team-services .row-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    text-align: left;
+}
+
+
+.team-services .row-list div:nth-child(2)>div{
+    background-color: var(--white-color);
+    height: 100%;
+}
+.team-services .row-list:nth-child(odd) {
+    flex-direction: row-reverse;
+
+}
+.team-services .row-list img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.team-process{
+    width: 100%;
+    background-image: url(../../assets/images/team-process-bg.jpeg);
+
+}
+.team-process .process-list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 0;
+    text-align: center;
+}
+.team-process .process-list div{
+    margin: 15px 0;
+}
+.team-process .process-list h1{
+    font-size: 24px;
+}
+.team-process .process-list p{
+    font-size: 16px;
+}

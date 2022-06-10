@@ -52,14 +52,14 @@ function Footer({ languages, navigation}) {
               </div>    
           </div>
           <div className="footer__bottom">
-              <div className="copyright">  
+              <div className="copyright col-md-6 col-sm-6 col-12">  
                 <span>Copyright © 
                   <Link to="/">
                     Volan Software & Technologies
                   </Link>. All Rights Reserved
                 </span>
               </div>
-              <ul className="bottom__navigation">
+              <ul className="bottom__navigation col-md-6 col-sm-6 col-12">
                 {navigation.map((nav, index) => index<6 &&  (
                   <li key={index}>
                     <Link to={nav.linkUrl} > {nav.lang[languages.lang]}</Link>

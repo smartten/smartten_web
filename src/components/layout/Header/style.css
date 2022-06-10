@@ -44,9 +44,9 @@
     text-transform: uppercase;
     text-shadow: 0 1px 2px rgb(0 0 0 / 65%);
 }
-.header__logo .logo-link img{
-    width: 147px;
-    height: 51px;
+.header__logo .logo-link img {
+    width: 200px;
+    height: 61px;
 }
 .header__burgerMenu{
     background: var(--primary-color);

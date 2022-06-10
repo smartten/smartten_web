@@ -2,6 +2,8 @@ import AboutUs from "../pages/AboutUs";
 import Career from "../pages/Career";
 import Solutions from "../pages/Solutions"
 import ContactUs from "../pages/ContactUs";
+import Team from "../pages/ServiceTeam";
+import TestingAndAssurance from "../pages/TestingAndAssurance"
 
 const publicRouter = [
   
@@ -21,6 +23,14 @@ const publicRouter = [
     path:"/contact-us",
     component:ContactUs,
   },
+  {
+    path:"/services/team",
+    component:Team,
+  },
+  {
+    path:"/services/quality-assurance-and-testing",
+    component: TestingAndAssurance
+  }
   
   
 ];

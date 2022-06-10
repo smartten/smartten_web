@@ -19,10 +19,12 @@ import { Pagination, Navigation } from "swiper";
 import './style.css'
 import TestimonialRow from '../../components/layout/TestimonialRow';
 
-function Home({postsData, languages, servicesData}) {
+function Home({postsData, languages, serviceData}) {
 
-
-
+	var romanToInt = function(s) {
+		
+	};
+	console.log(romanToInt("LXIII"));
   return (
     <div className="home">
       	<section className="main_banner">
@@ -107,94 +109,98 @@ function Home({postsData, languages, servicesData}) {
 		</div>
 		<div className="home-services">
 			<div className="container">
-				<div className="services-title">
-					<h2>Our Services</h2>
-					<p>At Smartten, we primarily focus on adding extra value to your business by using up-to-date Technologies, which results in higher profitability & company evaluation.</p>
-				</div>
-				<div className="services-list">
-					<div className="col-md-4 col-sm-6 col-12">
-						<div className="service-item">
-							<h3>
-							Dedicated Development Team
-							</h3>
-							<p>
-							We quickly allocate independent software developers for your internal projects with a focus on communication processes & detailed development phases.
-							</p>
-							<img src={require('../../assets/images/Savvycom-Services-1000-6.jpeg')} alt=" " />
-							<Link to="/services"><i className='ti ti-arrow-right'></i></Link>
+				<Fade bottom >
+					<div className="services-title">
+						<h2>Our Services</h2>
+						<p>At Smartten, we primarily focus on adding extra value to your business by using up-to-date Technologies, which results in higher profitability & company evaluation.</p>
+					</div>
+				</Fade>
+				<Fade bottom>
+					<div className="services-list">
+						<div className="col-md-4 col-sm-6 col-12">
+							<div className="service-item">
+								<h3>
+								Dedicated Development Team
+								</h3>
+								<p>
+								We quickly allocate independent software developers for your internal projects with a focus on communication processes & detailed development phases.
+								</p>
+								<img src={require('../../assets/images/Savvycom-Services-1000-6.jpeg')} alt=" " />
+								<Link to="/services/team"><i className='ti ti-arrow-right'></i></Link>
+							</div>
+						</div>
+						<div className="col-md-4 col-sm-6 col-12">
+							<div className="service-item">
+								<h3>
+								Web App Development
+								</h3>
+								<p>
+								We always keep up with the latest Front & Back-end Web Development technologies to create high-quality Web Applications in a constantly changing business environment.
+
+								</p>
+								<img src={require('../../assets/images/Savvycom-Services-1000-3.jpeg')} alt=" " />
+								<Link to="/services/post/0"><i className='ti ti-arrow-right'></i></Link>
+
+							</div>
+						</div>
+						<div className="col-md-4 col-sm-6 col-12">
+							<div className="service-item">
+								<h3>
+								Mobile App Development
+								</h3>
+								<p>
+								Being the top 30 Global App Developers, Savvycom has immense experience creating feature-rich & high-performing Mobile Apps for iOS and Android platforms.
+								</p>
+								<img src={require('../../assets/images/Savvycom-Services-1000-1.jpeg')} alt=" " />
+								<Link to="/services/post/1"><i className='ti ti-arrow-right'></i></Link>
+
+							</div>
+						</div>
+						<div className="col-md-4 col-sm-6 col-12">
+							<div className="service-item">
+								<h3>
+								Quality Assurance and Testing
+
+								</h3>
+								<p>
+								Rigorous testing and stringent quality assurance at every stage ensure zero defects after releaseIN.
+								</p>
+								<img src={require('../../assets/images/Savvycom-Services-1000-5.jpeg')} alt=" " />
+								<Link to="/services/quality-assurance-and-testing"><i className='ti ti-arrow-right'></i></Link>
+
+							</div>
+						</div>
+						<div className="col-md-4 col-sm-6 col-12">
+							<div className="service-item">
+								<h3>
+								Cloud Services
+								</h3>
+								<p>
+								Our Cloud services are wide-ranging and innovative. So no matter where you are on your Cloud journey, Rikkeisoft will help build a practical solution and fulfill your business requirements.
+								</p>
+								<img src={require('../../assets/images/Savvycom-Services-1000-4.jpeg')} alt=" " />
+								<Link to="/services/post/3"><i className='ti ti-arrow-right'></i></Link>
+
+							</div>
+						</div>
+						<div className="col-md-4 col-sm-6 col-12">
+							<div className="service-item">
+								<h3>
+								Custom Software Development
+
+								</h3>
+								<p>
+								We design bold and unique digital products that help you achieve your business goals. Every feature included in each product is designed to boost your company’s value, customer base, and profitability.
+
+								</p>
+								<img src={require('../../assets/images/Savvycom-Services-1000-2.jpeg')} alt=" " />
+								<Link to="/services/post/4"><i className='ti ti-arrow-right'></i></Link>
+
+							</div>
 						</div>
 					</div>
-					<div className="col-md-4 col-sm-6 col-12">
-						<div className="service-item">
-							<h3>
-							Web App Development
-							</h3>
-							<p>
-							We always keep up with the latest Front & Back-end Web Development technologies to create high-quality Web Applications in a constantly changing business environment.
-
-							</p>
-							<img src={require('../../assets/images/Savvycom-Services-1000-3.jpeg')} alt=" " />
-							<Link to="/services"><i className='ti ti-arrow-right'></i></Link>
-
-						</div>
-					</div>
-					<div className="col-md-4 col-sm-6 col-12">
-						<div className="service-item">
-							<h3>
-							Mobile App Development
-							</h3>
-							<p>
-							Being the top 30 Global App Developers, Savvycom has immense experience creating feature-rich & high-performing Mobile Apps for iOS and Android platforms.
-							</p>
-							<img src={require('../../assets/images/Savvycom-Services-1000-1.jpeg')} alt=" " />
-							<Link to="/services"><i className='ti ti-arrow-right'></i></Link>
-
-						</div>
-					</div>
-					<div className="col-md-4 col-sm-6 col-12">
-						<div className="service-item">
-							<h3>
-							Quality Assurance and Testing
-
-							</h3>
-							<p>
-							Rigorous testing and stringent quality assurance at every stage ensure zero defects after releaseIN.
-							</p>
-							<img src={require('../../assets/images/Savvycom-Services-1000-5.jpeg')} alt=" " />
-							<Link to="/services"><i className='ti ti-arrow-right'></i></Link>
-
-						</div>
-					</div>
-					<div className="col-md-4 col-sm-6 col-12">
-						<div className="service-item">
-							<h3>
-							Cloud Services
-							</h3>
-							<p>
-							Our Cloud services are wide-ranging and innovative. So no matter where you are on your Cloud journey, Rikkeisoft will help build a practical solution and fulfill your business requirements.
-							</p>
-							<img src={require('../../assets/images/Savvycom-Services-1000-4.jpeg')} alt=" " />
-							<Link to="/services"><i className='ti ti-arrow-right'></i></Link>
-
-						</div>
-					</div>
-					
-					<div className="col-md-4 col-sm-6 col-12">
-						<div className="service-item">
-							<h3>
-							Custom Software Development
-
-							</h3>
-							<p>
-							We design bold and unique digital products that help you achieve your business goals. Every feature included in each product is designed to boost your company’s value, customer base, and profitability.
-
-							</p>
-							<img src={require('../../assets/images/Savvycom-Services-1000-2.jpeg')} alt=" " />
-							<Link to="/services"><i className='ti ti-arrow-right'></i></Link>
-
-						</div>
-					</div>
-				</div>
+				</Fade>
+				
 			</div>
 		</div>
 
@@ -239,51 +245,52 @@ function Home({postsData, languages, servicesData}) {
 					<Fade bottom>
 						<h3 className="">Latest Blogs, News And Insights</h3>
 					</Fade>
-					<Swiper
-						slidesPerView={1}
-						spaceBetween={30}
-						slidesPerGroup={1}
-						loop={true}		
-						modules={[ Navigation]}				
-						navigation= {{
-							nextEl: '.swiper-button-next',
-							prevEl: '.swiper-button-prev',
+						<Swiper
+							slidesPerView={1}
+							spaceBetween={30}
+							slidesPerGroup={1}
+							loop={true}		
+							modules={[ Navigation]}				
+							navigation= {{
+								nextEl: '.swiper-button-next',
+								prevEl: '.swiper-button-prev',
+								}}
+							className="mySwiper"
+							breakpoints={{
+								786: {
+									slidesPerView:2,
+									slidesPerGroup:2,
+								},
+								1200:{
+									slidesPerView:3,
+									slidesPerGroup:3,
+								}
 							}}
-						className="mySwiper"
-						breakpoints={{
-							786: {
-								slidesPerView:2,
-								slidesPerGroup:2,
-							},
-							1200:{
-								slidesPerView:3,
-								slidesPerGroup:3,
-							}
-						}}
-					>
-						{postsData.map((post,index) =>(
-							<SwiperSlide key={index}>
-								<div className="vs_blog_single">
-									<div className="awesome-img ">
-										<Link to={`/blog/post/${index}`}>
-											<img src={post.image} alt="Blog" />
-										</Link>
-										<ul className=" post-detail-ul">
-											<li><i className="fa fa-calendar"></i>{post.createdAt.slice(0,10)}</li>
-											<li><i className="fa fa-user"></i> Admin</li>
-										</ul>
+						>
+							{postsData.map((post,index) =>(
+								<SwiperSlide key={index}>
+									<div className="vs_blog_single">
+										<div className="awesome-img ">
+											<Link to={`/blog/post/${index}`}>
+												<img src={post.image} alt="Blog" />
+											</Link>
+											<ul className=" post-detail-ul">
+												<li><i className="fa fa-calendar"></i>{post.createdAt.slice(0,10)}</li>
+												<li><i className="fa fa-user"></i> Admin</li>
+											</ul>
+										</div>
+										<div className="project-dec ">
+											<Link to={`/blog/post/${index}`}><h4>{post.lang[languages.lang].title}</h4></Link>
+											<p>{post.lang[languages.lang].description} </p>
+												<Link className=" read-btn btn-white" to={`/blog/post/${index}`}> Read more</Link>
+										</div>
 									</div>
-									<div className="project-dec ">
-										<Link to={`/blog/post/${index}`}><h4>{post.lang[languages.lang].title}</h4></Link>
-										<p>{post.lang[languages.lang].description} </p>
-											<Link className=" read-btn btn-white" to={`/blog/post/${index}`}> Read more</Link>
-									</div>
-								</div>
-							</SwiperSlide>
-						))}
-					</Swiper>
-					<div className="swiper-button-prev" style={{left:"80px", color:"#fff"}}></div>
-       				<div className="swiper-button-next" style={{right:"80px", color:"#fff"}}></div>
+								</SwiperSlide>
+							))}
+						</Swiper>
+						<div className="swiper-button-prev" style={{left:"80px", color:"#fff"}}></div>
+						<div className="swiper-button-next" style={{right:"80px", color:"#fff"}}></div>
+
 				</div>
 			</div>
 		</div>
@@ -725,5 +732,4 @@ function Home({postsData, languages, servicesData}) {
     </div>
   )
 }
-
 export default Home
