@@ -22,13 +22,10 @@ function TestingAndAssurance() {
                   Test early, test often
                 </h1>
                 <h2>
-                Making sure nothing escapes our attention
-
+                  Making sure nothing escapes our attention
                 </h2>
                 <p>
-                Testing is an essential part of our process. We thoroughly test all the software we build or rewrite in manual, automation, and performance tests. All our testing steps like regression, load and stress tests, automation and CI are meant to make your software more efficient, usable, and reliable. We know earlier stability and fewer bugs mean shorter time to market and higher customer satisfaction.
-
-
+                  Testing is an essential part of our process. We thoroughly test all the software we build or rewrite in manual, automation, and performance tests. All our testing steps like regression, load and stress tests, automation and CI are meant to make your software more efficient, usable, and reliable. We know earlier stability and fewer bugs mean shorter time to market and higher customer satisfaction.
                 </p>
               </div>
             </div>
@@ -66,7 +63,7 @@ function TestingAndAssurance() {
                     also includes exploratory and accessibility testing.
                   
                 </p>
-                <Link to="/contact-us" >Let’s talk</Link>
+                <Link className="btn btn_m3 btn-black" to="/contact-us" >Let’s talk</Link>
                   
                   </div>  
                 <div>

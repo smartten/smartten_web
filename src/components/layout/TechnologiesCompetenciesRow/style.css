@@ -1,0 +1,9 @@
+.technologies-competencies .container{
+    text-align: left;
+    color: var(--primary-color);
+    padding:25px 0;
+    line-height: 35px;
+}
+.technologies-competencies .container ul{
+
+}

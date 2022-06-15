@@ -10,7 +10,11 @@ function Blog( { languages, postsData } ) {
 
     let postsPerPages = 3
 
-
+    function renderPagination() {
+        for (let i = 1; i < Math.ceil(postsData.length/postsPerPages) +1 ; i++) {
+            console.log(i)
+        }
+    }
 
 
     useEffect(() => {
@@ -53,22 +57,19 @@ function Blog( { languages, postsData } ) {
                 <nav aria-label="Page navigation example">
                 <ul className="pagination">
                     <li className="page-item" style={{cursor: 'pointer'}} >
-                    <div className="page-link" href="#" aria-label="Previous" onClick={() => postIndex <= 0 ? setPostIndex(0) : (setPostIndex(postIndex - postsPerPages))}>
-                        <span aria-hidden="true">&laquo;</span>
-                        <span className="sr-only">Previous</span>
-                    </div>
-                    </li>
-                  
-                    <li className="page-item"  style={{cursor: 'pointer'}} >
-                        <div className="page-link" onClick={() => setPostIndex(0)} >1</div>
+                        <div className="page-link" href="#" aria-label="Previous" onClick={() => postIndex <= 0 ? setPostIndex(0) : (setPostIndex(postIndex - postsPerPages))}>
+                            <span aria-hidden="true">&laquo;</span>
+                            <span className="sr-only">Previous</span>
+                        </div>
                     </li>
 
+                    {renderPagination}
                       
                     <li className="page-item" style={{cursor: 'pointer'}} >
-                    <div className="page-link" href="#" aria-label="Next" onClick={() => setPostIndex(postIndex + 3)}>
-                        <span aria-hidden="true">&raquo;</span>
-                        <span className="sr-only">Next</span>
-                    </div>
+                        <div className="page-link" href="#" aria-label="Next" onClick={() => setPostIndex(postIndex + 3)}>
+                            <span aria-hidden="true">&raquo;</span>
+                            <span className="sr-only">Next</span>
+                        </div>
                     </li>
                 </ul>
                 </nav>

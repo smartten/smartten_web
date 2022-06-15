@@ -9,7 +9,8 @@
 .service__row-paragraph{
 }
 .service__row-paragraph a{
-    color: var(--text-color);
+    color: var(--primary-color);
+
 }
 .service__row-paragraph h3{
     font-size: 30px;
@@ -23,7 +24,7 @@
 .service__row-paragraph p{
     font-size: 16px;
     text-align: justify;
-    color: #333;
+    color: var(--primary-color);
     line-height:28px;
 
 }
@@ -57,7 +58,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    color:white;
+    color:var(--white-color);
 
 }
 .row--list--content h3{

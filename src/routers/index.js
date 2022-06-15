@@ -4,6 +4,7 @@ import Solutions from "../pages/Solutions"
 import ContactUs from "../pages/ContactUs";
 import Team from "../pages/ServiceTeam";
 import TestingAndAssurance from "../pages/TestingAndAssurance"
+import CustomerCases from "../pages/CustomerCases";
 
 const publicRouter = [
   
@@ -30,7 +31,12 @@ const publicRouter = [
   {
     path:"/services/quality-assurance-and-testing",
     component: TestingAndAssurance
-  }
+  },
+  {
+    path:"/customer-cases",
+    component: CustomerCases
+  },
+  
   
   
 ];

@@ -1,8 +1,6 @@
 
 .inner-bannner-sec{-webkit-transition: background .8s ease-out;
-    -moz-transition: background .8s ease-out;
-    -o-transition: background .8s ease-out;
-    -ms-transition: background .8s ease-out;
+
     z-index: 0;
     position: relative;
     top: 0;

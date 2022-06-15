@@ -102,7 +102,7 @@
 }
 
 .post-entry-content .post-detail-ul li {
-    color: #1f1e1e
+    color: var(--primary-color)
 }
 .post-detail-ul {
     margin-top: 10px;

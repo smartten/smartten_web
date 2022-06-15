@@ -30,7 +30,7 @@ function TestimonialRow() {
 								<span>
 									<span>
 										<span>
-											<p>VolanSoft is a truly professional company. They have helped our company get to a new level of service excellence!</p>
+											<p>SMARTTEN Software is a truly professional company. They have helped our company get to a new level of service excellence!</p>
 											<div className="test-info">
 												<h6>Mr. Ashish Somani</h6>
 												<h5>CEO, Somani Threads</h5>
@@ -53,7 +53,7 @@ function TestimonialRow() {
 								<span>
 									<span>
 										<span>
-											<p>Flexibility and on-time delivery. VolanSoft team has strong technical experience and execution capabilities.</p>
+											<p>Flexibility and on-time delivery. SMARTTEN Software team has strong technical experience and execution capabilities.</p>
 											<div className="test-info">
 												<h6>Mr. Pankaj Marothiya</h6>
 												<h5>Founder, Centreum</h5>
@@ -76,7 +76,7 @@ function TestimonialRow() {
 								<span>
 									<span>
 										<span>
-											<p>VolanSoft came in and saved the day! They are very easy to work with, and very understanding of changes as the project moved along.</p>
+											<p>SMARTTEN Software came in and saved the day! They are very easy to work with, and very understanding of changes as the project moved along.</p>
 											<div className="test-info">
 												<h6>Mr. Olaoluwa Izuchi</h6>
 												<h5>Founder, Diadal Nigeria LTD</h5>

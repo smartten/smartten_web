@@ -1,9 +1,9 @@
 import React from 'react'
-import CountUp from 'react-countup';
-import { Fade } from 'react-reveal';
+import BlogRow from '../../components/layout/BlogRow'
+import  Fade  from 'react-reveal/Fade';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Pagination } from "swiper";
 import ReactVivus from 'react-vivus';
 import standOutSvg1 from '../../assets/icons/how-we-stand-out/stand-out-service1.svg';
 import standOutSvg2 from '../../assets/icons/how-we-stand-out/stand-out-service2.svg';
@@ -11,100 +11,63 @@ import standOutSvg3 from '../../assets/icons/how-we-stand-out/stand-out-service3
 import standOutSvg4 from '../../assets/icons/how-we-stand-out/stand-out-service4.svg';
 import standOutSvg5 from '../../assets/icons/how-we-stand-out/stand-out-service5.svg';
 import standOutSvg6 from '../../assets/icons/how-we-stand-out/stand-out-service6.svg';
-
-
+import whoWeAreImg from '../../assets/images/who-we-are.jpeg'
 // import required modules
-import { Pagination, Navigation } from "swiper";
-
 import './style.css'
-import TestimonialRow from '../../components/layout/TestimonialRow';
+
 
 function Home({postsData, languages, serviceData}) {
-
-	var romanToInt = function(s) {
-		
-	};
-	console.log(romanToInt("LXIII"));
   return (
     <div className="home">
-      	<section className="main_banner">
-			<div className="container">
-			<div className="row">
-				<div className="col-md-12">
-				<div className="main_banner_top_part d-table">
-					<div className="d-table-cell">
-					<h1 className="mbt_title">TRUSTED SOFTWARE DEVELOPMENT<br/> COMPANY IN SMARTTEN</h1>
-					<p className="mbt_subtitle">We love helping start-up become brand names<br/>and corporation launch new products</p>
-					<a href="#getQuoteModal" data-toggle="modal" className="btn mbt_btn btn-black">Get a free quote</a>
-					</div>
-				</div>
-				</div>
-			</div>
-			<div className="row">
-				<div className="main_banner_bottom_part ">
-					<ul className="mbbp_ul nav-justified d-md-flex  d-none">
-					<li className="col-sm-12">
-						<h4><span className="counter"><CountUp start={0} end={100} duration={4}></CountUp></span>+</h4>
-						<div className="mbbp_divider"></div>
-						<h6>Happy Clients</h6>
-					</li>
-					<li className="col-sm-12">
-						<h4><span className="counter"><CountUp start={0} end={82} duration={4}></CountUp></span>%</h4>
-						<div className="mbbp_divider"></div>
-						<h6>Repeat Clients</h6>
-					</li>
-					<li className="col-sm-12">
-						<h4><span className="counter"><CountUp start={0} end={300} duration={4}></CountUp></span>+</h4>
-						<div className="mbbp_divider"></div>
-						<h6>Finished Project</h6>
-					</li>
-					<li className="col-sm-12">
-						<h4><span className="counter"><CountUp start={0} end={20} duration={4}></CountUp></span>+</h4>
-						<div className="mbbp_divider"></div>
-						<h6>Countries</h6>
-					</li>
-					<li className="col-sm-12">
-						<h4><span className="counter"><CountUp start={0} end={15} duration={4}></CountUp></span>+</h4>
-						<div className="mbbp_divider"></div>
-						<h6>Resource Strength</h6>
-					</li>
-					</ul>
-				</div>
-			</div>
-			</div>
-		</section>
+		<div className="bannerContent">
+			<Fade left>
+				<h1 className="homeMainHead col-md-5 col-sm-8 col-8">
+					<span className="homeHead">
+						<span className="headLight">
+							Driving Next-Gen 
+						</span>
+						DIGITAL
+					</span>
+				</h1>
+			</Fade>
+			<figure className="col-md-8 col-sm-12 col-12">
+					<img src={require('../../assets/images/banner-home.jpeg')} className="bannerImg loading" alt="Home Banner: Driving Next-Gen Digital" height="50" width="50" data-was-processed="true" />
+
+			</figure>
+		</div>
+      
 		<div className="who-we-are">   
-			<div className="d-inline port-section-wrapper">
-						<Fade left className="col-md-6 col-12">
-							<div className="services-image">
-									<div className="img-gray-layer ">
-										<img src={require('../../assets/images/explore.jpeg')} alt="explore"  />
-									</div>
-							</div>
-						</Fade>
-				<Fade bottom>
-					<div className="container">
-						<div className="col-md-6 col-12 port_sec_right">
-							<div className="title-headline ">
-								<h6>WHO WE ARE</h6>
-								<p className="text-justify">
-									<strong>As an 
-										<span className="display-inline-block h5st">IT Company</span>
-										, we offers you solutions through our services, our team experts combine the synergy of the traditional with modern to give you an innovative experience.
-									</strong>
-								</p>
-							</div>
-							<div className="service-section-description mt50 ">
-								<p className="text-justify "  >We don’t just dream, we make I(o)T happen using excellent strategies: </p>
-								<p><b>We believe making a DIFFERENCE can make businesses THRIVE.</b></p>
-								<p className="text-justify "  >It has been working since our launch. We, at VolanSoft <b>The Software Development Company</b>, have steered new and established businesses to stun their clients with world-class digital experiences. In the course of time, VolanSoft has transformed into an industry Giant by implementing latest technology realms in our processes, while enhancing standards of quality, project management and, engineering. We develop long-lasting associations with our customers and put a great emphasis on quality and delivery.
-								</p>
-								<Link to="/contact-us" className="btn btn_m3 btn-black pull-right ml10">Start Discussion</Link>
-								<Link to="/about-us" className="btn btn_m3 btn-black pull-right ml10">Explore Now</Link>
+			<div className="container">
+				<div className="d-inline port-section-wrapper">
+							<Fade left className="col-md-6 col-12">
+								<div className="services-image">
+										<div className="img-gray-layer ">
+											<img src={whoWeAreImg} alt="explore"  />
+										</div>
+								</div>
+							</Fade>
+					<Fade bottom>
+						<div className="container">
+							<div className="col-md-6 col-12 port_sec_right">
+								<div className="title-headline ">
+									<h6 style={{fontWeight: '500', fontSize:"20px"}}>WHO WE ARE</h6>
+									<p style={{fontWeight: '600'}}>
+									SMARTTEN Software – Agile Development Company
+
+									</p>
+									<p className="text-justify" >
+									<br />
+We are one of the leading Information Technology Providers based in Vietnam, specializing in providing digital transformation consulting services and software solutions in Finance, Healthcare, Logistic and Insurance.<br />
+<br />
+Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great passion for technology, we has been providing cutting edge engineering solutions, helping worldwide customers untangle their issues. We pride ourselves in the quality of our work and constantly seek new ways to improve our know-how & capabilities.
+									
+									</p>
+								</div>
 							</div>
 						</div>
-					</div>
-				</Fade>
+					</Fade>
+				</div>
+
 			</div>
 		</div>
 		<div className="home-services">
@@ -205,95 +168,9 @@ function Home({postsData, languages, serviceData}) {
 		</div>
 
 
-		{/* <div className="services-area p50" id="our-services">
-				<Fade bottom>
-					<div className="row">
-						<div className="col-md-12 col-sm-12 col-12">
-							<div className="center-headline">
-								<h3   className="">Our Services</h3>
-							</div>
-						</div>
-					</div>
-				</Fade>
-				<div className="container">
-					<Fade bottom >
-						<div className="services-list ">
-								{servicesData.map((service, index) => (
-									<div key={index} className="service-item col-md-4 col-sm-6 col-12">
-										<Link to={`/services/post/${index}`} className="single-service"  >
-											<div className="single-service-inner single-service-inner-2">
-												<div className="service-content">
-													<div className="service-icon">
-														<span><i className={service.icon}></i></span>
-													</div>
-													<div className="service-text">
-														<h4>{service.title}</h4>
-														<p>{service.description.slice(0,300) + '...'}</p>
-													</div>
-												</div>
-											</div>
-										</Link>
-									</div>
-								))}						
-						</div>
-					</Fade>
-				</div>
-		</div> */}
-		<div className="home-blog">
-			<div className="container">
-				<div className="home-blog-content">
-					<Fade bottom>
-						<h3 className="">Latest Blogs, News And Insights</h3>
-					</Fade>
-						<Swiper
-							slidesPerView={1}
-							spaceBetween={30}
-							slidesPerGroup={1}
-							loop={true}		
-							modules={[ Navigation]}				
-							navigation= {{
-								nextEl: '.swiper-button-next',
-								prevEl: '.swiper-button-prev',
-								}}
-							className="mySwiper"
-							breakpoints={{
-								786: {
-									slidesPerView:2,
-									slidesPerGroup:2,
-								},
-								1200:{
-									slidesPerView:3,
-									slidesPerGroup:3,
-								}
-							}}
-						>
-							{postsData.map((post,index) =>(
-								<SwiperSlide key={index}>
-									<div className="vs_blog_single">
-										<div className="awesome-img ">
-											<Link to={`/blog/post/${index}`}>
-												<img src={post.image} alt="Blog" />
-											</Link>
-											<ul className=" post-detail-ul">
-												<li><i className="fa fa-calendar"></i>{post.createdAt.slice(0,10)}</li>
-												<li><i className="fa fa-user"></i> Admin</li>
-											</ul>
-										</div>
-										<div className="project-dec ">
-											<Link to={`/blog/post/${index}`}><h4>{post.lang[languages.lang].title}</h4></Link>
-											<p>{post.lang[languages.lang].description} </p>
-												<Link className=" read-btn btn-white" to={`/blog/post/${index}`}> Read more</Link>
-										</div>
-									</div>
-								</SwiperSlide>
-							))}
-						</Swiper>
-						<div className="swiper-button-prev" style={{left:"80px", color:"#fff"}}></div>
-						<div className="swiper-button-next" style={{right:"80px", color:"#fff"}}></div>
-
-				</div>
-			</div>
-		</div>
+		
+		
+		<BlogRow postsData={postsData}  languages={languages}/>
 		<div className="p90 process-sec">
 			<div className="container">
 				<Fade bottom>
@@ -301,7 +178,7 @@ function Home({postsData, languages, serviceData}) {
 						<div className="col-md-12 col-sm-12 col-12">
 							<div className="center-headline">
 								<h3   className="">Web and Mobile App Development Process</h3>
-								<p   className="">We are well-known for crafting eye catchy and most innovative Web &amp; Mobile Apps. We provide our clients with a wide array of customized software services in the <a href="https://www.volansoft.com/services"><strong>mobile and web app development</strong></a> realm. Our products and skilled team are engineered for bringing growth to our clients’ businesses. Moreover, we understand that it is the most important thing to deliver services without making any compromise on quality and time.</p>
+								<p   className="">We are well-known for crafting eye catchy and most innovative Web &amp; Mobile Apps. We provide our clients with a wide array of customized software services in the <Link to="/services" style={{color:"var(--black-color)"}}><strong>mobile and web app development</strong></Link> realm. Our products and skilled team are engineered for bringing growth to our clients’ businesses. Moreover, we understand that it is the most important thing to deliver services without making any compromise on quality and time.</p>
 							</div>
 						</div>
 					</div>								
@@ -341,7 +218,7 @@ function Home({postsData, languages, serviceData}) {
 						<div className="m-timeline-col"><span className="timeline-circel borderAn">06<span className="timeline-circel-inr fillAn">06</span> </span>
 							<div className="timeline-content">
 								<h4>Maintenance</h4>
-								<p>Once Applications are launched, VolanSoft keeps the Apps updated through innovative programs and processes. </p>
+								<p>Once Applications are launched, SMARTTEN Software keeps the Apps updated through innovative programs and processes. </p>
 							</div>
 						</div>
 					</div>
@@ -728,7 +605,6 @@ function Home({postsData, languages, serviceData}) {
 					</div>
 				</div>
 		</div>
-		<TestimonialRow />
     </div>
   )
 }

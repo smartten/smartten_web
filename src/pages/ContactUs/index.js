@@ -10,13 +10,24 @@ function ContactUs() {
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
 
-  async function postCustomersData(){
-    await blogApi.postCustomersInfo('info', {
+
+  async function postCustomersData(e){
+    e.preventDefault();
+    await blogApi.postCustomersInfo('/contact', {
       name:name,
       email:email,
       phone:phone,
       message:message,
     })
+    .then(function (response) {
+      //handle success
+      console.log(response);
+    })
+    .catch(function (response) {
+      //handle error
+      console.log(response.message);
+    });
+
   }
 
 
@@ -43,15 +54,15 @@ function ContactUs() {
                 <div className="text-item">
                   <h2>new business</h2>
                   <p>We don't have client or customers, we have partners. We leverage innovation towards digital transformation.</p>
-                  <a href="mailto:business@volansoft.com" >
-                  business@volansoft.com
+                  <a href="mailto:business@smartten.com.vn" >
+                  business@smartten.com.vn
                   </a>
                 </div>
                 <div className="text-item">
                   <h2>general inquiries</h2>
                   <p>Have something to say? Drop us a line. We offer big results with boutique-style relationships.</p>
-                  <a href="mailto:info@volansoft.com" >
-                  info@volansoft.com
+                  <a href="mailto:info@smartten.com.vn" >
+                  info@smartten.com.vn
                   </a>
                 </div>
               </div>
@@ -83,22 +94,23 @@ function ContactUs() {
               </div>
             </Fade>
             <Fade right>
-              <form className="input-form col-md-6 col-sm-12 col-12" method="post" >
+              <form className="input-form col-md-6 col-sm-12 col-12" method="post" onSubmit={postCustomersData} >
                 <h3>Let us know how we can help!</h3>
                 <div className="form-group">
-                  <input onChange={e => setName(e.target.value)} type="text" className="form-control" placeholder="Your Name" name="name" id="name" />
+                  <input value={name} onChange={e => setName(e.target.value)} type="text" className="form-control" placeholder="Your Name" name="name" id="name"  required/>
                 </div>
                 <div className="form-group">
-                  <input onChange={e => setEmail(e.target.value)} type="email" className="form-control " placeholder="Your Email" name="email" id="email" />
+                  <input value={email} onChange={e => setEmail(e.target.value)} type="email" className="form-control " placeholder="Your Email" name="email" id="email" required />
                 </div>
                 <div className="form-group">
-                  <input onChange={e => setPhone(e.target.value)} type="text" className="form-control " placeholder="Your Mobile" name="mobile" id="mobile" />
+                  <input value={phone} onChange={e => setPhone(e.target.value)} type="tel"  className="form-control " placeholder="Your Mobile" name="mobile" id="mobile" required />
                 </div>
                 <div className="form-group">
-                  <textarea onChange={e => setMessage(e.target.value)} rows="5" className="form-control " placeholder="Your Message" name="message" id="message"></textarea>
+                  <textarea value={message} onChange={e => setMessage(e.target.value)} rows="5" className="form-control " placeholder="Your Message" name="message" id="message" required></textarea>
                 </div>
                 <div className="form-group button">
-                  <button className=" btn_black btn_m3"  type="submit"  onClick={postCustomersData}>Send</button>
+                  <button className=" btn_black btn_m3"  type="submit"  >Send</button>
+                  <div id="alert_msg"></div>
                 </div>
               </form>
             </Fade>

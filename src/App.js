@@ -12,6 +12,12 @@ import blogApi from './api/blogApi'
 import Services from "./pages/Services";
 import Home from "./pages/Home";
 import ServicesPost from "./pages/ServicesPost";
+import FrontEnd from "./pages/Technologies/Frontend"
+import Backend from "./pages/Technologies/Backend";
+import QualityAssurance from "./pages/Technologies/QualityAssurance";
+import CloudSolutions from "./pages/Technologies/CloudSolutions";
+import DevOps from "./pages/Technologies/DevOps";
+
 
 function App() {
   const { i18n } = useTranslation();
@@ -133,6 +139,43 @@ function App() {
                       </DefaultLayout>}
                   >
                   </Route>
+                  <Route
+                    path="/technologies/front-end"
+                    element={
+                      <DefaultLayout menuList={menus}>
+                        <FrontEnd postsData={posts} languages={languages} />
+                      </DefaultLayout>}
+                  />
+                  <Route
+                    path="/technologies/back-end"
+                    element={
+                      <DefaultLayout menuList={menus}>
+                        <Backend postsData={posts} languages={languages} />
+                      </DefaultLayout>}
+                  />
+                  <Route
+                    path="/technologies/software-quality-assurance"
+                    element={
+                      <DefaultLayout menuList={menus}>
+                        <QualityAssurance postsData={posts} languages={languages} />
+                      </DefaultLayout>}
+                  />
+                
+                  <Route
+                    path="/technologies/cloud-solutions"
+                    element={
+                      <DefaultLayout menuList={menus}>
+                        <CloudSolutions postsData={posts} languages={languages} />
+                      </DefaultLayout>}
+                  />
+                   <Route
+                    path="/technologies/dev-ops"
+                    element={
+                      <DefaultLayout menuList={menus}>
+                        <DevOps postsData={posts} languages={languages} />
+                      </DefaultLayout>}
+                  />
+
                   <Route
                     path="*"
                     element={<NotFound />}

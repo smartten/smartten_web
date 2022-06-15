@@ -14,6 +14,7 @@
 .about-services{
     max-width: 1300px;
     margin: auto;
+    color: var(--primary-color);
 }
 .about-services .services-header{
     
@@ -50,6 +51,7 @@
     text-transform: capitalize;
     font-weight: 300;
     font-size: 34px;
+    color: var(--primary-color);
 }
 
 .about-banner h1{
@@ -95,7 +97,8 @@
     border-left: 2px solid #e3e3e1;
 }
 .title-headline p{
-    text-align:justify
+    text-align:justify;
+    color:var(--black-color);
 }
 .title-headline h2 {
     font-size: 34px;
@@ -111,6 +114,7 @@
     text-align:left;
     margin: 0 25px;
     line-height: 27px;
+    color:var(--primary-color);
 }
 .mission-details h2{
     font-size: 34px;

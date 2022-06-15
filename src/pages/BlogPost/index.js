@@ -71,7 +71,7 @@ function BlogPost({ languages, postsData }) {
                     <textarea rows="5" placeholder="Your Message" name="message" ></textarea>
                   </div>
                   <div className="form-group">
-                    <button  type="submit ">Send</button>
+                    <button className="btn btn_black"type="submit ">Send</button>
                   </div>
                 </form>
               </div>

@@ -1,254 +1,98 @@
 .header{
     position: absolute;
-    display: flex;
     z-index: 5;
     width: 100%;
     height: 90px;
 }
-.header--container{
-    width: 1200px; 
+.header .container{
+    justify-content:space-between;
     display: flex;
-    justify-content:space-evenly;
-    margin: auto;
-    
+
 }
 .backgroundBlack{
-    background-color: var(--primary-color);
+    background-color: var(--white-color);
     position: fixed;
 }
 .header__navigation a{
-    color: var(--white-color);
+    color: var(--black-color);
     letter-spacing: 1.8px;
     font-size: 13px;
 }
-.nav__lists{
+.header__navigation a:hover{
+    color: var(--primary-color)
+}
+#navigation{
     display: flex;
+    padding: 0;
+}
+#navigation>li{
+    line-height: 65px;
+    margin: 7px 14px;
+
+}
+#navigation>li>a{
+    cursor: pointer;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+#navigation>.has-child>a:after{
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    margin-bottom: 2px;
+    margin-left: 10px;
+    padding: 2px;
 }
 
-.lists-item{
-    line-height: 75px;
-    padding: 10px 15px;
-}
-.lists-item a i{
-    margin-right:5px
-}
-
-.header__logo{
-    margin:18px 30px;
-}
-.logo-link{
-    color: var(--white-color);
-    font-size: 24px;
-    letter-spacing: 10px;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-shadow: 0 1px 2px rgb(0 0 0 / 65%);
-}
 .header__logo .logo-link img {
-    width: 200px;
+    width: 170px;
     height: 61px;
+    color:red;
 }
-.header__burgerMenu{
-    background: var(--primary-color);
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30%;
-    height: 100vh;
-    overflow-y: auto;
-    z-index: 3;
+
+.header__language{
+    line-height: 83px;
+}
+.has-child:hover{
+    cursor: pointer;
+}
+.has-child:hover .menu-display-table{
+    display:block;
+    
+}
+
+@media (max-width: 768px){
+    .header__navigation{
+        display: none;
+    }
+}
+#navigation>.has-child{
+    position: relative;
+   
+}
+.has-child a{
+    text-transform: capitalize;
+}
+
+
+.has-child .menu-display-table{
     display: none;
+    position: absolute;
+    background-color: white;
+    padding-top: 30px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    box-shadow: inset 0 20px 20px -20px #cccccc5c, 0 0 24px #cccccc5c;
+    width: 550px;
 
     
 }
-.header__menuButtonOpen{
-    color: var(--white-color);
-    display: flex;
-    cursor: pointer;
-    margin-right: 10px;
-}
-.header__menuButtonOpen span{
-    line-height:75px;
-    margin-top: 10px;
-    margin: 11px 15px;
-}
-.header__menuButtonOpen .hamburger{
-    margin: 0;
-}
-.header__menuList{
-    color: var(--white-color);
-    cursor: pointer;
-    display:flex;
-    flex-direction: column;
-    justify-content:space-between;
-}
-.openBurgerMenu{
-    display: block;
-}
-
-.menuLists__close{
-    cursor: pointer;
-    padding:20px 25px;
-    margin:25px 15px;
-    display: flex;
-    align-self: end;
-}
-.menuLists__close span{
-    color: #fff;
-    letter-spacing: 3px;
-    font-size: 14px;
-    text-transform: uppercase;
-    line-height: 44px;
-}
-.menuLists__close i{
-    margin-left: 10px;
-    font-size: 30px;
-}
-.header__language{
-    line-height:98px;
-}
-
-.header__language button{
-    padding: 10px;
-    margin: 10px;
-}
-
-.menuLists-lists>ul>li {
-    display: block;
-    position: relative;
-    background: 0 0;
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease
-}
-.menuLists-lists>ul>li>a {
-    font-size: 14px;
-    line-height: 16px;
-    border-bottom: 1px solid #161515;
-    padding: 11px 40px 9px;
-    margin: 0 25px;
-    font-weight: 400;
-    background: 0 0;
-    display: block;
-    letter-spacing: 4px;
-    position: relative;
-    z-index: 1;
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    text-transform: uppercase;
-    color: #fff;
-    text-decoration: none
-}
-.menuLists-lists-inner{
-    padding: 0;
-}
-.menuLists-lists-inner a{
-    color:var(--white-color);
-    font-size: 34px;
-    text-align: left;
-}
-.menuLists-lists-inner li{
-    display:flex;
-}
-.menuLists-lists-inner>li:hover{
-    background-color: var(--white-color);
-}
-.menuLists-lists-inner>li:hover>a{
-    color: var(--black-color);
-}
-
-@media (min-width: 768px){
-    .has-child:hover .menu-display-table{
-        display:block;
-    }
-}
-.has-child>a{
-    display: block;
-    position: relative;
-}
-.has-child>a>i{
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    opacity: .55;
-    font-size: 16px;
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease
-}
-
-.has-child:hover a>i{
-    color: var(--black-color);
-
-}
-.has-child .menu-display-table{
-    display: none;
-    position: fixed;
-    background-color: #424242;
-    height: 100vh;
-    width: 30%;
-    right: 30%;
-    top: 0;
-    box-shadow: -10px 0 30px 0 rgb(3 3 3 / 20%);
-}
 .menu-display-table>ul{
-    margin-top:80px;
-
-}
-.menu-display-table>ul>li>a{
-    border-bottom: 1px solid #353535;
-    font-family: Lato,sans-serif;
-    font-weight: 400;
-    position: relative;
-    font-size: 13px;
-    line-height: 18px;
-    display: block;
-    margin: 0 40px;
-    padding: 12px 0 12px 40px;
-    letter-spacing: 2px;
-    transition: all .3s ease;
-    -webkit-transition: all .3s ease;
-    text-transform: uppercase;
-}
-
-
-.hamburger {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-item-align: center;
-    align-self: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
-    margin-top: -15px;
-    margin-right: 20px;
-}
-
-.hamburger div {
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    height: 1px;
-    width: 100%;
-    background: #fff;
-}
-
-.hamburger .meat {
-    width: 75%;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-
-.hamburger .bottom-bun {
-    width: 50%;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    flex-wrap: wrap;
+    padding: 0;
+    text-align: left;
 }
 
 

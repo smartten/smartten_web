@@ -73,6 +73,7 @@
     text-align:left;
     text-transform: capitalize;
     font-size: 30px;
+    color: var(--primary-color);
 }
 .row-details h2::after {
     top: 15px;
@@ -90,12 +91,12 @@
 }
 .details-li i{
     font-size: 25px;
-    color:var(--black-color);
+    color:var(--primary-color);
 }
 .details-li li{
     font-size: 18px;
     line-height: 26px;
-    color: var(--text-color);
+    color: var(--primary-color);
     text-align:left;
     margin: 5px 10px;
 }

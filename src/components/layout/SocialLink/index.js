@@ -7,12 +7,12 @@ function SocialLink() {
     <div>
         <ul className="social_link">
             <li>
-                <a className="facebook"  href="https://www.facebook.com/volansoft" target="blank" >
+                <a className="facebook"  href="https://www.facebook.com/smartten-software" target="blank" >
                     <FaFacebookF />
                 </a>
             </li>	
             <li>
-                <a className="twitter"  href="https://twitter.com/volansoft" target="blank" >
+                <a className="twitter"  href="https://twitter.com/smartten-software" target="blank" >
                 <FaTwitter />
                 </a>
             </li>	
@@ -22,7 +22,7 @@ function SocialLink() {
                 </a>
             </li>	
             <li>
-                <a className="linkedin"  href="https://www.linkedin.com/company/volansoft/" target="blank" >
+                <a className="linkedin"  href="https://www.linkedin.com/company/smartten-software/" target="blank" >
                     <FaLinkedinIn />
                 </a>
             </li>	

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import locationMap from '../../../assets/images/location_map.jpg';
 import SocialLink from '../../../components/layout/SocialLink/index';
-import logoSvg from '../../../assets/images/smartten_logo.svg';
+import logoSvg from '../../../assets/images/smartten_logo-white.svg';
 import './style.css'
 
 function Footer({ languages, navigation}) {
@@ -13,7 +13,7 @@ function Footer({ languages, navigation}) {
               <div className="footer-widget col-md-4 col-sm-12 col-12">
                 <div className="footer_logo">
                   <Link to="/" className="logo-link" >
-                  <img src={logoSvg} alt=""/>
+                  <img  src={logoSvg} alt=""/>
                   </Link>
                 </div>
                 <ul className="widget-navigation">
@@ -43,7 +43,7 @@ function Footer({ languages, navigation}) {
                             {business.title}
                           </span>   
                           <br />
-                          Mail: <Link to="mailto:info@volansoft.com">{business.mail}</Link> <br />
+                          Mail: <Link to="mailto:info@smartten.com.vn">{business.mail}</Link> <br />
                           {business.phone}: <Link to="tel:+919549326532">{business.mobile}</Link>
                         </li>
                       ))}
@@ -55,7 +55,7 @@ function Footer({ languages, navigation}) {
               <div className="copyright col-md-6 col-sm-6 col-12">  
                 <span>Copyright © 
                   <Link to="/">
-                    Volan Software & Technologies
+                  SMARTTEN Software & Technologies
                   </Link>. All Rights Reserved
                 </span>
               </div>

@@ -19,5 +19,7 @@
     border: 1px solid #fff;
 }
 .displayNone{
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
 }

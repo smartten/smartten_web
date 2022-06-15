@@ -35,7 +35,7 @@
     display: block;
 }
 .footer_logo .logo-link img{
-    height: 35px;
+    height: 25px;
 }
 .footer__top{
     display: flex;
@@ -60,6 +60,8 @@
 }
 .footer-address span{
     width: 250px;
+    text-align: left;
+    font-size: 15px;
 }
 
 .footer__bottom{

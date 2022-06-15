@@ -1,0 +1,33 @@
+.technologies-row{
+    background-color: #f5f5f5;
+    margin:25px 0;
+    padding:25px 0;
+}
+.technologies-row .container{
+    color: var(--primary-color);
+
+}
+.technologies-row .slick-current{
+    background-color: var(--white-color);
+}
+.technologies-slide-content .slick-slide{
+    background-color: white;
+    height: 100%;
+    min-height: 350px;
+}
+.technologies-slide-content div{
+    display: flex!important;
+}
+.technologies-slide-content span{
+    padding-top: 45px;
+}
+.technologies-slide-content .text{
+    text-align: justify;
+    padding: 35px 15px;
+}
+.technologies-row .slick-arrow{
+    display: none!important;
+}
+.slick-initialized .slick-slide {
+    min-height: 80px;
+}
