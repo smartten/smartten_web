@@ -3,14 +3,13 @@
   flex-wrap: wrap;
 }
 .customer-cases .container .row {
-  padding: 25px 0;
+  padding: 155px 0;
   margin: 15px 0;
 
 }
-.customer-cases .container div:nth-child(even){
-  flex-direction: row-reverse;
-}
+
 .customer-cases .case-img{
+  position: relative;
   height: 100%;
 }
 .customer-cases .case-img img{
@@ -18,11 +17,26 @@
   height: 100%;
 }
 .customer-cases .case-content{
-  background-color: #e9e9e9;
+  position: relative;
   height: 100%;
   padding:40px 15px;
   text-align: left;
 
+}
+.background-gray::after{
+  position: absolute;
+  content: "";
+  top: -30%;
+  width: 150%;
+  height: 160%;
+  background-color: #e9e9e9;
+  z-index: -1;
+}
+.background-gray.left::after{
+  left:-55%;
+}
+.background-gray.right::after{
+  right:-55%;
 }
 .customer-cases .case-content a{
   color: var(--primary-color);

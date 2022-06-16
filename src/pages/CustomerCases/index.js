@@ -16,14 +16,14 @@ function CustomerCases() {
                     </div>
                 </div>
                 <div className="col-md-6 col-sm-6 col-12">
-                    <div className="case-img">
+                    <div className="case-img background-gray right">
                         <img src={require('../../assets/images/backgroup_customer-case.png')} alt=" " />
                     </div>
                 </div>
             </div>
             <div className="row">
                 <div className="col-md-6 col-sm-6 col-12">
-                    <div className="case-content">
+                    <div className="case-content background-gray left">
                         <h1>Language Exchange - HeyPal Nebula Software Corp</h1>
                         <p>An online eco-friendly P2B marketplace for sharing electric cars with tenants through insurance companies and car repair shops.</p>
                         <a href="/" className="read-btn" >Read more</a>
@@ -44,14 +44,14 @@ function CustomerCases() {
                     </div>
                 </div>
                 <div className="col-md-6 col-sm-6 col-12">
-                    <div className="case-img">
+                    <div className="case-img background-gray right">
                         <img src={require('../../assets/images/background-customer-case3.png')} alt=" " />
                     </div>
                 </div>
             </div>
             <div className="row">
                 <div className="col-md-6 col-sm-6 col-12">
-                    <div className="case-content">
+                    <div className="case-content background-gray left">
                         <h1>ゲームテクター (Gametector) Tabeena,Inc.</h1>
                         <p>How to accomplish what previous vendors couldn't? Find out!</p>
                         <a href="/" className="read-btn" >Read more</a>
