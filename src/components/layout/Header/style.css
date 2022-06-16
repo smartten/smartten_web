@@ -62,11 +62,7 @@
     
 }
 
-@media (max-width: 768px){
-    .header__navigation{
-        display: none;
-    }
-}
+
 #navigation>.has-child{
     position: relative;
    
@@ -94,7 +90,18 @@
     padding: 0;
     text-align: left;
 }
-
+@media (min-width: 768px) and (max-width: 1024px){
+    #navigation{
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    #navigation>li {
+        line-height: 20px;
+    }
+    .header__language{
+        line-height: 42px;
+    }
+}
 
 @media (max-width: 768px) {
     .header__burgerMenu{
@@ -107,5 +114,8 @@
     }
     .has-child .menu-display-table{
         display: none!important;
+    }
+    .header__navigation{
+        display: none;
     }
 }
