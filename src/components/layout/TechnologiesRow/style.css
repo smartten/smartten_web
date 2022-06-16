@@ -5,7 +5,12 @@
 }
 .technologies-row .container{
     color: var(--primary-color);
-
+}
+.technologies-row .container h2{
+    margin:15px 0;
+}
+.technologies-row .container p{
+    margin: 25px 0;
 }
 .technologies-row .slick-current{
     background-color: var(--white-color);
@@ -30,4 +35,7 @@
 }
 .slick-initialized .slick-slide {
     min-height: 80px;
+}
+.technologies-slide-nav .slick-list{
+    cursor: pointer;
 }

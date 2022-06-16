@@ -1,9 +1,15 @@
 .technologies-competencies .container{
     text-align: left;
     color: var(--primary-color);
-    padding:25px 0;
+    padding:25px 15px;
     line-height: 35px;
 }
 .technologies-competencies .container ul{
-
+    padding: 25px 0;
+}
+.technologies-competencies .container div{
+    text-align: center;
+}
+.technologies-competencies .container h2{
+    
 }
