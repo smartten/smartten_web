@@ -29,7 +29,7 @@ const publicRouter = [
     component:Team,
   },
   {
-    path:"/services/quality-assurance-and-testing",
+    path:"/quality-assurance-and-testing",
     component: TestingAndAssurance
   },
   {

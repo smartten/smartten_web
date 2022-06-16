@@ -81,7 +81,7 @@ function TestingAndAssurance() {
                     also includes exploratory and accessibility testing.
                   
                 </p>
-                <Link to="/contact-us" >Let’s talk</Link>
+                <Link className="btn btn_m3 btn-black" to="/contact-us" >Let’s talk</Link>
                   
                   </div>  
                 <div>
@@ -99,7 +99,7 @@ function TestingAndAssurance() {
                     also includes exploratory and accessibility testing.
                   
                 </p>
-                <Link to="/contact-us" >Let’s talk</Link>
+                <Link className="btn btn_m3 btn-black" to="/contact-us" >Let’s talk</Link>
                   
                   </div>  
               </Slider>

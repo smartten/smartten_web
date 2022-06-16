@@ -12,18 +12,17 @@ function ServicesPost( {children, servicesData} ) {
 	const [service, setService] = useState()
 	
 
-	let { serviceIndex } = useParams();
+	let { linkServicePost } = useParams();
 	
-	let currentIndex = parseInt(serviceIndex)
 	
 	useEffect(() => {
-	  function getServices(){
-		let service = servicesData[currentIndex]
+	   function getServices(){
+		let service =  servicesData?.find(service => service.linkUrl === `/${linkServicePost}`)
 		setService(service)
 		return service
 	  }
 	  getServices()
-	},[servicesData, currentIndex])
+	},[servicesData, linkServicePost])
 
   return (
     <div className="service-post">

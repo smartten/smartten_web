@@ -102,7 +102,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 
 								</p>
 								<img src={require('../../assets/images/Savvycom-Services-1000-3.jpeg')} alt=" " />
-								<Link to="/services/post/0"><i className='ti ti-arrow-right'></i></Link>
+								<Link to="/web-development"><i className='ti ti-arrow-right'></i></Link>
 
 							</div>
 						</div>
@@ -115,7 +115,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 								Being the top 30 Global App Developers, Savvycom has immense experience creating feature-rich & high-performing Mobile Apps for iOS and Android platforms.
 								</p>
 								<img src={require('../../assets/images/Savvycom-Services-1000-1.jpeg')} alt=" " />
-								<Link to="/services/post/1"><i className='ti ti-arrow-right'></i></Link>
+								<Link to="/mobile-app-development"><i className='ti ti-arrow-right'></i></Link>
 
 							</div>
 						</div>
@@ -142,7 +142,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 								Our Cloud services are wide-ranging and innovative. So no matter where you are on your Cloud journey, Rikkeisoft will help build a practical solution and fulfill your business requirements.
 								</p>
 								<img src={require('../../assets/images/Savvycom-Services-1000-4.jpeg')} alt=" " />
-								<Link to="/services/post/3"><i className='ti ti-arrow-right'></i></Link>
+								<Link to="/technologies/cloud-solutions"><i className='ti ti-arrow-right'></i></Link>
 
 							</div>
 						</div>
@@ -157,7 +157,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 
 								</p>
 								<img src={require('../../assets/images/Savvycom-Services-1000-2.jpeg')} alt=" " />
-								<Link to="/services/post/4"><i className='ti ti-arrow-right'></i></Link>
+								<Link to="/technologies/dev-ops"><i className='ti ti-arrow-right'></i></Link>
 
 							</div>
 						</div>

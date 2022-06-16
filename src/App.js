@@ -118,7 +118,7 @@ function App() {
                     }
                   />
                   <Route
-                    path="/services/post/:serviceIndex"
+                    path="/:linkServicePost"
                     element={
                       <DefaultLayout menuList={menus}>
                         <ServicesPost servicesData={services} languages={languages} />
