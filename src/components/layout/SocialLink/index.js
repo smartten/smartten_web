@@ -17,7 +17,7 @@ function SocialLink() {
                 </a>
             </li>	
             <li>
-                <a className="whatsapp"  href="https://api.whatsapp.com/send?phone=919549326532" target="blank" >
+                <a className="whatsapp"  href="https://api.whatsapp.com/send?phone=2462593698" target="blank" >
                     <FaWhatsapp />
                 </a>
             </li>	

@@ -69,7 +69,7 @@
     justify-content: space-between;
     margin: 0 80px;
     margin-top: 40px;
-    border-top: 1px solid #343231;
+    border-top: 1px solid var(--white-color);
 }
 
 .bottom__navigation{
@@ -91,7 +91,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    border-top: 1px solid #343231;
+    border-top: 1px solid var(--white-color);
     padding: 0;
     margin-bottom:10px;
 }
@@ -127,10 +127,10 @@
     padding-bottom: 15px;
 }
 .footer_bussinesses li:nth-child(2){
-    border-left: 1px solid #343231;
+    border-left: 1px solid var(--white-color);
 }
 .footer_bussinesses li:nth-child(3){
-    border-left: 1px solid #343231;
+    border-left: 1px solid var(--white-color);
 }
 .business-icon{
 }

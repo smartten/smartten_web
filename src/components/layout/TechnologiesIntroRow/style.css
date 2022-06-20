@@ -24,3 +24,9 @@
 }
 .container .intro-content h3 p{
 }
+@media (max-width: 756px){
+    .technologies-intro-row .container{
+        flex-direction: column-reverse;
+
+    }
+}

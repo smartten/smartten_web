@@ -142,3 +142,11 @@
     letter-spacing:2px;
     font-weight: 300;
 }
+.alert{
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 6px!important;
+    margin-top: 7px!important;
+    color: var(--black-color);
+}

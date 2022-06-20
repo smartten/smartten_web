@@ -5,6 +5,7 @@ import './style.css'
 
 function Services({servicesData}) {
 
+  console.log(servicesData);
   return (
     <div className="services">
         <BlogBanner title="services" backgroundName="banner-services.jpeg" description="Our aim is to apply Technological Solutions to your Business Objectives & Ideas" />
@@ -13,7 +14,7 @@ function Services({servicesData}) {
             {servicesData && servicesData.map((service, index) =>(
               <ServiceRow 
               key={index} 
-              servicePostIndex={index}
+              servicePostUrl={service.linkUrl}
               titleParagraph={service.title}
               paragraph={service.description}
               titleList="WHAT WE DO" 

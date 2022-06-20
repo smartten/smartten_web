@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from 'react'
+import { React, useEffect, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import './style.css'
 import BlogBanner from '../../components/layout/BlogBanner'
@@ -8,14 +8,18 @@ function Blog( { languages, postsData } ) {
 
     const [postIndex, setPostIndex] = useState(0)
 
+    const [paginationNumber, setpaginationNumber] = useState([])
+    
     let postsPerPages = 3
 
-    function renderPagination() {
-        for (let i = 1; i < Math.ceil(postsData.length/postsPerPages) +1 ; i++) {
-            console.log(i)
+    useEffect(() => {
+        function renderPagination() {
+            for (let i = 1; i < Math.ceil(postsData.length/postsPerPages) +1 ; i++) {
+                paginationNumber.push(i)
+            }
         }
-    }
-
+        renderPagination()
+    },[postsData, postsPerPages, paginationNumber])
 
     useEffect(() => {
         async function slicePosts(){
@@ -63,7 +67,16 @@ function Blog( { languages, postsData } ) {
                         </div>
                     </li>
 
-                    {renderPagination}
+                    {paginationNumber && paginationNumber.map((pag, index) => (
+                        <li 
+                            className="page-item" 
+                            key={index} 
+                            style={{cursor: 'pointer'}}
+                            onClick={() => setPostIndex(index * postsPerPages)}
+                            >
+                            <span className="page-link" >{pag}</span>
+                        </li>
+                    )) }
                       
                     <li className="page-item" style={{cursor: 'pointer'}} >
                         <div className="page-link" href="#" aria-label="Next" onClick={() => setPostIndex(postIndex + 3)}>

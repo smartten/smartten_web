@@ -21,6 +21,7 @@
 }
 .about-services .services-header h3{
     font-size:34px;
+    padding-top: 25px;
 }
 .about-services .services-header p{
     font-size: 16px;
@@ -28,13 +29,9 @@
 
 .about-services .services-content{
     display: flex;
+    flex-wrap: wrap;
 }
-@media only screen and (max-width: 767px) {
-    .about-services .services-content{
-        display: inherit !important;
-        margin-top: 50px;
-    }
-}
+
 .services-content .content-item{
     padding: 45px;
 }
@@ -100,26 +97,30 @@
     text-align:justify;
     color:var(--black-color);
 }
-.title-headline h2 {
+.title-headline h6 {
     font-size: 34px;
     line-height: 36px
 }
 /* About mission */
 .about-mission{
     display: flex;
+    flex-wrap: wrap;
     margin: 30px 10px;
     background-color: var(--white-color);
 }
 .about-mission .mission-details{
     text-align:left;
-    margin: 0 25px;
+    padding: 0 25px;
     line-height: 27px;
     color:var(--primary-color);
 }
 .mission-details h2{
     font-size: 34px;
+    padding-top: 20px;
 }
-
+.mission-details p{
+    color: var(--black-color)
+}
 .about-mission .image img{
     width: 100%;
     height: 100%;
@@ -177,8 +178,23 @@
     background: var(--white-color);
     border-radius: 50%;
     box-shadow: 0 0 25px rgb(204 204 204 / 46%);
-    padding: 45px;
+    padding: 35px;
 }
 .item-image img{
     width: 100%;
+}
+
+@media(min-width: 767px) {
+    .about-services .services-content{
+        display: flex ;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    
+}
+@media(max-width: 567px){
+    .margin_top_bottom.countries{
+        border-top: 2px solid #e3e3e1;
+        padding-top: 15px;
+    }
 }

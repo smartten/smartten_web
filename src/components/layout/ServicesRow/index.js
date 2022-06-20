@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import './style.css'
 import Fade from 'react-reveal/Fade';
 
-function ServiceRow( { titleParagraph, paragraph, titleList, list, imageName, servicePostIndex} ) {
+function ServiceRow( { titleParagraph, paragraph, titleList, list, imageName, servicePostUrl} ) {
   return (
     <Fade bottom>
       <div className="service__row">
           <div className="service__row-paragraph col-md-8 col-sm-12 col-12">
-            <Link to={`/services/post/${servicePostIndex}`}>
+            <Link to={`/services${servicePostUrl}`}>
               <h3>{titleParagraph}</h3>
             </Link>
             <p>{paragraph}</p>

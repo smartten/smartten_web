@@ -5,7 +5,26 @@ import logoSvg from '../../../assets/images/smartten_logo-white.svg';
 import './style.css'
 
 function Footer({ languages, navigation}) {
+
+  function dfsfds(s) {
+    
+    let array = []
+    
+    for(let i = 0 ; i < s.length ; i ++){
+      if (s[i] === "(") {
+        array.push(')')
+      } else if (s[i] === "{" ) {
+        array.push('}')
+      }else if (s[i] === "[" ) {
+        array.push(']')
+      }else if (array.length === 0 || array.pop() !== s[i] ) {
+        return false
+      }
+  }
   
+    return array.length === 0 
+  }
+      
   return (
       <div className="footer-container">
         <div className="footer">
@@ -44,7 +63,7 @@ function Footer({ languages, navigation}) {
                           </span>   
                           <br />
                           Mail: <Link to="mailto:info@smartten.com.vn">{business.mail}</Link> <br />
-                          {business.phone}: <Link to="tel:+919549326532">{business.mobile}</Link>
+                          {business.phone}: <a href={`tel:${business.mobile}`}>{business.mobile}</a>
                         </li>
                       ))}
                   </ul>

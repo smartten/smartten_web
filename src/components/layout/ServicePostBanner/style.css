@@ -12,7 +12,7 @@
     height: 100vh;
     background: -moz-linear-gradient(left,#142452 0%,#162b65 100%,#162b65 100%,#162b65 100%);
     background: -webkit-linear-gradient(left,#142452 0%,#162b65 100%,#162b65 100%,#162b65 100%);
-    background: linear-gradient(to right,var(--primary-color) 0%,var(--primary-color) 100%,#0c0c0c 100%,#131313 100%);
+    background: linear-gradient(to right,var(--black-color) 0%,var(--black-color) 100%,#0c0c0c 100%,#131313 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#142452',endColorstr='#162b65',GradientType=1 );
     overflow: hidden;}
 

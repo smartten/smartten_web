@@ -1,14 +1,20 @@
 import { React, useState } from 'react'
-import { Fade } from 'react-reveal';
+import  Fade  from 'react-reveal';
 import blogApi from '../../api/blogApi'
 import BlogBanner from '../../components/layout/BlogBanner'
 import './style.css'
 
 function ContactUs() {
   const [name, setName] = useState('');
+
   const [email, setEmail] = useState('')
+
   const [phone, setPhone] = useState('');
+
   const [message, setMessage] = useState('');
+
+  const [alertMessage, setAlertMessage] = useState('')
+
 
 
   async function postCustomersData(e){
@@ -21,11 +27,15 @@ function ContactUs() {
     })
     .then(function (response) {
       //handle success
-      console.log(response);
+      setAlertMessage("Thank you! Your message has been successfully sent. We will contact you very soon!")
+      setTimeout(() => {
+        setAlertMessage("")
+      }, 5000);
     })
     .catch(function (response) {
       //handle error
       console.log(response.message);
+      
     });
 
   }
@@ -33,7 +43,7 @@ function ContactUs() {
 
   return (
     <div className="contact-us">
-        <BlogBanner title="Contact Us" backgroundName="banner-contact.jpeg" description="Our aim is to apply Technological Solutions to your Business Objectives & Ideas"/>
+        <BlogBanner title="Contact Us" backgroundName="banner-contact.webp" description="Our aim is to apply Technological Solutions to your Business Objectives & Ideas"/>
         <div className="container">
           <div className="contact-us-info">
             <Fade left>
@@ -42,8 +52,8 @@ function ContactUs() {
                   <h2>
                   phone number
                   </h2>
-                  <a href="tel:9549326532">    
-                    +919549326532
+                  <a href="/tel:2462593698">    
+                    +842462593698
                   </a>
 
                 </div>
@@ -110,7 +120,9 @@ function ContactUs() {
                 </div>
                 <div className="form-group button">
                   <button className=" btn_black btn_m3"  type="submit"  >Send</button>
-                  <div id="alert_msg"></div>
+                  <div id="alert_msg">
+                    {alertMessage}
+                  </div>
                 </div>
               </form>
             </Fade>

@@ -8,6 +8,11 @@ function Header( { languages, navigation} ) {
   const { i18n } = useTranslation();
   const [currentLang, setCurrentLang] = useState("en");
 
+  const [isOpened, setIsOpened] = useState(false)
+
+  const [openedBurger, setOpenedBurger] = useState(false)
+
+
 
   useEffect(() => {
     setCurrentLang(i18n.language);
@@ -18,15 +23,13 @@ function Header( { languages, navigation} ) {
     setCurrentLang(e.target.value);
   };
 
-
-
-
   useEffect(() => {
     function changeBackground(){
       if(window.scrollY > 400){
-        document.querySelector(".header").classList.add('backgroundBlack')
+        setIsOpened(true);
       }else{
-        document.querySelector(".header").classList.remove('backgroundBlack')
+        setIsOpened(false);
+
     }
   }
     window.addEventListener('scroll', changeBackground)
@@ -35,7 +38,7 @@ function Header( { languages, navigation} ) {
 
 
   return (
-    <div className="header">
+    <div  className={`${isOpened ? "backgroundBlack" : ""} header`}>
         <div className="container">
           <div className="header__logo">
               <Link className="logo-link" to="/">
@@ -60,7 +63,7 @@ function Header( { languages, navigation} ) {
                               </ul>
                         </div>}
                       </li> 
-                    ))}
+            ))}
               <div className="header__language d-md-block d-sm-none d-none">
               <select  onChange={changeLanguage} className="selectpicker" value={currentLang}>
                 <option value="en" >
@@ -73,7 +76,28 @@ function Header( { languages, navigation} ) {
             </div>
             </ul>
           </div>
-          
+          <div className="header_sm-menu d-md-none d-sm-flex d-flex" onClick={() => setOpenedBurger(v => !v)}>
+              <div className="hamburger">
+                <div className="top-bun"></div>
+                <div className="meat"></div>
+                <div className="bottom-bun"></div>
+              </div>
+          </div>
+        </div>
+        <div id="burger_menu-container" className={openedBurger ? "d-block" : "d-none"}>
+            <ul className="burger_menu-list">
+            <div className="menuLists__close" onClick={() => setOpenedBurger(v => !v)}>
+              <span>
+                Close
+              </span>
+              <i className="ti ti-close"></i>
+            </div>            
+                {navigation && navigation.map((nav, index) => (
+                  <li key={index}>
+                    <Link to={nav.linkUrl} onClick={() => setOpenedBurger(false)} >{nav.lang[languages.lang]}</Link>
+                  </li>
+                )) }
+            </ul>              
         </div>
     </div>
   );

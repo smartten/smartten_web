@@ -1,17 +1,15 @@
 import AboutRow from '../../components/layout/AboutRow';
 import CountUp from 'react-countup';
-import houseImg from '../../assets/images/houseImg.jpeg';
-import ourTeam from '../../assets/images/our-team.jpeg';
+import houseImg from '../../assets/images/who-we-are.jpeg';
 import Fade from 'react-reveal/Fade';
 import './style.css';
 import Banner from '../../components/layout/BlogBanner';
-import { Link } from 'react-router-dom';
 
 function AboutUs() {
   return (
     <div className="about-us">
       <div className="about-banner">
-          <Banner title="About Us" backgroundName="banner-about.jpg" description="A company with creative professionals, committed to deliver the products with excellence" />
+          <Banner title="About Us" backgroundName="banner-about.jpeg" description="A company with creative professionals, committed to deliver the products with excellence" />
       </div>
       <section className="p50 counter_section">
         <div className="container">
@@ -31,7 +29,7 @@ function AboutUs() {
                   </div>
                 </div>
                 <div className="col-xs-6 col-sm-6 col-lg-6 br_left text-center pl-0">
-                  <div className="margin_top_bottom">
+                  <div className="margin_top_bottom countries">
                   <i className="fa-regular fa-face-smile"></i>
                   <h3><span className="counter"><CountUp start={0} end={20} duration={3.5} /></span>+</h3>
                   <h5>Countries</h5>
@@ -46,9 +44,12 @@ function AboutUs() {
             </div>
             <div className="col-sm-12 col-md-12 col-lg-7">
               <div className="title-headline">
-                <h6>Are you Ready</h6>
-                <h2>Welcome to our company</h2>
-                <p>Volan Software &amp; Technologies is one amongst the leading <Link to="/mobile-app-development"><strong>Mobile Application Development Company</strong></Link> and also <a href="/web-development"><strong>website development company</strong></a> which is excelled in developing exemplary IT solutions for various industries. Our competence is to fascinate customers, industrial edge and work towards greater satisfaction. We have experts professionals belonging to all leading technologies who are always curious to adapt according to varying technology requirements. Delivering commitments within the committed timeline are two major concerns which are considered while developing applications. We have been tagged as the favorite development partner by our clients as we have delivered some outstanding solutions in the span of our 5+ years of service where we seek for more in the further coming years. 
+                <h6>About Us</h6>
+                <p>
+                SMARTTEN is is one amongst the leading software development  and outsourcing company in Vietnam, which is excelled in developing exemplary IT solutions for various industries. We delever edge-cutting technologies, software solutions and local talents in the successful digital transformation of global business partners.
+<br />
+<br />
+The success and competitive-leading sustainability of business partners is the chief performance indicator to our efforts. At Smartten, we embed passion, innovation, talent resources in every single work.
                 </p>
               </div>
             </div>
@@ -81,7 +82,7 @@ function AboutUs() {
           </p>
         </div>
       </div>
-      <div className="about-team flex-sm-row">
+      {/* <div className="about-team flex-sm-row">
         <img className="col-md-6 col-sm-12 col-12" src={ourTeam} alt="Our Team" />
         <div className="team-details col-md-6 col-sm-12 col-12">
           <Fade bottom>
@@ -97,7 +98,7 @@ function AboutUs() {
           </p>
           <Link to="/team">meet our team</Link>
         </div>
-      </div>
+      </div> */}
       <div className="container">
         <div className="about-services">
           <Fade bottom>
@@ -108,37 +109,37 @@ function AboutUs() {
           </Fade>
           <Fade  left>
             <div className='services-content '>
-              <div className='content-item col-md-2 col-sm-12 col-12'>
+              <div className='content-item col-md-2 col-sm-4 col-12'>
                   <div className='item-image'>
                     <img src={require('../../assets/images/departures.png')} alt="Industries" className="" />
                   </div>
                   <h5 >Travel</h5>
               </div>
-              <div className='content-item col-md-2 col-sm-12 col-12'>
+              <div className='content-item col-md-2 col-sm-4 col-12'>
                   <div className='item-image' >
                     <img src={require('../../assets/images/delivery-truck.png')} alt="Industries" className="" />
                   </div>
                   <h5 >Transportation</h5>
               </div>
-              <div className='content-item col-md-2 col-sm-12 col-12'>
+              <div className='content-item col-md-2 col-sm-4 col-12'>
                     <div className='item-image'>
                       <img src={require('../../assets/images/pay.png')}  alt="Industries" className="" />
                     </div>
                     <h5 >Banking</h5>
               </div>
-              <div className='content-item col-md-2 col-sm-12 col-12'>
+              <div className='content-item col-md-2 col-sm-4 col-12'>
                     <div className='item-image'>
                       <img src={require('../../assets/images/charity.png')} alt="Industries" className="" />
                     </div>
                     <h5 >Healthcare</h5>
               </div>
-              <div className='content-item col-md-2 col-sm-12 col-12'>
+              <div className='content-item col-md-2 col-sm-4 col-12'>
                   <div className='item-image'>
                     <img src={require('../../assets/images/joystick.png')} alt="Industries" className="" />
                   </div>
                   <h5 >Entertainment</h5>
               </div>
-              <div className='content-item col-md-2 col-sm-12 col-12'>
+              <div className='content-item col-md-2 col-sm-4 col-12'>
                   <div className='item-image'>
                     <img src={require('../../assets/images/diploma.png')} alt="Industries" className="" />
                   </div>

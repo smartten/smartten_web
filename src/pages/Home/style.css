@@ -4,12 +4,12 @@
     height: 100vh;
     display: flex;
     justify-content: flex-end;
-    padding-top: 70px;
     position: relative;
     background-image: url('../../assets/images/dot-element.svg');
     background-position: -32% 140%;
     background-size: 48%;
     background-repeat: no-repeat;
+    margin-top: -60px;
 }   
 
 .home .bannerContent {
@@ -19,7 +19,9 @@
     justify-content: flex-end;
     -webkit-justify-content: flex-end
 }
-
+.bannerContent .container{
+    justify-content:space-between;
+}
 .home .homeMainHead {
     font-size: 93px;
     padding: 80px 70px;
@@ -102,7 +104,6 @@
 /*Who we are */
 .who-we-are{
     width: 100%;
-    padding: 25px 0;
 }
 .p50 {
     padding: 50px 0
@@ -117,8 +118,8 @@
 }
 @media only screen and (max-width: 767px) {
     .port-section-wrapper{
-        display: inherit !important;
-        margin-top: 50px;
+    flex-direction: column-reverse;
+
     }
    
 }
@@ -138,8 +139,6 @@
     color: var(--primary-color);
 }
 .services-image {
-
-    padding: 0 30px 0 0;
     width: 100%;
 }
 .services-image img{
@@ -211,9 +210,11 @@
 }
 .container .services-title h2{
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
-.container .services-title h3{
+.container .services-title p{
     text-align: center;
+    color: var(--black-color);
 }
 .home-services .service-item{
     position: relative;
@@ -302,6 +303,9 @@
     margin: 0 auto 10px;
     text-align: center;
     text-transform: capitalize
+}
+.center-headline p{
+    color:var(--black-color)
 }
 /* Blog 
 

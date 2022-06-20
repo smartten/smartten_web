@@ -83,7 +83,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <ScrollTop>
           <div>
             <Routes>
               {publicRouter.map((route, index) => {
@@ -183,7 +182,6 @@ function App() {
                   </Route>
             </Routes>
           </div>
-        </ScrollTop>
       </Router>
     </div>
   );

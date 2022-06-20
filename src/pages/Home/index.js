@@ -20,20 +20,20 @@ function Home({postsData, languages, serviceData}) {
   return (
     <div className="home">
 		<div className="bannerContent">
-			<Fade left>
-				<h1 className="homeMainHead col-md-5 col-sm-8 col-8">
-					<span className="homeHead">
-						<span className="headLight">
-							Driving Next-Gen 
+				<Fade left>
+					<h1 className="homeMainHead col-md-5 col-sm-8 col-8">
+						<span className="homeHead">
+							<span className="headLight">
+								Driving Next-Gen 
+							</span>
+							DIGITAL
 						</span>
-						DIGITAL
-					</span>
-				</h1>
-			</Fade>
-			<figure className="col-md-8 col-sm-12 col-12">
-					<img src={require('../../assets/images/banner-home.jpeg')} className="bannerImg loading" alt="Home Banner: Driving Next-Gen Digital" height="50" width="50" data-was-processed="true" />
+					</h1>
+				</Fade>
+				<figure className="col-md-8 col-sm-12 col-12">
+						<img src={require('../../assets/images/banner-home.jpeg')} className="bannerImg loading" alt="Home Banner: Driving Next-Gen Digital" height="50" width="50" data-was-processed="true" />
 
-			</figure>
+				</figure>
 		</div>
       
 		<div className="who-we-are">   
@@ -56,7 +56,6 @@ function Home({postsData, languages, serviceData}) {
 
 									</p>
 									<p className="text-justify" >
-									<br />
 We are one of the leading Information Technology Providers based in Vietnam, specializing in providing digital transformation consulting services and software solutions in Finance, Healthcare, Logistic and Insurance.<br />
 <br />
 Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great passion for technology, we has been providing cutting edge engineering solutions, helping worldwide customers untangle their issues. We pride ourselves in the quality of our work and constantly seek new ways to improve our know-how & capabilities.
@@ -78,7 +77,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 						<p>At Smartten, we primarily focus on adding extra value to your business by using up-to-date Technologies, which results in higher profitability & company evaluation.</p>
 					</div>
 				</Fade>
-				<Fade bottom>
+				<Fade left>
 					<div className="services-list">
 						<div className="col-md-4 col-sm-6 col-12">
 							<div className="service-item">
@@ -102,7 +101,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 
 								</p>
 								<img src={require('../../assets/images/Savvycom-Services-1000-3.jpeg')} alt=" " />
-								<Link to="/web-development"><i className='ti ti-arrow-right'></i></Link>
+								<Link to="/technologies/front-end"><i className='ti ti-arrow-right'></i></Link>
 
 							</div>
 						</div>
@@ -115,7 +114,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 								Being the top 30 Global App Developers, Savvycom has immense experience creating feature-rich & high-performing Mobile Apps for iOS and Android platforms.
 								</p>
 								<img src={require('../../assets/images/Savvycom-Services-1000-1.jpeg')} alt=" " />
-								<Link to="/mobile-app-development"><i className='ti ti-arrow-right'></i></Link>
+								<Link to="/technologies/back-end"><i className='ti ti-arrow-right'></i></Link>
 
 							</div>
 						</div>
@@ -129,7 +128,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 								Rigorous testing and stringent quality assurance at every stage ensure zero defects after releaseIN.
 								</p>
 								<img src={require('../../assets/images/Savvycom-Services-1000-5.jpeg')} alt=" " />
-								<Link to="/services/quality-assurance-and-testing"><i className='ti ti-arrow-right'></i></Link>
+								<Link to="/technologies/software-quality-assurance"><i className='ti ti-arrow-right'></i></Link>
 
 							</div>
 						</div>
@@ -157,7 +156,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 
 								</p>
 								<img src={require('../../assets/images/Savvycom-Services-1000-2.jpeg')} alt=" " />
-								<Link to="/technologies/dev-ops"><i className='ti ti-arrow-right'></i></Link>
+								<Link to="/"><i className='ti ti-arrow-right'></i></Link>
 
 							</div>
 						</div>

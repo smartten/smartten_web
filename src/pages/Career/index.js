@@ -24,7 +24,7 @@ function Career() {
 
   return (
     <div className="career">
-        <BlogBanner title="Career" backgroundName="banner-career.jpg" description="Our aim is to apply Technological Solutions to your Business Objectives & Ideas" />
+        <BlogBanner title="Career" backgroundName="banner-career.webp" description="Our aim is to apply Technological Solutions to your Business Objectives & Ideas" />
         <div className="container">
             <div className="career-content p50">
               <div className="wrap-sidetext col-md-6 col-sm-12 col-12">
