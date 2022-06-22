@@ -59,7 +59,7 @@ function Footer({ languages, navigation}) {
                 </span>
               </div>
               <ul className="bottom__navigation col-md-6 col-sm-6 col-12">
-                {navigation.map((nav, index) => index<6 &&  (
+                {navigation.map((nav, index) =>  (
                   <li key={index}>
                     <Link to={nav.linkUrl} > {nav.lang[languages.lang]}</Link>
                   </li>
