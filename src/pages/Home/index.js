@@ -2,8 +2,7 @@ import React from 'react'
 import BlogRow from '../../components/layout/BlogRow'
 import  Fade  from 'react-reveal/Fade';
 import { Link } from 'react-router-dom';
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+
 import ReactVivus from 'react-vivus';
 import standOutSvg1 from '../../assets/icons/how-we-stand-out/stand-out-service1.svg';
 import standOutSvg2 from '../../assets/icons/how-we-stand-out/stand-out-service2.svg';
@@ -111,7 +110,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 								Mobile App Development
 								</h3>
 								<p>
-								Being the top 30 Global App Developers, Savvycom has immense experience creating feature-rich & high-performing Mobile Apps for iOS and Android platforms.
+								Being the top 30 Global App Developers, Smartten has immense experience creating feature-rich & high-performing Mobile Apps for iOS and Android platforms.
 								</p>
 								<img src={require('../../assets/images/Savvycom-Services-1000-1.jpeg')} alt=" " />
 								<Link to="/technologies/back-end"><i className='ti ti-arrow-right'></i></Link>
@@ -138,7 +137,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 								Cloud Services
 								</h3>
 								<p>
-								Our Cloud services are wide-ranging and innovative. So no matter where you are on your Cloud journey, Rikkeisoft will help build a practical solution and fulfill your business requirements.
+								Our Cloud services are wide-ranging and innovative. So no matter where you are on your Cloud journey, Smartten will help build a practical solution and fulfill your business requirements.
 								</p>
 								<img src={require('../../assets/images/Savvycom-Services-1000-4.jpeg')} alt=" " />
 								<Link to="/technologies/cloud-solutions"><i className='ti ti-arrow-right'></i></Link>
@@ -455,7 +454,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 					</div>
 				</div>
 		</section>
-		<div className="home-our-clients-container">
+		{/* <div className="home-our-clients-container">
 				<div className="center-headline">
 					<h3>Our Clients</h3>
 					<p>We love our clients and the feeling is mutual.</p>
@@ -603,7 +602,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 						</Swiper>
 					</div>
 				</div>
-		</div>
+		</div> */}
     </div>
   )
 }

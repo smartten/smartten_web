@@ -14,6 +14,7 @@
 .backgroundBlack{
     background-color: var(--white-color);
     position: fixed;
+    top: 0;
 }
 .header__navigation a{
     color: var(--black-color);

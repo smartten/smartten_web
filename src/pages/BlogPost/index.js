@@ -2,7 +2,6 @@ import {React, useState, useEffect} from 'react'
 import { Link, useParams} from 'react-router-dom'
 import blogApi from '../../api/blogApi'
 import './style.css'
-import SocialLink from '../../components/layout/SocialLink'
 import BannerBlog from '../../components/layout/BlogBanner'
 
 function BlogPost({ languages, postsData }) {
@@ -71,7 +70,6 @@ function BlogPost({ languages, postsData }) {
               </div>}
               <div className="content-navigation">
                 <Link className="content-navigation-button" to={`/blog/post/${currentIndex-1}`}>prev</Link>
-                <SocialLink />
                 <Link className="content-navigation-button" to={`/blog/post/${currentIndex+1}`}>next</Link>
               </div>
             </div>
@@ -81,12 +79,12 @@ function BlogPost({ languages, postsData }) {
                 <ul className="suggestion-lists">
                   {postsData && postsData.map((post,index) =>(
                     <li key={index} className="suggestion-item">
-                      <a href={`/blog/post/${index}`}>
+                      <Link to={`/blog/post/${index}`}>
                         <img src={post.image} alt="Thumbnail" />
                         <span>
                           {post.lang[languages.lang].title}
                         </span>
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>

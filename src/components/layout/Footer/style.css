@@ -62,8 +62,12 @@
     width: 250px;
     text-align: left;
     font-size: 15px;
+    margin-left: 20px;
 }
-
+.footer-address span i{
+    margin-left: -20px;
+    font-size: 20px;
+}
 .footer__bottom{
     display: flex;
     justify-content: space-between;
@@ -143,8 +147,7 @@
     
 }
 .location_section{
-    padding-top: 65px;
-    margin-top: 35px;
+    margin-top: 10px;
 }
 .location_section h4{
     text-align: start;

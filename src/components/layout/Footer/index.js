@@ -1,29 +1,10 @@
 import { Link } from "react-router-dom";
 import locationMap from '../../../assets/images/location_map.jpg';
-import SocialLink from '../../../components/layout/SocialLink/index';
 import logoSvg from '../../../assets/images/smartten_logo-white.svg';
 import './style.css'
 
 function Footer({ languages, navigation}) {
 
-  function dfsfds(s) {
-    
-    let array = []
-    
-    for(let i = 0 ; i < s.length ; i ++){
-      if (s[i] === "(") {
-        array.push(')')
-      } else if (s[i] === "{" ) {
-        array.push('}')
-      }else if (s[i] === "[" ) {
-        array.push(']')
-      }else if (array.length === 0 || array.pop() !== s[i] ) {
-        return false
-      }
-  }
-  
-    return array.length === 0 
-  }
       
   return (
       <div className="footer-container">
@@ -40,7 +21,6 @@ function Footer({ languages, navigation}) {
                     <li key={index}>
                       <Link to={nav.linkUrl}>{nav.lang[languages.lang]}</Link></li>
                     ))}
-                  <SocialLink />
                 </ul>
               </div>
               <div className="location_section col-md-8 col-sm-12 col-12 ">
