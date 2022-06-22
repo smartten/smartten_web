@@ -113,7 +113,7 @@ function ContactUs() {
                   <input value={email} onChange={e => setEmail(e.target.value)} type="email" className="form-control " placeholder="Your Email" name="email" id="email" required />
                 </div>
                 <div className="form-group">
-                  <input value={phone} onChange={e => setPhone(e.target.value)} type="tel"  className="form-control " placeholder="Your Mobile" name="mobile" id="mobile" required />
+                  <input value={phone} onChange={e => setPhone(e.target.value)} type="tel" pattern="[0-9]{10}"  className="form-control " placeholder="Your Mobile" name="mobile" id="mobile" required />
                 </div>
                 <div className="form-group">
                   <textarea value={message} onChange={e => setMessage(e.target.value)} rows="5" className="form-control " placeholder="Your Message" name="message" id="message" required></textarea>

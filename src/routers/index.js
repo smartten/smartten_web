@@ -20,10 +20,7 @@ const publicRouter = [
     path:"/solutions",
     component:Solutions,
   },
-  {
-    path:"/contact-us",
-    component:ContactUs,
-  },
+
   {
     path:"/services/team",
     component:Team,
