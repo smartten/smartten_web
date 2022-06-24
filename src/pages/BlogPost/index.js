@@ -5,6 +5,17 @@ import './style.css'
 import BannerBlog from '../../components/layout/BlogBanner'
 
 function BlogPost({ languages, postsData }) {
+
+  useEffect(()=>{
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: "smooth",
+		  });
+    
+      document.title="SMARTTEN";
+      document.description="SMARTTEN Software";
+	},[])
   
   const [post, setPost] = useState()
 

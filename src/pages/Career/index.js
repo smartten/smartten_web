@@ -1,9 +1,21 @@
-import {React, useState} from 'react'
+import {React, useState, useEffect} from 'react'
 import BlogBanner from '../../components/layout/BlogBanner'
 import blogApi from '../../api/blogApi'
 import './style.css'
 
 function Career() {
+
+  useEffect(()=>{
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: "smooth",
+		  });
+
+      document.title="SMARTTEN";
+      document.description="SMARTTEN Software";
+	},[])
+  
   const [name, setName] = useState('');
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('');

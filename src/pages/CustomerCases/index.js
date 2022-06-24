@@ -1,8 +1,20 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import BlogBanner from '../../components/layout/BlogBanner'
 import './style.css'
 
 function CustomerCases() {
+
+    useEffect(()=>{
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: "smooth",
+		  });
+
+        document.title="SMARTTEN";
+        document.description="SMARTTEN Software";
+	},[])
+
   return (
     <div className="customer-cases">
         <BlogBanner title="Customer Cases" backgroundName="background-customer-case.jpeg"  />

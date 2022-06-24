@@ -1,8 +1,18 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import './style.css'
 
 function NotFound() {
+	useEffect(()=>{
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: "smooth",
+		  });
+
+		document.title="SMARTTEN";
+      	document.description="SMARTTEN Software";
+	},[])
   return (
         <div id="notfound">
 		<div className="notfound">

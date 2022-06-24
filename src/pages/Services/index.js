@@ -1,9 +1,20 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import ServiceRow from '../../components/layout/ServicesRow'
 import BlogBanner from '../../components/layout/BlogBanner'
 import './style.css'
 
 function Services({servicesData}) {
+
+  useEffect(()=>{
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: "smooth",
+		  });
+
+      document.title="SMARTTEN";
+      document.description="SMARTTEN Software";
+	},[])
 
   console.log(servicesData);
   return (

@@ -19,6 +19,15 @@ function Blog( { languages, postsData } ) {
             }
         }
         renderPagination()
+
+        window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: "smooth",
+		  });
+        
+        document.title="SMARTTEN";
+        document.description="SMARTTEN Software";
     },[postsData, postsPerPages, paginationNumber])
 
     useEffect(() => {

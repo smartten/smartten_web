@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import BlogBanner from '../../../components/layout/BlogBanner'
 import BlogRow from '../../../components/layout/BlogRow'
 import TechnologiesRow from '../../../components/layout/TechnologiesRow'
@@ -7,6 +7,16 @@ import TechnologiesCompetenciesRow from '../../../components/layout/Technologies
 import './style.css'
 
 function QualityAssurance({postsData, languages}) {
+  useEffect(()=>{
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: "smooth",
+		  });
+
+      document.title="SMARTTEN";
+      document.description="SMARTTEN Software";
+	},[])
   return (
     <div>
       <BlogBanner title="Software quality assurance" backgroundName="background-technologies.jpg"  description="">

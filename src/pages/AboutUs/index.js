@@ -4,8 +4,18 @@ import houseImg from '../../assets/images/who-we-are.jpeg';
 import Fade from 'react-reveal/Fade';
 import './style.css';
 import Banner from '../../components/layout/BlogBanner';
+import { React, useEffect } from 'react'
 
 function AboutUs() {
+  useEffect(()=>{
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: "smooth",
+		  });
+      document.title="SMARTTEN";
+      document.description="SMARTTEN Software";
+	},[])
   return (
     <div className="about-us">
       <div className="about-banner">

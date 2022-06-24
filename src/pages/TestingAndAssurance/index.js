@@ -1,10 +1,20 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import BlogBanner from '../../components/layout/BlogBanner'
 import Slider from "react-slick";
 import './style.css'
 
 function TestingAndAssurance() {
+  useEffect(()=>{
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: "smooth",
+		  });
+
+      document.title="SMARTTEN";
+      document.description="SMARTTEN Software";
+	},[])
 
   return (
     <div className="testing-and-assurance">

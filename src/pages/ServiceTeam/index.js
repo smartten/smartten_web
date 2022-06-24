@@ -1,11 +1,20 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import BlogBanner from '../../components/layout/BlogBanner'
 import CountUp from 'react-countup';
 import './style.css' 
 
 function ServiceTeam() {
     
+    useEffect(()=>{
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: "smooth",
+		  });
 
+          document.title="SMARTTEN";
+          document.description="SMARTTEN Software";
+	},[])
     
 
   return (

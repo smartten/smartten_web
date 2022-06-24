@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useEffect } from 'react'
 import BlogRow from '../../components/layout/BlogRow'
 import  Fade  from 'react-reveal/Fade';
 import { Link } from 'react-router-dom';
@@ -16,6 +16,16 @@ import './style.css'
 
 
 function Home({postsData, languages, serviceData}) {
+	useEffect(()=>{
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: "smooth",
+		  });
+
+		document.title="SMARTTEN";
+      	document.description="SMARTTEN Software";
+	},[])
   return (
     <div className="home">
 		<div className="bannerContent">

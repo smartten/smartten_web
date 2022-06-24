@@ -1,10 +1,22 @@
-import { React, useState } from 'react'
+import { React, useState, useEffect } from 'react'
 import  Fade  from 'react-reveal';
 import blogApi from '../../api/blogApi'
 import BlogBanner from '../../components/layout/BlogBanner'
 import './style.css'
 
 function ContactUs({languages}) {
+
+  useEffect(()=>{
+		window.scrollTo({
+			top: 0,
+			left: 0,
+			behavior: "smooth",
+		  });
+
+      document.title="SMARTTEN";
+      document.description="SMARTTEN Software";
+	},[])
+
   const [name, setName] = useState('');
 
   const [email, setEmail] = useState('')
