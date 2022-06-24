@@ -17,6 +17,7 @@ import Backend from "./pages/Technologies/Backend";
 import QualityAssurance from "./pages/Technologies/QualityAssurance";
 import CloudSolutions from "./pages/Technologies/CloudSolutions";
 import DevOps from "./pages/Technologies/DevOps";
+import ContactUs from "./pages/ContactUs";
 
 
 function App() {
@@ -174,6 +175,13 @@ function App() {
                         <DevOps postsData={posts} languages={languages} />
                       </DefaultLayout>}
                   />
+                    <Route
+                        path="/contact-us"
+                        element={
+                            <DefaultLayout menuList={menus}>
+                                <ContactUs languages={languages} />
+                            </DefaultLayout>}
+                    />
 
                   <Route
                     path="*"

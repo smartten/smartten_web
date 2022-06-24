@@ -4,7 +4,7 @@ import blogApi from '../../api/blogApi'
 import BlogBanner from '../../components/layout/BlogBanner'
 import './style.css'
 
-function ContactUs() {
+function ContactUs({languages}) {
   const [name, setName] = useState('');
 
   const [email, setEmail] = useState('')
@@ -43,34 +43,34 @@ function ContactUs() {
 
   return (
     <div className="contact-us">
-        <BlogBanner title="Contact Us" backgroundName="banner-contact.webp" description="Our aim is to apply Technological Solutions to your Business Objectives & Ideas"/>
+        <BlogBanner title="Contact Us" backgroundName="banner-contact.jpg" description="Our aim is to apply Technological Solutions to your Business Objectives & Ideas"/>
         <div className="container">
           <div className="contact-us-info">
             <Fade left>
               <div className="info-text col-md-6 col-sm-12 col-12">
                 <div className="text-item">
                   <h2>
-                  phone number
+                    {languages.title_phone}
                   </h2>
                   <a href="/tel:2462593698">    
-                    +842462593698
+                    +(84) 2462593698
                   </a>
 
                 </div>
                 <div className="text-item">
-                  <h2>address</h2>
-                  <p>701-702, Evershine Tower, Amrapali Circle, Vaishali Nagar, Jaipur- 302021</p>
+                  <h2>{languages.title_adress}</h2>
+                  <p>{languages.address}</p>
                 </div>
                 <div className="text-item">
-                  <h2>new business</h2>
-                  <p>We don't have client or customers, we have partners. We leverage innovation towards digital transformation.</p>
+                  <h2>{languages.title_business}</h2>
+                  <p>{languages.business}</p>
                   <a href="mailto:business@smartten.com.vn" >
                   business@smartten.com.vn
                   </a>
                 </div>
                 <div className="text-item">
-                  <h2>general inquiries</h2>
-                  <p>Have something to say? Drop us a line. We offer big results with boutique-style relationships.</p>
+                  <h2>{languages.title_inquiries}</h2>
+                  <p>{languages.inquiries}</p>
                   <a href="mailto:info@smartten.com.vn" >
                   info@smartten.com.vn
                   </a>
@@ -96,27 +96,27 @@ function ContactUs() {
               <div className="wrap-sidetext col-md-6 col-sm-12 col-12">
                 <div className="wrap-sidetext__content aos-init aos-animate" >
                   <div className="title-headline">
-                    <h3>What happens next</h3>
+                    <h3>{languages.title_happen}</h3>
                   </div>
-                  <p>After we receive your request, one of our sales managers will contact you to clarify the details and arrange a meeting. We normally reply within one business day (or much sooner).</p><p>Then, we'll schedule a call to discuss the details of your project. </p><p>For video calls, we use Skype or Google Hangouts. If you prefer to use other software, just let us know. We'd be happy to make it work for both of us.</p>
+                  <p>{languages.happens}</p>
                   <p></p>
                 </div>
               </div>
             </Fade>
             <Fade right>
               <form className="input-form col-md-6 col-sm-12 col-12" method="post" onSubmit={postCustomersData} >
-                <h3>Let us know how we can help!</h3>
+                <h3>{languages.title_help}</h3>
                 <div className="form-group">
-                  <input value={name} onChange={e => setName(e.target.value)} type="text" className="form-control" placeholder="Your Name" name="name" id="name"  required/>
+                  <input value={name} onChange={e => setName(e.target.value)} type="text" className="form-control" placeholder={languages.your_name} name="name" id="name"  required/>
                 </div>
                 <div className="form-group">
-                  <input value={email} onChange={e => setEmail(e.target.value)} type="email" className="form-control " placeholder="Your Email" name="email" id="email" required />
+                  <input value={email} onChange={e => setEmail(e.target.value)} type="email" className="form-control " placeholder={languages.your_email} name="email" id="email" required />
                 </div>
                 <div className="form-group">
-                  <input value={phone} onChange={e => setPhone(e.target.value)} type="tel" pattern="[0-9]{10}"  className="form-control " placeholder="Your Mobile" name="mobile" id="mobile" required />
+                  <input value={phone} onChange={e => setPhone(e.target.value)} type="tel" pattern="[0-9]{10}"  className="form-control " placeholder={languages.your_mobile} name="mobile" id="mobile" required />
                 </div>
                 <div className="form-group">
-                  <textarea value={message} onChange={e => setMessage(e.target.value)} rows="5" className="form-control " placeholder="Your Message" name="message" id="message" required></textarea>
+                  <textarea value={message} onChange={e => setMessage(e.target.value)} rows="5" className="form-control " placeholder={languages.your_message} name="message" id="message" required></textarea>
                 </div>
                 <div className="form-group button">
                   <button className=" btn_black btn_m3"  type="submit"  >Send</button>
