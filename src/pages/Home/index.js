@@ -23,7 +23,7 @@ function Home({postsData, languages, serviceData}) {
 					<h1 className="homeMainHead col-md-5 col-sm-8 col-8">
 						<span className="homeHead">
 							<span className="headLight">
-								Driving Next-Gen 
+								Driving the Power of
 							</span>
 							DIGITAL
 						</span>
@@ -86,7 +86,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 								<p>
 								We quickly allocate independent software developers for your internal projects with a focus on communication processes & detailed development phases.
 								</p>
-								<img src={require('../../assets/images/Savvycom-Services-1000-6.jpeg')} alt=" " />
+								<img src={require('../../assets/images/Smartten-Services-1000-6.jpeg')} alt=" " />
 								<Link to="/services/team"><i className='ti ti-arrow-right'></i></Link>
 							</div>
 						</div>
@@ -99,7 +99,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 								We always keep up with the latest Front & Back-end Web Development technologies to create high-quality Web Applications in a constantly changing business environment.
 
 								</p>
-								<img src={require('../../assets/images/Savvycom-Services-1000-3.jpeg')} alt=" " />
+								<img src={require('../../assets/images/Smartten-Services-1000-3.jpeg')} alt=" " />
 								<Link to="/technologies/front-end"><i className='ti ti-arrow-right'></i></Link>
 
 							</div>
@@ -112,7 +112,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 								<p>
 								Being the top 30 Global App Developers, Smartten has immense experience creating feature-rich & high-performing Mobile Apps for iOS and Android platforms.
 								</p>
-								<img src={require('../../assets/images/Savvycom-Services-1000-1.jpeg')} alt=" " />
+								<img src={require('../../assets/images/Smartten-Services-1000-1.jpeg')} alt=" " />
 								<Link to="/technologies/back-end"><i className='ti ti-arrow-right'></i></Link>
 
 							</div>
@@ -126,7 +126,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 								<p>
 								Rigorous testing and stringent quality assurance at every stage ensure zero defects after releaseIN.
 								</p>
-								<img src={require('../../assets/images/Savvycom-Services-1000-5.jpeg')} alt=" " />
+								<img src={require('../../assets/images/Smartten-Services-1000-5.jpeg')} alt=" " />
 								<Link to="/technologies/software-quality-assurance"><i className='ti ti-arrow-right'></i></Link>
 
 							</div>
@@ -139,7 +139,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 								<p>
 								Our Cloud services are wide-ranging and innovative. So no matter where you are on your Cloud journey, Smartten will help build a practical solution and fulfill your business requirements.
 								</p>
-								<img src={require('../../assets/images/Savvycom-Services-1000-4.jpeg')} alt=" " />
+								<img src={require('../../assets/images/Smartten-Services-1000-4.jpeg')} alt=" " />
 								<Link to="/technologies/cloud-solutions"><i className='ti ti-arrow-right'></i></Link>
 
 							</div>
@@ -154,7 +154,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 								We design bold and unique digital products that help you achieve your business goals. Every feature included in each product is designed to boost your company’s value, customer base, and profitability.
 
 								</p>
-								<img src={require('../../assets/images/Savvycom-Services-1000-2.jpeg')} alt=" " />
+								<img src={require('../../assets/images/Smartten-Services-1000-2.jpeg')} alt=" " />
 								<Link to="/"><i className='ti ti-arrow-right'></i></Link>
 
 							</div>

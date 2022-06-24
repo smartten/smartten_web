@@ -15,12 +15,14 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
     "bootstrap": "^5.2.0-beta1",
+    "customize-cra": "^1.0.0",
     "i18next": "^21.8.2",
     "i18next-browser-languagedetector": "^6.1.4",
     "jquery": "^3.6.0",
     "node-sass": "^7.0.1",
     "query-string": "^7.1.1",
     "react": "^18.1.0",
+    "react-app-rewired": "^2.2.1",
     "react-bootstrap": "^2.4.0",
     "react-countup": "^6.2.0",
     "react-dom": "^18.1.0",
@@ -41,13 +43,14 @@
     "styled-components": "^5.3.5",
     "swiper": "^8.1.6",
     "vivus": "^0.4.6",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": "^5.73.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
   },
   "eslintConfig": {
     "extends": [
@@ -68,6 +71,7 @@
     ]
   },
   "devDependencies": {
-    "html-loader": "^3.1.0"
+    "html-loader": "^3.1.0",
+    "webpack-cli": "^4.10.0"
   }
 }
