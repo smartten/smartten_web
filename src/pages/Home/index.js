@@ -23,14 +23,14 @@ function Home({postsData, languages, serviceData}) {
 			behavior: "smooth",
 		  });
 
-		document.title="SMARTTEN";
+		document.title="SMARTTEN Software - Software Development Company";
       	document.description="SMARTTEN Software";
 	},[])
   return (
     <div className="home">
 		<div className="bannerContent">
 				<Fade left>
-					<h1 className="homeMainHead col-md-5 col-sm-8 col-8">
+					<h1 className="homeMainHead col-md-5 col-sm-8 col-8" >
 						<span className="homeHead">
 							<span className="headLight">
 								Driving the Power of
@@ -110,7 +110,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 
 								</p>
 								<img src={require('../../assets/images/Smartten-Services-1000-3.jpeg')} alt=" " />
-								<Link to="/technologies/front-end"><i className='ti ti-arrow-right'></i></Link>
+								<Link to="/services/web-development"><i className='ti ti-arrow-right'></i></Link>
 
 							</div>
 						</div>
@@ -123,7 +123,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 								Being the top 30 Global App Developers, Smartten has immense experience creating feature-rich & high-performing Mobile Apps for iOS and Android platforms.
 								</p>
 								<img src={require('../../assets/images/Smartten-Services-1000-1.jpeg')} alt=" " />
-								<Link to="/technologies/back-end"><i className='ti ti-arrow-right'></i></Link>
+								<Link to="/services/mobile-app-development"><i className='ti ti-arrow-right'></i></Link>
 
 							</div>
 						</div>
@@ -137,7 +137,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 								Rigorous testing and stringent quality assurance at every stage ensure zero defects after releaseIN.
 								</p>
 								<img src={require('../../assets/images/Smartten-Services-1000-5.jpeg')} alt=" " />
-								<Link to="/technologies/software-quality-assurance"><i className='ti ti-arrow-right'></i></Link>
+								<Link to="/services/quality-assurance-and-testing"><i className='ti ti-arrow-right'></i></Link>
 
 							</div>
 						</div>
@@ -150,7 +150,7 @@ Headquartered in Hanoi and Founded in 2019, by a group of IT experts with great 
 								Our Cloud services are wide-ranging and innovative. So no matter where you are on your Cloud journey, Smartten will help build a practical solution and fulfill your business requirements.
 								</p>
 								<img src={require('../../assets/images/Smartten-Services-1000-4.jpeg')} alt=" " />
-								<Link to="/technologies/cloud-solutions"><i className='ti ti-arrow-right'></i></Link>
+								<Link to="/services/cloud-solutions"><i className='ti ti-arrow-right'></i></Link>
 
 							</div>
 						</div>

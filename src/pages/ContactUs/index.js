@@ -13,7 +13,7 @@ function ContactUs({languages}) {
 			behavior: "smooth",
 		  });
 
-      document.title="SMARTTEN";
+      document.title="SMARTTEN Software - Software Development Company";
       document.description="SMARTTEN Software";
 	},[])
 
@@ -65,7 +65,7 @@ function ContactUs({languages}) {
                     {languages.title_phone}
                   </h2>
                   <a href="/tel:2462593698">    
-                    +(84) 2462593698
+                    +(84) 24 6259 3698
                   </a>
 
                 </div>

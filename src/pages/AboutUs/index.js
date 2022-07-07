@@ -13,7 +13,7 @@ function AboutUs() {
 			left: 0,
 			behavior: "smooth",
 		  });
-      document.title="SMARTTEN";
+      document.title="SMARTTEN Software - Software Development Company";
       document.description="SMARTTEN Software";
 	},[])
   return (

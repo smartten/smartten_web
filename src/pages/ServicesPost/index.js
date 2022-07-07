@@ -17,7 +17,7 @@ function ServicesPost( {children, servicesData} ) {
 			behavior: "smooth",
 		  });
 
-		document.title="SMARTTEN";
+		document.title="SMARTTEN Software - Software Development Company";
       	document.description="SMARTTEN Software";
 	},[])
 

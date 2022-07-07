@@ -9,6 +9,8 @@
 .header .container{
     justify-content:space-between;
     display: flex;
+    align-items: center;
+    height: 100%;
 
 }
 .backgroundBlack{
@@ -25,18 +27,29 @@
     color: var(--primary-color)
 }
 #burger_menu-container{
+    display: none;
     position: absolute;
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+    transition-delay: 0.1s;
+    padding-right: 40px;
+    padding-top: 30px;
+    top: 0;
     width: 100vw;
     height: 100vh;
-    background-color: var(--black-color)
+    background-color: #fff;
 
+}
+
+#burger_menu-container.open__burger-menu {
+    transform: translateX(0);
 }
 #navigation{
     display: flex;
     padding: 0;
 }
 #navigation>li{
-    line-height: 65px;
+    /*line-height: 65px;*/
     margin: 7px 14px;
 
 }
@@ -44,6 +57,9 @@
     cursor: pointer;
     font-weight: 400;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 #navigation>.has-child>a:after{
     background-color: var(--primary-color);
@@ -57,7 +73,7 @@
 
 .header__logo .logo-link img {
     width: 170px;
-    height: 61px;
+    height: 60px;
 }
 
 .header__language{
@@ -99,6 +115,25 @@
     padding: 0;
     text-align: left;
 }
+
+.menu-display-table ul li {
+    line-height: 65px;
+}
+
+.burger__menus-list-icon {
+    display: none;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+.burger__menu-submenu {
+    margin-top: 20px;
+}
+
+
+
+
+
 @media (min-width: 768px) and (max-width: 1024px){
     #navigation{
         flex-wrap: wrap;
@@ -113,6 +148,18 @@
 }
 
 @media (max-width: 768px) {
+    .header .container {
+        height: 100%;
+    }
+
+    .mobile-menu__icon {
+        margin-right: 12px;
+    }
+
+    .header__logo .logo-link img{
+        width: 140px;
+    }
+
     .header__burgerMenu{
         width: 100%;
     }
@@ -127,6 +174,19 @@
     .header__navigation{
         display: none;
     }
+
+    #burger_menu-container {
+        z-index: 100;
+        display: block;
+        overflow-y: auto;
+
+
+    }
+
+    .burger__menus-list-icon {
+        display: inline-block;
+    }
+
     
 }
 
@@ -149,12 +209,25 @@
     cursor: pointer
 }
 
+.hamburger::before {
+    cursor: pointer;
+    display: block;
+    content: "";
+    background-color: #e62552;
+    position: absolute;
+    width: 220%;
+    height: 220%;
+    left: -8px;
+    top: -9px;
+    z-index: -1;
+    border-radius: 50%;
+}
 .hamburger div {
     -ms-flex-item-align: end;
     align-self: flex-end;
-    height: 1px;
+    height: 2px;
     width: 100%;
-    background: var(--primary-color)
+    background: white;
 }
 
 .hamburger .meat {
@@ -170,17 +243,22 @@
 }
 .burger_menu-list li{
     text-align: left;
+    padding-bottom: 30px;
+    max-width: 300px;
 
 }
-.burger_menu-list li a{
-    color: var(--white-color);
-    font-size: 20px;
-    line-height: 33px;
+.burger_menu-list > li > a{
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
     text-transform: uppercase;
 
 }
 .burger_menu-list .menuLists__close{
-    color: var(--white-color);
+    cursor: pointer;
+    color: var(--text-colorburger_menu-list);
     font-size: 24px;
     text-align: right;
+    margin-bottom: 40px;
 }

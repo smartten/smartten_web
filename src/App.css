@@ -2,7 +2,15 @@
   text-align: center;
   overflow: hidden;
   font-family: 'Poppins', sans-serif!important;
+
+
 }
+
+.App:-webkit-full-screen {
+  background-color: yellow;
+}
+
+
 :root{
   --primary-color: #ed1b32;
   --primary-color-rgba: rgba(237,27,50,0.3);
@@ -23,6 +31,8 @@
   }
 }
 
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -32,6 +42,13 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: var(--white-color);
+}
+
+@supports(padding: max(0px)) {
+  .post {
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+  }
 }
 
 .App-link {

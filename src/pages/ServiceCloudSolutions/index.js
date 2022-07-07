@@ -1,12 +1,11 @@
-import {React, useEffect} from 'react'
-import BlogBanner from '../../../components/layout/BlogBanner'
-import BlogRow from '../../../components/layout/BlogRow'
-import TechnologiesRow from '../../../components/layout/TechnologiesRow'
-import TechnologiesIntroRow from '../../../components/layout/TechnologiesIntroRow'
-import TechnologiesCompetenciesRow from '../../../components/layout/TechnologiesCompetenciesRow'
+import React, {useEffect} from 'react'
+import BlogBanner from '../../components/layout/BlogBanner'
+import TechnologiesRow from '../../components/layout/TechnologiesRow'
+import TechnologiesIntroRow from '../../components/layout/TechnologiesIntroRow'
+import TechnologiesCompetenciesRow from '../../components/layout/TechnologiesCompetenciesRow'
 import './style.css'
 
-function CloudSolutions({postsData, languages}) {
+function ServiceCloudSolutions() {
 
   useEffect(()=>{
 		window.scrollTo({
@@ -36,10 +35,9 @@ function CloudSolutions({postsData, languages}) {
           "⦁ In-depth technical expertise helping customers to move workloads to the cloud using IaaS, Paas and/or SaaS solutions.",
           '⦁ Microsoft Gold Partner in competency of Application Development.'
           ]} />
-      <BlogRow postsData={postsData} languages={languages}/>
     </div>
   )
   
 }
 
-export default CloudSolutions
+export default ServiceCloudSolutions

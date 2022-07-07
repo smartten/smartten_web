@@ -28,8 +28,8 @@ const languageData = {
                 {title:'contact us' ,linkUrl:'/contact-us'}
                 ],
       bussiness:[{title:'general enquiries',mail:'info@smartten.com.vn', mobile:'(+84)24 6259 3698', phone:'Phone', icon:'pe-7s-phone'},
-                {title:'bussiness enquires',mail:'business@smartten.com.vn', mobile:'(+84)24 6259 3698', phone:'Phone', icon:'pe-7s-chat'},
-                {title:'recruitments',mail:'career@smartten.com.vn', mobile:'(+84)24 6259 3698', phone:'Phone', icon:'pe-7s-portfolio'}
+                {title:'bussiness enquires',mail:'sales@smartten.com.vn', mobile:'(+84)24 6259 3698', phone:'Phone', icon:'pe-7s-chat'},
+                {title:'recruitments',mail:'tuyendung@smartten.com.vn', mobile:'(+84)24 6259 3698', phone:'Phone', icon:'pe-7s-portfolio'}
               ],
       lang:"en",
     
@@ -63,8 +63,8 @@ const languageData = {
                 {title:'liên hệ' ,linkUrl:'/contact-us'}
               ],
       bussiness:[{title:'thắc mắc chung',mail:'info@smartten.com.vn', mobile:'(+84)24 6259 3698', phone:'Số điện thoại', icon:'pe-7s-phone'},
-                {title:'yêu cầu kinh doanh',mail:'business@smartten.com.vn', mobile:'(+84)24 6259 3698', phone:'Số điện thoại', icon:'pe-7s-chat'},
-                {title:'tuyển dụng',mail:'career@smartten.com.vn', mobile:'(+84)24 6259 3698', phone:'Số điện thoại', icon:'pe-7s-portfolio'}],
+                {title:'yêu cầu kinh doanh',mail:'sales@smartten.com.vn', mobile:'(+84)24 6259 3698', phone:'Số điện thoại', icon:'pe-7s-chat'},
+                {title:'tuyển dụng',mail:'tuyendung@smartten.com.vn', mobile:'(+84)24 6259 3698', phone:'Số điện thoại', icon:'pe-7s-portfolio'}],
       lang:"vi",
   },
 };

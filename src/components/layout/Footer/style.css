@@ -126,7 +126,7 @@
     margin-bottom:15px;
     font-family: karla,sans-serif;
     font-size: 14px;
-    padding-left: 50px!important;
+    padding-left: 45px!important;
     padding-bottom: 15px;
 }
 .footer_bussinesses li:nth-child(2){
@@ -189,6 +189,14 @@
 @media (max-width: 768px){
     .footer_bussinesses{
         display:inherit !important;
+        text-align: center;
+    }
+
+    .widget-navigation {
+        display: none;
+    }
+
+    .footer_logo .logo-link {
         text-align: center;
     }
     .footer__top{

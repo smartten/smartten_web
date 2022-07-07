@@ -12,14 +12,14 @@ function ServiceTeam() {
 			behavior: "smooth",
 		  });
 
-          document.title="SMARTTEN";
+          document.title="SMARTTEN Software - Software Development Company";
           document.description="SMARTTEN Software";
 	},[])
     
 
   return (
     <div className="team">
-        <BlogBanner title="Dedicated Development Teams" backgroundName="banner-team.jpeg" description="Find best tech talent and rapidly scale your delivery capability. Let our engineers walk you through any challenges with deep expertise & great experience." />        
+        <BlogBanner title="Dedicated Development Team" backgroundName="banner-team.jpeg" description="Find best tech talent and rapidly scale your delivery capability. Let our engineers walk you through any challenges with deep expertise & great experience." />
         <div className="container">
             <div className="team-achievements">
                 <div className="col-md-12">

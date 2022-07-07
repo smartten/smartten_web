@@ -42,7 +42,7 @@ function Footer({ languages, navigation}) {
                             {business.title}
                           </span>   
                           <br />
-                          Mail: <Link to="mailto:info@smartten.com.vn">{business.mail}</Link> <br />
+                          Mail: <a href="mailto: info@smartten.com.vn">{business.mail}</a> <br />
                           {business.phone}: <a href={`tel:${business.mobile}`}>{business.mobile}</a>
                         </li>
                       ))}
@@ -54,7 +54,7 @@ function Footer({ languages, navigation}) {
               <div className="copyright col-md-6 col-sm-6 col-12">  
                 <span>Copyright © 
                   <Link to="/">
-                  SMARTTEN Software & Technologies
+                   SMARTTEN Software
                   </Link>. All Rights Reserved
                 </span>
               </div>

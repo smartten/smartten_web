@@ -32,7 +32,8 @@
     background: rgba(237,27,50,0.9);
     left: 0;
     z-index: 1;
-    line-height: 1.08
+    line-height: 1.08;
+    margin-top: 30px;
 }
 .home .homeMainHead .homeHead{
 }
@@ -41,14 +42,25 @@
     
 }
 @media (max-width: 768px) {
+
+    .home {
+        margin-top: 60px;
+    }
+
+    .home .bannerContent figure {
+        padding: 0!important;
+    }
+
     .home .homeMainHead {
         top: 60%!important;
-        padding:15px 50px;
+        padding:45px 50px;
         font-size: 35px;
+        left: 0!important;
     }
 
     .home .bannerContent{
         height: inherit;
+        margin-bottom: 100px;
     }
     .homeHead .headLight {
         font-size: 20px;
@@ -946,4 +958,10 @@
 .test-info>h5 {
     font-style: italic;
     font-size: 12px
+}
+
+@media screen and (max-width: 768px) {
+    .dark_main_bg {
+        padding: 50px 0 0 0;
+    }
 }
