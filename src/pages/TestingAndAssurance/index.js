@@ -12,8 +12,8 @@ function TestingAndAssurance() {
 			behavior: "smooth",
 		  });
 
-      document.title="SMARTTEN Software - Software Development Company";
-      document.description="SMARTTEN Software";
+      document.title="SMARTTEN - Software Development Company";
+      document.description="SMARTTEN";
 	},[])
 
   return (

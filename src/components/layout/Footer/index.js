@@ -54,7 +54,7 @@ function Footer({ languages, navigation}) {
               <div className="copyright col-md-6 col-sm-6 col-12">  
                 <span>Copyright © 
                   <Link to="/">
-                   SMARTTEN Software
+                   SMARTTEN
                   </Link>. All Rights Reserved
                 </span>
               </div>
